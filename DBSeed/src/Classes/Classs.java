@@ -27,6 +27,6 @@ public class Classs {
 
     @Override
     public String toString() {
-        return "new TblClasses{SchoolYear=\""+ SchoolYear +"\", Year=\""+ Year +"\", ClassDesc=\""+ ClassDesc +"\", SchoolFK="+ SchoolFK +", TeacherFK="+ TeacherFK +"},";
+        return "INSERT INTO TblClasses( SchoolYear, Year, ClassDesc, SchoolFK, TeacherFK ) VALUES( '"+SchoolYear+"', '"+Year+"', '"+ClassDesc+"', "+SchoolFK+", "+TeacherFK+" );";
     }
 }

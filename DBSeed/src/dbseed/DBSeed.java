@@ -25,7 +25,7 @@ public class DBSeed {
         // TODO code application logic here
 
         try {
-            PrintWriter writer = new PrintWriter("seed.txt", "UTF-8");
+            PrintWriter writer = new PrintWriter("seed.sql", "UTF-8");
 
             int count = 0;
 
@@ -49,85 +49,89 @@ public class DBSeed {
                     + "\nrooms by school: " + roomsBySchool
             );
 
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblActions]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblClasses]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblClassStudents]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblDocuments]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblDone]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblEvaluations]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblEvaluationStudents]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblLessons]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblLessonStudents]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblNotifications]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblParenting]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblRoles]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblRooms]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblSchedules]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblSchools]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblSensors]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblTasks]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblUserRoles]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblUsers]\")");
-            writer.println("context.Database.ExecuteSqlCommand(\"TRUNCATE TABLE [TblValidations]\")");
+            writer.println("TRUNCATE TABLE [TblActions]");
+            writer.println("TRUNCATE TABLE [TblClasses]");
+            writer.println("TRUNCATE TABLE [TblClassStudents]");
+            writer.println("TRUNCATE TABLE [TblDocuments]");
+            writer.println("TRUNCATE TABLE [TblDone]");
+            writer.println("TRUNCATE TABLE [TblEvaluations]");
+            writer.println("TRUNCATE TABLE [TblEvaluationStudents]");
+            writer.println("TRUNCATE TABLE [TblLessons]");
+            writer.println("TRUNCATE TABLE [TblLessonStudents]");
+            writer.println("TRUNCATE TABLE [TblNotifications]");
+            writer.println("TRUNCATE TABLE [TblParenting]");
+            writer.println("TRUNCATE TABLE [TblRoles]");
+            writer.println("TRUNCATE TABLE [TblRooms]");
+            writer.println("TRUNCATE TABLE [TblSchedules]");
+            writer.println("TRUNCATE TABLE [TblSchools]");
+            writer.println("TRUNCATE TABLE [TblSensors]");
+            writer.println("TRUNCATE TABLE [TblTasks]");
+            writer.println("TRUNCATE TABLE [TblUserRoles]");
+            writer.println("TRUNCATE TABLE [TblUsers]");
+            writer.println("TRUNCATE TABLE [TblValidations]");
 
             /* USERS */
             writer.println("");
-            writer.println("var users = new List<TblUsers>{");
-
+            writer.println("-- USERS");
+            writer.println("");
+            
             // estudantes
             for (int i = 1; i < (students + 1); i++) {
                 User user = new User(i, "student", students);
                 writer.println("\t" + user.toString());
                 count++;
             }
+            writer.println("");
             // professores
             for (int i = 1; i < (teachers + 1); i++) {
                 User user = new User(i, "teacher");
                 writer.println("\t" + user.toString());
                 count++;
             }
+            writer.println("");
             // secretárias
             for (int i = 1; i < (secretaries + 1); i++) {
                 User user = new User(i, "secretary");
                 writer.println("\t" + user.toString());
                 count++;
             }
+            writer.println("");
             // contínuas
             for (int i = 1; i < (assistants + 1); i++) {
                 User user = new User(i, "assistant");
                 writer.println("\t" + user.toString());
                 count++;
             }
+            writer.println("");
             // enc.educação
             for (int i = 1; i < (guardians + 1); i++) {
                 User user = new User(i, "guardian");
                 writer.println("\t" + user.toString());
                 count++;
             }
+            writer.println("");
             // administradores
             for (int i = 1; i < 3; i++) {
                 User user = new User(i, "admin");
                 writer.println("\t" + user.toString());
                 count++;
             }
-            writer.println("};");
-            writer.println("users.ForEach(uu => context.TblUsers.AddOrUpdate(u => u.ID, uu));");
-            writer.println("context.SaveChanges();");
-
+            writer.println("");
+            
             /* SCHOOLS */
             writer.println("");
-            writer.println("var schools = new List<TblSchools>{");
+            writer.println("-- SCHOOLS");
+            writer.println("");
             for (int i = 0; i < schools; i++) {
-                writer.println("\tnew TblSchools{Name=\"school-" + (i + 1) + "\", Logo=\"logoExemple.png\", ProfilePicture=\"profileExemple.png\", Acronym=\"XPTO\"},");
+                writer.println("\tINSERT INTO TblSchools( Name, Logo, ProfilePicture, Acronym ) VALUES ( 'school-" + (i + 1) + "', 'logoExemple.png', 'profileExemple.png', 'XPTO' );");
                 count++;
             }
-            writer.println("};");
-            writer.println("schools.ForEach(ss => context.TblSchools.AddOrUpdate(s => s.ID, ss));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* CLASSES */
             writer.println("");
-            writer.println("var classes = new List<TblClasses>{");
+            writer.println("-- CLASSES");
+            writer.println("");
             int teacher = students + 1;
             for (int i = 1; i < 5; i++) {
                 int school = 1, classDesc = 0, j = 0;
@@ -141,63 +145,58 @@ public class DBSeed {
                     j++;
                 }
             }
-            writer.println("};");
-            writer.println("classes.ForEach(cc => context.TblClasses.AddOrUpdate(c => c.ID, cc));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* CLASSES-STUDENTS */
             writer.println("");
-            writer.println("var classStudent = new List<TblClassStudents>{");
+            writer.println("-- CLASSES-STUDENTS");
+            writer.println("");
             for (int i = 0; i < students; i++) {
-                writer.println("\tnew TblClassStudents{ClassFK=classes[" + ((int) i / (students / (classesByYear * 4))) + "].ID, StudentFK=students[" + i + "].ID},");
+                writer.println("\tINSERT INTO TblClassStudents( ClassFK, StudentFK ) VALUES( " + ((int) i / (students / (classesByYear * 4)) +1) + ", " + (i+1) + " );");
                 count++;
             }
-            writer.println("};");
-            writer.println("classStudent.ForEach(cc => context.TblClassStudents.AddOrUpdate(c => new { c.ClassFK, c.StudentFK }, cc));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* DOCUMENTS */
             writer.println("");
-            writer.println("var documents = new List<TblDocuments>{");
+            writer.println("-- DOCUMENTS");
+            writer.println("");
             for (int i = 0; i < classesByYear * 4; i++) {
                 for (int j = 0; j < 3; j++) {
-                    writer.println("\tnew TblDocuments{Document=\"documentExemple.pdf\", IsVisible=" + ((j % 2 == 0) ? true : false) + ", SubmitedIn=DateTime.Now, ClassFK=classes[" + i + "].ID},");
+                    writer.println("\tINSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i+1) + " );");
                     count++;
                 }
             }
-            writer.println("};");
-            writer.println("documents.ForEach(doc => context.TblDocuments.AddOrUpdate(d => d.ID, doc));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* ACTIONS   */
             writer.println("");
-            writer.println("var actions = new List<TblActions>{");
+            writer.println("-- ACTIONS");
+            writer.println("");
             for (int j = 0; j < 6; j++) {
                 for (int i = students + 1; i < students + teachers; i++) {
-                    writer.println("\tnew TblActions { UserFK = users[" + i + "].ID, Description=\"An Action exemple... An Action exemple... An Action exemple...\", Hour=RandomDay()},");
+                    writer.println("\tINSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( " + (i+1) + ", 'An Action exemple... An Action exemple... An Action exemple...', '"+2017+String.format("%02d", (8 + (int) Math.round(Math.random() * (3)))) +String.format("%02d", (1 + (int) Math.round(Math.random() * (29))))+"' );");
                     count++;
                 }
             }
-            writer.println("};");
-            writer.println("actions.ForEach(aa => context.TblActions.AddOrUpdate(a => a.ID, aa));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* ROOMS */
             writer.println("");
-            writer.println("var rooms = new List<TblRooms>{");
+            writer.println("-- ROOMS");
+            writer.println("");
             for (int j = 0; j < schools; j++) {
                 for (int i = 0; i < roomsBySchool; i++) {
-                    writer.println("\tnew TblRoomns { SchoolFK = schools[" + j + "].ID, Name=\"S" + ((j + 1) + "-R" + (i + 1)) + "\"},");
+                    writer.println("\tINSERT INTO TblRooms( SchoolFK, Name ) VALUES( " + (j+1) + ", 'S" + ((j + 1) + "-R" + (i + 1)) + "' );");
                     count++;
                 }
             }
-            writer.println("};");
-            writer.println("rooms.ForEach(rr => context.TblRooms.AddOrUpdate(r => r.ID, rr));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* SENSORS */
             writer.println("");
-            writer.println("var sensors = new List<TblSensors>{");
+            writer.println("-- SENSORS");
+            writer.println("");
             int roomID = 1;
             for (int j = 0; j < schools; j++) {
                 for (int i = 0; i < roomsBySchool; i++) {
@@ -287,119 +286,6 @@ public class DBSeed {
             }
             writer.println("};");
             writer.println("parenting.ForEach(pp => context.TblParenting.AddOrUpdate(p => new { p.StudentFK, p.GuardianFK }, pp));");
-            writer.println("context.SaveChanges();");
-
-            /* NOTIFICATIONS */
-            writer.println("");
-            writer.println("var notifications = new List<TblNotifications>{");
-            for (int i = 0; i < teachers; i++) {
-                writer.println("\tnew TblNotifications{Hour=RandomDay(), Subject=\"Some Subject exemple" + (i + 1) + "\", Urgency=" + ((i % 4 == 0) ? false : true) + ", Description=\"Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description...\", UserFK=" + (students + 1 + (int) Math.round(Math.random() * (guardians + teachers + secretaries))) + "  },");
-                count++;
-            }
-            writer.println("};");
-            writer.println("notifications.ForEach(nn => context.TblNotifications.AddOrUpdate(n => n.ID, nn));");
-            writer.println("context.SaveChanges();");
-
-            /* VALIDATIONS */
-            writer.println("");
-            writer.println("var validations = new List<TblValidations>{");
-            for (int i = 0; i < teachers; i++) {
-                int group = 1 + (int) Math.round(Math.random() * 19);
-                for (int j = 0; j < group; j++) {
-                    writer.println("\tnew TblNotifications{ UserFK=" + ((students + teachers + 1) + (int) Math.round(Math.random() * (guardians - students + teachers))) + ", NotificationFK=" + i + ", Accepted=" + ((j % 6 == 0) ? true : false) + ", Readed=" + ((j % 3 == 0) ? true : false) + " },");
-                    count++;
-                }
-            }
-            writer.println("};");
-            writer.println("validations.ForEach(vv => context.TblNotifications.AddOrUpdate(v => new{ v.UserFK, v.NotificationFK }, vv));");
-            writer.println("context.SaveChanges();");
-
-            /* TASKS */
-            writer.println("");
-            writer.println("var tasks = new List<TblTasks>{");
-            for (int i = 0; i < teachers; i++) {
-                writer.println("\tnew TblTasks{ UserFK=" + ((students + teachers + 1) + (int) Math.round(Math.random() * (secretaries + assistants))) + ", Day=DateTime.Now.Date.AddDays(" + (20 + (int) Math.round(Math.random() * 60)) + "), Weekly=" + ((i % 4 == 0) ? true : false) + ", Description=\"Some description exemple... Some description exemple... Some description exemple... Some description exemple... Some description exemple... \" },");
-                count++;
-            }
-            writer.println("};");
-            writer.println("tasks.ForEach(tt => context.TblTasks.AddOrUpdate(t => t.ID, tt));");
-            writer.println("context.SaveChanges();");
-
-            /* DONE */
-            writer.println("");
-            writer.println("var done = new List<TblDone>{");
-            for (int i = 0; i < teachers / 2; i++) {
-                writer.println("\tnew TblDone{ TaskFK=" + i + ", Hour=DateTime.Now},");
-                count++;
-            }
-            writer.println("};");
-            writer.println("done.ForEach(dd => context.TblDone.AddOrUpdate(d => d.ID, dd));");
-            writer.println("context.SaveChanges();");
-
-            /* SCHEDULE */
-            writer.println("");
-            writer.println("var schedules = new List<TblSchedules>{");
-            for (int i = 0; i < classesByYear * 4; i++) {
-                for (int j = 0; j < 5; j++) {
-                    for (int k = 0; k < 5; k++) {
-                        Schedule schedule = new Schedule(k, j, students + i, i, i);
-                        writer.println("\t" + schedule.toString());
-                        count++;
-                    }
-                }
-            }
-            writer.println("};");
-            writer.println("schedules.ForEach(ss => context.TblSchedules.AddOrUpdate(s => s.ID, ss));");
-            writer.println("context.SaveChanges();");
-
-            /* LESSONS */
-            writer.println("");
-            writer.println("var lessons = new List<TblLessons>{");
-            for (int i = 0; i < classesByYear * 100; i++) {
-                for (int j = 0; j < 2; j++) {
-                    writer.println("\tnew TblLessons{ Summary=\"Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário \", Observations=\"Uma Observação Uma Observação Uma Observação Uma Observação \", Homework=\"Algum Trabalho de casa Algum Trabalho de casa \", ScheduleFK=" + i + ", Day=DateTime.Now},");
-                    count++;
-                }
-            }
-            writer.println("};");
-            writer.println("lessons.ForEach(ll => context.TblLessons.AddOrUpdate(l => l.ID, ll));");
-            writer.println("context.SaveChanges();");
-
-            /* LESSON-STUDENTS */
-            writer.println("");
-            writer.println("var lessStudent  = new List<TblLessonStudents>{");
-            for (int i = 0; i < classesByYear * 200; i++) {
-                for (int j = 0; j < 20; j++) {
-                    writer.println("\tnew TblLessonStudents{ LessonFK=" + i + ", StudentFK=" + (1 + (int) Math.round(Math.random() * (students - 1))) + ", Presence=" + ((i % 8 == 0) ? false : true) + ", Material=" + ((i % 5 == 0) ? false : true) + ", Behavior=" + (1 + (int) Math.round(Math.random() * (4))) + " },");
-                    count++;
-                }
-            }
-            writer.println("};");
-            writer.println("lessStudent .ForEach(ll => context.TblLessonStudents.AddOrUpdate(l => l.ID, ll));");
-            writer.println("context.SaveChanges();");
-
-            /* EVALUATION */
-            writer.println("");
-            writer.println("var evaluations = new List<TblEvaluations>{");
-            for (int i = 0; i < classesByYear * 100; i++) {
-                writer.println("\tnew TblEvaluations{ Purport=\"Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo...\", EvaluationDate==DateTime.Now.Date.AddDays(" + (40 + (int) Math.round(Math.random() * 80)) + "), ScheduleFK=" + i + " },");
-                count++;
-            }
-            writer.println("};");
-            writer.println("evaluations.ForEach(ee => context.TblEvaluations.AddOrUpdate(e => e.ID, ee));");
-            writer.println("context.SaveChanges();");
-
-            /* EVALUATION_STUDENTS */
-            writer.println("");
-            writer.println("var evalStudent = new List<TblEvaluationStudents>{");
-            for (int i = 0; i < classesByYear * 100; i++) {
-                for (int j = 0; j < 20; j++) {
-                    writer.println("\tnew TblEvaluationStudents{ EvaluationFK=" + i + ", StudentFK=" + (1 + (int) Math.round(Math.random() * (students - 1))) + " },");
-                    count++;
-                }
-            }
-            writer.println("};");
-            writer.println("evalStudent.ForEach(ee => context.TblEvaluationStudents.AddOrUpdate(e => e.ID, ee));");
             writer.println("context.SaveChanges();");
 
             writer.close();
