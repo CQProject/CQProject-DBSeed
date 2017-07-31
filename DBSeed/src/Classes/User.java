@@ -29,20 +29,7 @@ public final class User {
     public final int IsActive = 1;
     public String Function;
 
-    public User(int ID, String Function) {
-        this.RegisterDate = RegisterDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy,M,d"));
-        this.Name = Function + "-" + ID;
-        this.Email = this.Name + "@a.a";
-        this.FiscalNumber = "" + (new Random().nextInt(899999999) + 100000000);
-        this.CitizenCard = "" + (new Random().nextInt(899999999) + 100000000);
-        this.PhoneNumber = "91" + (new Random().nextInt(8999999) + 1000000);
-        this.Photo = Function + ".png";
-        this.Curriculum = "curriculumExemple.pdf";
-        this.DateOfBirth = randBetween(1956, 1990) + "," + randBetween(1, 12) + "," + randBetween(1, 28);
-        this.Function = Function;
-    }
-
-    public User(int ID, String Function, int nStudents) {
+    public User(int ID, String Function, boolean adult) {
         this.RegisterDate = RegisterDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
         this.Name = Function + "-" + ID;
         this.Email = this.Name + "@a.a";
@@ -51,7 +38,7 @@ public final class User {
         this.PhoneNumber = "91" + (new Random().nextInt(8999999) + 1000000);
         this.Photo = Function + ".png";
         this.Curriculum = "curriculumExemple.pdf";
-        this.DateOfBirth = ((int) ID / (nStudents / 4) + 2007) + "" + randBetween(1, 12) + "" + randBetween(1, 28);
+        this.DateOfBirth = adult? Methods.dateBirth():Methods.dateBirthStudent();
         this.Function = Function;
     }
 
@@ -64,20 +51,20 @@ public final class User {
         String str;
         switch (Function) {
             case "student":
-                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES "
+                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES "
                         + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', '" + DateOfBirth + "', " + IsActive + ", '" + Address + "', '" + Photo + "' );";
                 break;
             case "guardian":
-                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES "
+                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES "
                         + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', " + IsActive + ", '" + Address + "', '" + PhoneNumber + "' );";
                 break;
             case "admin":
-                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, Photo, PhoneNumber ) VALUES "
+                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, Photo, PhoneNumber ) VALUES "
                         + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', '" + Photo + "', '" + PhoneNumber + "' );";
                 break;
             default:
-                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES "
-                        + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', " + DateOfBirth + ", " + IsActive + ", '" + Address + "', '" + Photo + "', '" + PhoneNumber + "', '"+Curriculum+"' );";
+                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES "
+                        + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', '" + DateOfBirth + "', " + IsActive + ", '" + Address + "', '" + Photo + "', '" + PhoneNumber + "', '"+Curriculum+"' );";
                 break;
         }
         return str;

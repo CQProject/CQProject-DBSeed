@@ -28,7 +28,6 @@ public final class Sensor {
     
     @Override
     public String toString() {
-        return "INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( "+RoomFK+", '20170917"++"' );";
-        return "new TblSensors { RoomFK = "+RoomFK+", Hour=RandomDay(), Luminosity="+Luminosity+", Temperature="+Temperature+", Energy="+Energy+"},";
+        return "INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( "+RoomFK+", '"+Methods.randDate()+"', "+Luminosity+", "+Temperature+", "+Energy+" );";
     }
 }

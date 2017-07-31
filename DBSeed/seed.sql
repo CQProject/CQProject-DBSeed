@@ -19,593 +19,593 @@ TRUNCATE TABLE [TblUserRoles]
 TRUNCATE TABLE [TblUsers]
 TRUNCATE TABLE [TblValidations]
 
--- USERS
+-- USERS ------------------------------------------------------------------------------------------------
 
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-1@a.a', 'student-1', '123qwe', 'student', '193468398', '318688004', '200725', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-2@a.a', 'student-2', '123qwe', 'student', '967841839', '918330374', '200736', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-3@a.a', 'student-3', '123qwe', 'student', '739413882', '555804915', '2007716', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-4@a.a', 'student-4', '123qwe', 'student', '694924083', '814124787', '2007720', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-5@a.a', 'student-5', '123qwe', 'student', '786118948', '747324304', '2007424', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-6@a.a', 'student-6', '123qwe', 'student', '540316976', '167818188', '2007112', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-7@a.a', 'student-7', '123qwe', 'student', '369231287', '140770673', '20071121', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-8@a.a', 'student-8', '123qwe', 'student', '407496840', '826489523', '20071022', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-9@a.a', 'student-9', '123qwe', 'student', '695501673', '721459190', '2007114', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-10@a.a', 'student-10', '123qwe', 'student', '118535459', '621592647', '2007911', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-11@a.a', 'student-11', '123qwe', 'student', '579139364', '124787383', '20071119', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-12@a.a', 'student-12', '123qwe', 'student', '778863447', '756815208', '2007913', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-13@a.a', 'student-13', '123qwe', 'student', '659462549', '312013408', '2007216', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-14@a.a', 'student-14', '123qwe', 'student', '692407120', '889086373', '20071027', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-15@a.a', 'student-15', '123qwe', 'student', '672262824', '832424148', '2007512', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-16@a.a', 'student-16', '123qwe', 'student', '351373011', '602457264', '2007523', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-17@a.a', 'student-17', '123qwe', 'student', '789697035', '575858982', '2007616', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-18@a.a', 'student-18', '123qwe', 'student', '500413047', '560994720', '2007519', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-19@a.a', 'student-19', '123qwe', 'student', '619415743', '312401331', '200793', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-20@a.a', 'student-20', '123qwe', 'student', '919752420', '710149169', '2007817', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-21@a.a', 'student-21', '123qwe', 'student', '153063726', '659823118', '2007816', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-22@a.a', 'student-22', '123qwe', 'student', '884106115', '759277220', '200799', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-23@a.a', 'student-23', '123qwe', 'student', '819199584', '935006672', '200742', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-24@a.a', 'student-24', '123qwe', 'student', '204156331', '164857284', '200739', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-25@a.a', 'student-25', '123qwe', 'student', '881631321', '834816412', '200791', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-26@a.a', 'student-26', '123qwe', 'student', '288053340', '742195682', '2007918', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-27@a.a', 'student-27', '123qwe', 'student', '941096442', '719505895', '200744', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-28@a.a', 'student-28', '123qwe', 'student', '507769952', '613002997', '2007624', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-29@a.a', 'student-29', '123qwe', 'student', '854919363', '313196487', '2007314', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-30@a.a', 'student-30', '123qwe', 'student', '442897141', '972331004', '2007419', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-31@a.a', 'student-31', '123qwe', 'student', '693389761', '315676396', '2007123', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-32@a.a', 'student-32', '123qwe', 'student', '731210963', '730641019', '200765', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-33@a.a', 'student-33', '123qwe', 'student', '365220637', '807058794', '200746', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-34@a.a', 'student-34', '123qwe', 'student', '126175914', '683363803', '20071111', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-35@a.a', 'student-35', '123qwe', 'student', '257859580', '660947123', '200787', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-36@a.a', 'student-36', '123qwe', 'student', '361158021', '658126668', '20071115', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-37@a.a', 'student-37', '123qwe', 'student', '422094267', '409081999', '2007714', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-38@a.a', 'student-38', '123qwe', 'student', '410544391', '254640918', '2007819', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-39@a.a', 'student-39', '123qwe', 'student', '456874763', '198449078', '20071013', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-40@a.a', 'student-40', '123qwe', 'student', '494469611', '677499365', '2007323', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-41@a.a', 'student-41', '123qwe', 'student', '238478120', '165336825', '2007627', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-42@a.a', 'student-42', '123qwe', 'student', '852471622', '428058033', '2007126', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-43@a.a', 'student-43', '123qwe', 'student', '882978943', '794159513', '200745', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-44@a.a', 'student-44', '123qwe', 'student', '998098066', '111750946', '2007814', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-45@a.a', 'student-45', '123qwe', 'student', '951101295', '125924408', '2007625', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-46@a.a', 'student-46', '123qwe', 'student', '724688626', '633766205', '2007228', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-47@a.a', 'student-47', '123qwe', 'student', '700838084', '541106458', '2007325', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-48@a.a', 'student-48', '123qwe', 'student', '465993997', '885459915', '20071122', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-49@a.a', 'student-49', '123qwe', 'student', '379671714', '612593055', '20071021', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-50@a.a', 'student-50', '123qwe', 'student', '409219578', '464519029', '2007114', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-51@a.a', 'student-51', '123qwe', 'student', '631397066', '850336932', '20071112', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-52@a.a', 'student-52', '123qwe', 'student', '925985924', '641556216', '20071016', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-53@a.a', 'student-53', '123qwe', 'student', '466447095', '713457435', '20071110', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-54@a.a', 'student-54', '123qwe', 'student', '834069734', '876224404', '2007717', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-55@a.a', 'student-55', '123qwe', 'student', '828406663', '533521201', '2007627', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-56@a.a', 'student-56', '123qwe', 'student', '224023185', '410919174', '2007214', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-57@a.a', 'student-57', '123qwe', 'student', '958402988', '460985531', '20071017', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-58@a.a', 'student-58', '123qwe', 'student', '242898287', '220630216', '2007710', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-59@a.a', 'student-59', '123qwe', 'student', '172921757', '305350738', '20071024', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-60@a.a', 'student-60', '123qwe', 'student', '162538832', '202088769', '20071027', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-61@a.a', 'student-61', '123qwe', 'student', '322310232', '584480800', '200767', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-62@a.a', 'student-62', '123qwe', 'student', '298677650', '883077250', '2007107', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-63@a.a', 'student-63', '123qwe', 'student', '741328989', '196708683', '2007526', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-64@a.a', 'student-64', '123qwe', 'student', '334188408', '186379873', '2007826', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-65@a.a', 'student-65', '123qwe', 'student', '147946146', '618775612', '2007125', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-66@a.a', 'student-66', '123qwe', 'student', '903828399', '899233684', '2007615', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-67@a.a', 'student-67', '123qwe', 'student', '646523607', '867619762', '2007721', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-68@a.a', 'student-68', '123qwe', 'student', '134152915', '631732849', '20071111', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-69@a.a', 'student-69', '123qwe', 'student', '671275387', '360537314', '2007322', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-70@a.a', 'student-70', '123qwe', 'student', '880611761', '609886122', '20071115', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-71@a.a', 'student-71', '123qwe', 'student', '355964666', '344812614', '200778', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-72@a.a', 'student-72', '123qwe', 'student', '286532950', '826082069', '2007328', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-73@a.a', 'student-73', '123qwe', 'student', '402176374', '175824956', '20071027', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-74@a.a', 'student-74', '123qwe', 'student', '366021199', '400280322', '200753', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-75@a.a', 'student-75', '123qwe', 'student', '971509370', '697157829', '2008227', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-76@a.a', 'student-76', '123qwe', 'student', '601839572', '955552244', '200827', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-77@a.a', 'student-77', '123qwe', 'student', '847919452', '714178688', '2008610', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-78@a.a', 'student-78', '123qwe', 'student', '406524756', '780381424', '2008715', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-79@a.a', 'student-79', '123qwe', 'student', '736262452', '157374849', '200869', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-80@a.a', 'student-80', '123qwe', 'student', '197807046', '889119220', '200854', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-81@a.a', 'student-81', '123qwe', 'student', '119505450', '112608085', '2008919', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-82@a.a', 'student-82', '123qwe', 'student', '655633799', '405082071', '200898', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-83@a.a', 'student-83', '123qwe', 'student', '156553846', '321992499', '2008320', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-84@a.a', 'student-84', '123qwe', 'student', '640810266', '572104222', '2008128', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-85@a.a', 'student-85', '123qwe', 'student', '684963091', '559088343', '200896', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-86@a.a', 'student-86', '123qwe', 'student', '940659922', '100944628', '2008518', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-87@a.a', 'student-87', '123qwe', 'student', '869054939', '869530871', '200863', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-88@a.a', 'student-88', '123qwe', 'student', '359034116', '849929650', '2008719', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-89@a.a', 'student-89', '123qwe', 'student', '736494950', '592638008', '2008524', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-90@a.a', 'student-90', '123qwe', 'student', '265006228', '834593203', '2008410', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-91@a.a', 'student-91', '123qwe', 'student', '572984354', '252450344', '200824', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-92@a.a', 'student-92', '123qwe', 'student', '536246563', '347771214', '2008422', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-93@a.a', 'student-93', '123qwe', 'student', '508466166', '868343905', '20081117', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-94@a.a', 'student-94', '123qwe', 'student', '286363713', '522110820', '200897', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-95@a.a', 'student-95', '123qwe', 'student', '353765561', '988528871', '200893', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-96@a.a', 'student-96', '123qwe', 'student', '602075863', '376044242', '200812', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-97@a.a', 'student-97', '123qwe', 'student', '870080874', '263911416', '20081110', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-98@a.a', 'student-98', '123qwe', 'student', '814117587', '680812408', '2008527', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-99@a.a', 'student-99', '123qwe', 'student', '136688291', '526883671', '2008217', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-100@a.a', 'student-100', '123qwe', 'student', '743186183', '792252704', '2008820', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-101@a.a', 'student-101', '123qwe', 'student', '670945072', '698904615', '20081118', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-102@a.a', 'student-102', '123qwe', 'student', '678455182', '846224097', '2008413', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-103@a.a', 'student-103', '123qwe', 'student', '108502265', '295145863', '2008628', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-104@a.a', 'student-104', '123qwe', 'student', '811573655', '611161610', '200866', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-105@a.a', 'student-105', '123qwe', 'student', '491632297', '143466282', '2008412', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-106@a.a', 'student-106', '123qwe', 'student', '217710120', '889551491', '2008418', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-107@a.a', 'student-107', '123qwe', 'student', '630890621', '318555103', '200891', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-108@a.a', 'student-108', '123qwe', 'student', '332758430', '518127041', '2008814', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-109@a.a', 'student-109', '123qwe', 'student', '109269816', '664993478', '20081024', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-110@a.a', 'student-110', '123qwe', 'student', '181921987', '116708615', '2008423', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-111@a.a', 'student-111', '123qwe', 'student', '565619587', '117751874', '2008622', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-112@a.a', 'student-112', '123qwe', 'student', '131536995', '359348204', '2008622', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-113@a.a', 'student-113', '123qwe', 'student', '517879019', '623700864', '2008514', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-114@a.a', 'student-114', '123qwe', 'student', '700302951', '441936351', '2008316', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-115@a.a', 'student-115', '123qwe', 'student', '501103584', '298089674', '2008219', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-116@a.a', 'student-116', '123qwe', 'student', '744688533', '443362399', '2008227', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-117@a.a', 'student-117', '123qwe', 'student', '555006398', '817167272', '2008102', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-118@a.a', 'student-118', '123qwe', 'student', '804231998', '658129362', '20081226', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-119@a.a', 'student-119', '123qwe', 'student', '560815860', '569612758', '2008310', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-120@a.a', 'student-120', '123qwe', 'student', '937075141', '711348835', '2008627', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-121@a.a', 'student-121', '123qwe', 'student', '977285558', '980206584', '2008519', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-122@a.a', 'student-122', '123qwe', 'student', '177292653', '987156524', '20081012', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-123@a.a', 'student-123', '123qwe', 'student', '713999171', '299243770', '20081228', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-124@a.a', 'student-124', '123qwe', 'student', '394676052', '630230542', '20081027', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-125@a.a', 'student-125', '123qwe', 'student', '732555291', '819577303', '2008220', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-126@a.a', 'student-126', '123qwe', 'student', '970424785', '133112183', '2008111', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-127@a.a', 'student-127', '123qwe', 'student', '606418523', '592382974', '2008918', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-128@a.a', 'student-128', '123qwe', 'student', '358236928', '375919703', '2008327', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-129@a.a', 'student-129', '123qwe', 'student', '755628583', '149752873', '2008419', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-130@a.a', 'student-130', '123qwe', 'student', '876412584', '583657712', '2008717', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-131@a.a', 'student-131', '123qwe', 'student', '224622294', '436105084', '200861', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-132@a.a', 'student-132', '123qwe', 'student', '491159249', '436960388', '2008326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-133@a.a', 'student-133', '123qwe', 'student', '641048696', '869540205', '2008916', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-134@a.a', 'student-134', '123qwe', 'student', '160178928', '555196484', '20081018', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-135@a.a', 'student-135', '123qwe', 'student', '792179743', '563426716', '2008613', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-136@a.a', 'student-136', '123qwe', 'student', '507144244', '429356335', '2008918', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-137@a.a', 'student-137', '123qwe', 'student', '641614246', '798811182', '2008520', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-138@a.a', 'student-138', '123qwe', 'student', '741707722', '943442887', '2008418', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-139@a.a', 'student-139', '123qwe', 'student', '307810149', '442948535', '2008722', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-140@a.a', 'student-140', '123qwe', 'student', '300297910', '950928992', '200881', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-141@a.a', 'student-141', '123qwe', 'student', '808603549', '657342809', '200893', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-142@a.a', 'student-142', '123qwe', 'student', '309401260', '376464566', '2008123', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-143@a.a', 'student-143', '123qwe', 'student', '217953052', '367426679', '2008820', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-144@a.a', 'student-144', '123qwe', 'student', '970247766', '871237260', '20081215', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-145@a.a', 'student-145', '123qwe', 'student', '191736445', '801841493', '2008922', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-146@a.a', 'student-146', '123qwe', 'student', '574058194', '224157937', '2008424', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-147@a.a', 'student-147', '123qwe', 'student', '255698376', '139612506', '2008109', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-148@a.a', 'student-148', '123qwe', 'student', '923928126', '561827505', '2008815', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-149@a.a', 'student-149', '123qwe', 'student', '430052037', '744230725', '2008213', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-150@a.a', 'student-150', '123qwe', 'student', '102663164', '942821824', '200974', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-151@a.a', 'student-151', '123qwe', 'student', '836525945', '570919221', '2009106', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-152@a.a', 'student-152', '123qwe', 'student', '692347787', '914117618', '2009718', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-153@a.a', 'student-153', '123qwe', 'student', '518418007', '785129974', '2009123', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-154@a.a', 'student-154', '123qwe', 'student', '165399960', '245083622', '20091127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-155@a.a', 'student-155', '123qwe', 'student', '175814498', '329387519', '2009315', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-156@a.a', 'student-156', '123qwe', 'student', '301229926', '539456248', '2009120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-157@a.a', 'student-157', '123qwe', 'student', '303019032', '570731346', '200994', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-158@a.a', 'student-158', '123qwe', 'student', '327592651', '190568456', '200959', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-159@a.a', 'student-159', '123qwe', 'student', '128496591', '154017639', '2009721', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-160@a.a', 'student-160', '123qwe', 'student', '539226961', '360734256', '2009815', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-161@a.a', 'student-161', '123qwe', 'student', '870734861', '698903648', '2009712', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-162@a.a', 'student-162', '123qwe', 'student', '137187968', '705438406', '2009717', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-163@a.a', 'student-163', '123qwe', 'student', '781642547', '894801531', '2009727', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-164@a.a', 'student-164', '123qwe', 'student', '616984984', '447786643', '2009424', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-165@a.a', 'student-165', '123qwe', 'student', '262623541', '241759079', '2009320', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-166@a.a', 'student-166', '123qwe', 'student', '944591306', '252259891', '2009520', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-167@a.a', 'student-167', '123qwe', 'student', '919856936', '413245955', '2009914', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-168@a.a', 'student-168', '123qwe', 'student', '784885244', '701346813', '2009911', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-169@a.a', 'student-169', '123qwe', 'student', '402828526', '284457051', '200974', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-170@a.a', 'student-170', '123qwe', 'student', '231157164', '927146524', '20091027', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-171@a.a', 'student-171', '123qwe', 'student', '198970781', '704432013', '200965', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-172@a.a', 'student-172', '123qwe', 'student', '336289673', '204237899', '2009326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-173@a.a', 'student-173', '123qwe', 'student', '273078570', '849573069', '200936', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-174@a.a', 'student-174', '123qwe', 'student', '498314441', '718801816', '200961', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-175@a.a', 'student-175', '123qwe', 'student', '866423133', '459017905', '2009423', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-176@a.a', 'student-176', '123qwe', 'student', '218049945', '238572891', '200987', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-177@a.a', 'student-177', '123qwe', 'student', '837785286', '977839767', '2009716', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-178@a.a', 'student-178', '123qwe', 'student', '226391875', '593866940', '200941', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-179@a.a', 'student-179', '123qwe', 'student', '277808472', '264396488', '2009722', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-180@a.a', 'student-180', '123qwe', 'student', '486708565', '711166183', '200965', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-181@a.a', 'student-181', '123qwe', 'student', '562011858', '112345080', '20091017', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-182@a.a', 'student-182', '123qwe', 'student', '257798549', '388260386', '2009411', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-183@a.a', 'student-183', '123qwe', 'student', '919540752', '703915114', '2009316', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-184@a.a', 'student-184', '123qwe', 'student', '523711982', '598763494', '2009210', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-185@a.a', 'student-185', '123qwe', 'student', '581118664', '687687194', '200975', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-186@a.a', 'student-186', '123qwe', 'student', '475232537', '120025302', '2009716', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-187@a.a', 'student-187', '123qwe', 'student', '767792770', '955040455', '2009323', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-188@a.a', 'student-188', '123qwe', 'student', '488134876', '123883867', '20091110', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-189@a.a', 'student-189', '123qwe', 'student', '423341168', '354506335', '200965', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-190@a.a', 'student-190', '123qwe', 'student', '259200222', '253563158', '20091114', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-191@a.a', 'student-191', '123qwe', 'student', '256232585', '910005055', '2009612', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-192@a.a', 'student-192', '123qwe', 'student', '610905885', '625511973', '2009215', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-193@a.a', 'student-193', '123qwe', 'student', '521551838', '341808622', '2009712', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-194@a.a', 'student-194', '123qwe', 'student', '969668078', '380748358', '2009221', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-195@a.a', 'student-195', '123qwe', 'student', '960476691', '181930841', '2009118', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-196@a.a', 'student-196', '123qwe', 'student', '817434890', '938370694', '2009312', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-197@a.a', 'student-197', '123qwe', 'student', '280079822', '985802630', '20091123', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-198@a.a', 'student-198', '123qwe', 'student', '281127213', '390929501', '2009104', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-199@a.a', 'student-199', '123qwe', 'student', '393346851', '962648310', '20091026', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-200@a.a', 'student-200', '123qwe', 'student', '120196239', '304511015', '2009520', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-201@a.a', 'student-201', '123qwe', 'student', '184936272', '682032951', '200962', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-202@a.a', 'student-202', '123qwe', 'student', '566062663', '618018569', '2009724', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-203@a.a', 'student-203', '123qwe', 'student', '403283151', '650459188', '2009420', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-204@a.a', 'student-204', '123qwe', 'student', '519473807', '154660312', '2009127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-205@a.a', 'student-205', '123qwe', 'student', '133408857', '419310375', '200912', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-206@a.a', 'student-206', '123qwe', 'student', '407244557', '750745134', '20091011', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-207@a.a', 'student-207', '123qwe', 'student', '679918896', '842696396', '2009528', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-208@a.a', 'student-208', '123qwe', 'student', '525006862', '110296630', '2009914', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-209@a.a', 'student-209', '123qwe', 'student', '433883610', '879553774', '2009314', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-210@a.a', 'student-210', '123qwe', 'student', '713459673', '256526768', '20091126', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-211@a.a', 'student-211', '123qwe', 'student', '866331012', '292283486', '2009520', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-212@a.a', 'student-212', '123qwe', 'student', '958444728', '506736097', '2009422', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-213@a.a', 'student-213', '123qwe', 'student', '799397446', '533755099', '2009210', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-214@a.a', 'student-214', '123qwe', 'student', '902598385', '205933621', '200965', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-215@a.a', 'student-215', '123qwe', 'student', '494732621', '549349995', '2009111', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-216@a.a', 'student-216', '123qwe', 'student', '188600046', '139029700', '2009826', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-217@a.a', 'student-217', '123qwe', 'student', '765936298', '701986573', '2009815', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-218@a.a', 'student-218', '123qwe', 'student', '276635189', '156856545', '2009116', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-219@a.a', 'student-219', '123qwe', 'student', '527677973', '253322928', '200982', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-220@a.a', 'student-220', '123qwe', 'student', '975048929', '689574979', '2009825', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-221@a.a', 'student-221', '123qwe', 'student', '459972919', '713310533', '2009721', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-222@a.a', 'student-222', '123qwe', 'student', '781164482', '299189271', '200948', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-223@a.a', 'student-223', '123qwe', 'student', '857731190', '505495333', '2009111', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-224@a.a', 'student-224', '123qwe', 'student', '324632613', '866558461', '2009108', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-225@a.a', 'student-225', '123qwe', 'student', '202910062', '438229605', '201092', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-226@a.a', 'student-226', '123qwe', 'student', '517608015', '358309454', '201015', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-227@a.a', 'student-227', '123qwe', 'student', '417951613', '970614516', '2010313', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-228@a.a', 'student-228', '123qwe', 'student', '344793247', '645009514', '2010326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-229@a.a', 'student-229', '123qwe', 'student', '646675560', '341745035', '201068', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-230@a.a', 'student-230', '123qwe', 'student', '460450016', '331768791', '2010124', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-231@a.a', 'student-231', '123qwe', 'student', '520496624', '465165139', '2010221', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-232@a.a', 'student-232', '123qwe', 'student', '899371959', '859981370', '2010724', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-233@a.a', 'student-233', '123qwe', 'student', '176970741', '146587504', '20101122', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-234@a.a', 'student-234', '123qwe', 'student', '962416906', '865150319', '2010910', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-235@a.a', 'student-235', '123qwe', 'student', '805978669', '143649069', '20101014', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-236@a.a', 'student-236', '123qwe', 'student', '613285748', '309687040', '201018', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-237@a.a', 'student-237', '123qwe', 'student', '577966584', '518063828', '201095', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-238@a.a', 'student-238', '123qwe', 'student', '345798024', '543614054', '20101114', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-239@a.a', 'student-239', '123qwe', 'student', '627578345', '287715727', '2010217', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-240@a.a', 'student-240', '123qwe', 'student', '558766247', '656999245', '201045', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-241@a.a', 'student-241', '123qwe', 'student', '629155210', '157386312', '2010318', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-242@a.a', 'student-242', '123qwe', 'student', '917250967', '241647385', '20101127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-243@a.a', 'student-243', '123qwe', 'student', '637542946', '357681190', '2010427', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-244@a.a', 'student-244', '123qwe', 'student', '623374318', '778987994', '2010220', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-245@a.a', 'student-245', '123qwe', 'student', '466102574', '889112461', '201014', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-246@a.a', 'student-246', '123qwe', 'student', '125073878', '165982341', '2010915', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-247@a.a', 'student-247', '123qwe', 'student', '978594879', '353405120', '2010917', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-248@a.a', 'student-248', '123qwe', 'student', '688667373', '371698311', '2010724', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-249@a.a', 'student-249', '123qwe', 'student', '393211540', '219174151', '20101023', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-250@a.a', 'student-250', '123qwe', 'student', '929661097', '359815066', '201053', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-251@a.a', 'student-251', '123qwe', 'student', '781497972', '456077769', '2010713', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-252@a.a', 'student-252', '123qwe', 'student', '347915082', '539720418', '2010317', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-253@a.a', 'student-253', '123qwe', 'student', '671878022', '989534705', '20101214', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-254@a.a', 'student-254', '123qwe', 'student', '716574588', '998079862', '201086', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-255@a.a', 'student-255', '123qwe', 'student', '420946360', '617032869', '201056', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-256@a.a', 'student-256', '123qwe', 'student', '317937958', '986038602', '201022', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-257@a.a', 'student-257', '123qwe', 'student', '586534995', '587515851', '201076', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-258@a.a', 'student-258', '123qwe', 'student', '845599400', '965621672', '2010816', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-259@a.a', 'student-259', '123qwe', 'student', '918338010', '534920051', '2010927', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-260@a.a', 'student-260', '123qwe', 'student', '237207379', '355155793', '2010101', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-261@a.a', 'student-261', '123qwe', 'student', '894806459', '785802626', '2010116', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-262@a.a', 'student-262', '123qwe', 'student', '841861449', '721414605', '20101221', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-263@a.a', 'student-263', '123qwe', 'student', '501376927', '719081379', '20101025', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-264@a.a', 'student-264', '123qwe', 'student', '738049372', '119508148', '2010912', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-265@a.a', 'student-265', '123qwe', 'student', '825593286', '640666959', '2010622', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-266@a.a', 'student-266', '123qwe', 'student', '830453920', '479872242', '2010925', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-267@a.a', 'student-267', '123qwe', 'student', '877010055', '566225903', '201025', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-268@a.a', 'student-268', '123qwe', 'student', '548348144', '978832020', '2010415', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-269@a.a', 'student-269', '123qwe', 'student', '294658508', '167611048', '2010322', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-270@a.a', 'student-270', '123qwe', 'student', '888414021', '371620818', '2010419', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-271@a.a', 'student-271', '123qwe', 'student', '191415338', '146691890', '201028', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-272@a.a', 'student-272', '123qwe', 'student', '558672001', '512185050', '2010324', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-273@a.a', 'student-273', '123qwe', 'student', '789936116', '521226928', '2010422', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-274@a.a', 'student-274', '123qwe', 'student', '289182156', '756651426', '2010416', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-275@a.a', 'student-275', '123qwe', 'student', '389011932', '395045308', '20101123', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-276@a.a', 'student-276', '123qwe', 'student', '713280003', '864989750', '201042', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-277@a.a', 'student-277', '123qwe', 'student', '855175968', '865387903', '2010127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-278@a.a', 'student-278', '123qwe', 'student', '172704165', '404523372', '2010921', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-279@a.a', 'student-279', '123qwe', 'student', '248443920', '103600607', '201084', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-280@a.a', 'student-280', '123qwe', 'student', '251643475', '439249193', '2010522', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-281@a.a', 'student-281', '123qwe', 'student', '712274095', '208309198', '201082', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-282@a.a', 'student-282', '123qwe', 'student', '707778525', '228483326', '201083', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-283@a.a', 'student-283', '123qwe', 'student', '910448833', '391857360', '20101112', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-284@a.a', 'student-284', '123qwe', 'student', '398371103', '101283862', '2010811', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-285@a.a', 'student-285', '123qwe', 'student', '621056097', '270122610', '2010621', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-286@a.a', 'student-286', '123qwe', 'student', '294053685', '684205991', '201073', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-287@a.a', 'student-287', '123qwe', 'student', '500183998', '605788427', '2010411', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-288@a.a', 'student-288', '123qwe', 'student', '468443554', '442646995', '2010419', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-289@a.a', 'student-289', '123qwe', 'student', '614823921', '311820642', '2010812', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-290@a.a', 'student-290', '123qwe', 'student', '118602287', '768213713', '201035', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-291@a.a', 'student-291', '123qwe', 'student', '711881749', '268761036', '201024', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-292@a.a', 'student-292', '123qwe', 'student', '916632472', '462352676', '2010520', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-293@a.a', 'student-293', '123qwe', 'student', '972139736', '346291313', '20101012', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-294@a.a', 'student-294', '123qwe', 'student', '646718342', '991328188', '2010115', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-295@a.a', 'student-295', '123qwe', 'student', '886265789', '699857703', '2010818', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-296@a.a', 'student-296', '123qwe', 'student', '688019577', '654249250', '20101227', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-297@a.a', 'student-297', '123qwe', 'student', '809325739', '800585765', '2010619', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-298@a.a', 'student-298', '123qwe', 'student', '425185565', '878059037', '2010826', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-299@a.a', 'student-299', '123qwe', 'student', '268342337', '457001374', '2010112', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumberm, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-300@a.a', 'student-300', '123qwe', 'student', '848472978', '977326236', '20111122', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-1@a.a', 'student-1', '123qwe', 'student', '550333717', '933983874', '20090412', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-2@a.a', 'student-2', '123qwe', 'student', '775746519', '236979372', '20100524', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-3@a.a', 'student-3', '123qwe', 'student', '421566619', '263810543', '20081124', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-4@a.a', 'student-4', '123qwe', 'student', '871202340', '519175490', '20100327', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-5@a.a', 'student-5', '123qwe', 'student', '336086791', '499608512', '20100909', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-6@a.a', 'student-6', '123qwe', 'student', '156463679', '784776115', '20100506', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-7@a.a', 'student-7', '123qwe', 'student', '147245840', '828732831', '20091225', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-8@a.a', 'student-8', '123qwe', 'student', '914952776', '826411980', '20100107', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-9@a.a', 'student-9', '123qwe', 'student', '187970644', '271845225', '20080209', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-10@a.a', 'student-10', '123qwe', 'student', '631679855', '367886508', '20080928', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-11@a.a', 'student-11', '123qwe', 'student', '867877928', '427094512', '20090921', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-12@a.a', 'student-12', '123qwe', 'student', '232176794', '230998581', '20100228', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-13@a.a', 'student-13', '123qwe', 'student', '577101660', '848629174', '20081006', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-14@a.a', 'student-14', '123qwe', 'student', '700955265', '148721775', '20101120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-15@a.a', 'student-15', '123qwe', 'student', '301281630', '127262910', '20110328', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-16@a.a', 'student-16', '123qwe', 'student', '507334963', '297031040', '20070804', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-17@a.a', 'student-17', '123qwe', 'student', '366845027', '102897966', '20080603', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-18@a.a', 'student-18', '123qwe', 'student', '985542638', '514595169', '20100312', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-19@a.a', 'student-19', '123qwe', 'student', '558715396', '791854817', '20090914', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-20@a.a', 'student-20', '123qwe', 'student', '235442810', '396124428', '20100321', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-21@a.a', 'student-21', '123qwe', 'student', '420321614', '384185895', '20090407', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-22@a.a', 'student-22', '123qwe', 'student', '520873055', '927982395', '20090320', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-23@a.a', 'student-23', '123qwe', 'student', '188142528', '324821358', '20080811', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-24@a.a', 'student-24', '123qwe', 'student', '478446597', '954082406', '20070302', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-25@a.a', 'student-25', '123qwe', 'student', '941499150', '830662646', '20091211', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-26@a.a', 'student-26', '123qwe', 'student', '123858431', '858224880', '20090708', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-27@a.a', 'student-27', '123qwe', 'student', '149284195', '340412779', '20080604', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-28@a.a', 'student-28', '123qwe', 'student', '340621477', '433640487', '20091021', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-29@a.a', 'student-29', '123qwe', 'student', '276287937', '931006359', '20090221', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-30@a.a', 'student-30', '123qwe', 'student', '783085204', '230810364', '20110319', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-31@a.a', 'student-31', '123qwe', 'student', '656569249', '136125987', '20081012', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-32@a.a', 'student-32', '123qwe', 'student', '376540523', '909278662', '20100715', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-33@a.a', 'student-33', '123qwe', 'student', '765598860', '290855189', '20071209', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-34@a.a', 'student-34', '123qwe', 'student', '892506892', '940866018', '20071028', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-35@a.a', 'student-35', '123qwe', 'student', '254585617', '654811346', '20090207', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-36@a.a', 'student-36', '123qwe', 'student', '181022240', '477361828', '20090916', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-37@a.a', 'student-37', '123qwe', 'student', '293874383', '535381632', '20091010', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-38@a.a', 'student-38', '123qwe', 'student', '486752800', '429864409', '20090713', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-39@a.a', 'student-39', '123qwe', 'student', '203659782', '760796031', '20070707', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-40@a.a', 'student-40', '123qwe', 'student', '814411058', '953704072', '20081112', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-41@a.a', 'student-41', '123qwe', 'student', '947007013', '578356786', '20090424', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-42@a.a', 'student-42', '123qwe', 'student', '986354195', '139567147', '20110128', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-43@a.a', 'student-43', '123qwe', 'student', '529256109', '215156263', '20090326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-44@a.a', 'student-44', '123qwe', 'student', '900436898', '205996416', '20100615', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-45@a.a', 'student-45', '123qwe', 'student', '272089790', '516639859', '20110522', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-46@a.a', 'student-46', '123qwe', 'student', '292643403', '346512663', '20070512', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-47@a.a', 'student-47', '123qwe', 'student', '814389055', '784376474', '20080824', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-48@a.a', 'student-48', '123qwe', 'student', '165674666', '886839062', '20101102', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-49@a.a', 'student-49', '123qwe', 'student', '216885762', '762004724', '20090318', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-50@a.a', 'student-50', '123qwe', 'student', '997488145', '982247742', '20080713', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-51@a.a', 'student-51', '123qwe', 'student', '771884861', '633531030', '20070707', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-52@a.a', 'student-52', '123qwe', 'student', '192658717', '480475907', '20100821', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-53@a.a', 'student-53', '123qwe', 'student', '137438288', '138680010', '20100505', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-54@a.a', 'student-54', '123qwe', 'student', '278252779', '902493229', '20100828', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-55@a.a', 'student-55', '123qwe', 'student', '346681616', '996515404', '20080211', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-56@a.a', 'student-56', '123qwe', 'student', '781193713', '210225949', '20100318', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-57@a.a', 'student-57', '123qwe', 'student', '512232225', '597789283', '20070903', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-58@a.a', 'student-58', '123qwe', 'student', '834615211', '812599624', '20100712', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-59@a.a', 'student-59', '123qwe', 'student', '727418108', '102944008', '20080323', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-60@a.a', 'student-60', '123qwe', 'student', '448271881', '959104880', '20080910', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-61@a.a', 'student-61', '123qwe', 'student', '157439876', '678408701', '20080523', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-62@a.a', 'student-62', '123qwe', 'student', '551838399', '937544462', '20090905', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-63@a.a', 'student-63', '123qwe', 'student', '812012305', '236290786', '20110222', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-64@a.a', 'student-64', '123qwe', 'student', '218910148', '653435860', '20090702', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-65@a.a', 'student-65', '123qwe', 'student', '643727760', '351030866', '20090326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-66@a.a', 'student-66', '123qwe', 'student', '328548730', '495746577', '20071019', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-67@a.a', 'student-67', '123qwe', 'student', '121121336', '833890426', '20100827', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-68@a.a', 'student-68', '123qwe', 'student', '618196240', '392315051', '20090711', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-69@a.a', 'student-69', '123qwe', 'student', '328451353', '849048970', '20110822', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-70@a.a', 'student-70', '123qwe', 'student', '396138279', '557277022', '20071017', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-71@a.a', 'student-71', '123qwe', 'student', '438579880', '502417439', '20070620', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-72@a.a', 'student-72', '123qwe', 'student', '317296859', '406447167', '20081025', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-73@a.a', 'student-73', '123qwe', 'student', '736404984', '492186074', '20100502', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-74@a.a', 'student-74', '123qwe', 'student', '561063429', '810126127', '20080121', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-75@a.a', 'student-75', '123qwe', 'student', '152860088', '742896246', '20100311', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-76@a.a', 'student-76', '123qwe', 'student', '381487791', '854817014', '20100308', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-77@a.a', 'student-77', '123qwe', 'student', '875930485', '646463679', '20101011', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-78@a.a', 'student-78', '123qwe', 'student', '269061349', '647730984', '20101221', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-79@a.a', 'student-79', '123qwe', 'student', '285628251', '254531778', '20100315', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-80@a.a', 'student-80', '123qwe', 'student', '343212708', '372619752', '20090826', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-81@a.a', 'student-81', '123qwe', 'student', '557096038', '735249869', '20110814', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-82@a.a', 'student-82', '123qwe', 'student', '186548033', '510116379', '20100724', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-83@a.a', 'student-83', '123qwe', 'student', '143851902', '792880828', '20090317', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-84@a.a', 'student-84', '123qwe', 'student', '991085638', '937473361', '20100213', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-85@a.a', 'student-85', '123qwe', 'student', '836041067', '368222118', '20081019', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-86@a.a', 'student-86', '123qwe', 'student', '721528814', '542307791', '20100304', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-87@a.a', 'student-87', '123qwe', 'student', '474151214', '416731062', '20110112', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-88@a.a', 'student-88', '123qwe', 'student', '315069322', '703994655', '20080923', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-89@a.a', 'student-89', '123qwe', 'student', '172476013', '894414180', '20100422', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-90@a.a', 'student-90', '123qwe', 'student', '674684558', '288314443', '20080919', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-91@a.a', 'student-91', '123qwe', 'student', '807437451', '740393464', '20100624', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-92@a.a', 'student-92', '123qwe', 'student', '160383706', '728391594', '20090212', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-93@a.a', 'student-93', '123qwe', 'student', '771051043', '315668113', '20080906', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-94@a.a', 'student-94', '123qwe', 'student', '131275185', '374027670', '20080427', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-95@a.a', 'student-95', '123qwe', 'student', '773083731', '719199130', '20080602', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-96@a.a', 'student-96', '123qwe', 'student', '906587608', '973087317', '20110421', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-97@a.a', 'student-97', '123qwe', 'student', '157191417', '595268152', '20070905', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-98@a.a', 'student-98', '123qwe', 'student', '750655655', '556198431', '20110223', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-99@a.a', 'student-99', '123qwe', 'student', '144370425', '961439688', '20080804', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-100@a.a', 'student-100', '123qwe', 'student', '193185439', '636637925', '20070923', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-101@a.a', 'student-101', '123qwe', 'student', '380134697', '523190238', '20071202', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-102@a.a', 'student-102', '123qwe', 'student', '186935948', '630614966', '20080821', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-103@a.a', 'student-103', '123qwe', 'student', '687694154', '821871462', '20080913', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-104@a.a', 'student-104', '123qwe', 'student', '282856993', '801284806', '20101023', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-105@a.a', 'student-105', '123qwe', 'student', '626713378', '399531537', '20090309', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-106@a.a', 'student-106', '123qwe', 'student', '469420937', '219202511', '20110411', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-107@a.a', 'student-107', '123qwe', 'student', '329451521', '271988147', '20110524', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-108@a.a', 'student-108', '123qwe', 'student', '411845074', '802873871', '20110802', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-109@a.a', 'student-109', '123qwe', 'student', '521464891', '173641180', '20100221', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-110@a.a', 'student-110', '123qwe', 'student', '227309950', '661683001', '20070708', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-111@a.a', 'student-111', '123qwe', 'student', '855310150', '976692769', '20111204', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-112@a.a', 'student-112', '123qwe', 'student', '688541960', '599822468', '20090825', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-113@a.a', 'student-113', '123qwe', 'student', '653901993', '288235335', '20070213', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-114@a.a', 'student-114', '123qwe', 'student', '309994983', '349065045', '20091120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-115@a.a', 'student-115', '123qwe', 'student', '372615677', '911942534', '20070803', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-116@a.a', 'student-116', '123qwe', 'student', '880505505', '918165227', '20080309', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-117@a.a', 'student-117', '123qwe', 'student', '664578047', '145731254', '20071010', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-118@a.a', 'student-118', '123qwe', 'student', '636292855', '305225674', '20090809', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-119@a.a', 'student-119', '123qwe', 'student', '737316336', '974077341', '20080903', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-120@a.a', 'student-120', '123qwe', 'student', '545917152', '253213519', '20090603', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-121@a.a', 'student-121', '123qwe', 'student', '536830152', '899104524', '20100215', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-122@a.a', 'student-122', '123qwe', 'student', '769115160', '477392252', '20100602', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-123@a.a', 'student-123', '123qwe', 'student', '151537647', '749032364', '20100822', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-124@a.a', 'student-124', '123qwe', 'student', '452482266', '934379519', '20080504', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-125@a.a', 'student-125', '123qwe', 'student', '354093615', '862599829', '20080217', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-126@a.a', 'student-126', '123qwe', 'student', '261339734', '941729274', '20080624', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-127@a.a', 'student-127', '123qwe', 'student', '776090258', '168892994', '20110622', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-128@a.a', 'student-128', '123qwe', 'student', '627597567', '696977347', '20070423', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-129@a.a', 'student-129', '123qwe', 'student', '781396659', '660995347', '20111021', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-130@a.a', 'student-130', '123qwe', 'student', '909633756', '215905680', '20110903', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-131@a.a', 'student-131', '123qwe', 'student', '340707991', '210623886', '20090801', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-132@a.a', 'student-132', '123qwe', 'student', '277035130', '820289947', '20101011', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-133@a.a', 'student-133', '123qwe', 'student', '748177310', '983995165', '20110316', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-134@a.a', 'student-134', '123qwe', 'student', '241233321', '287687604', '20100905', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-135@a.a', 'student-135', '123qwe', 'student', '465197340', '244034692', '20090307', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-136@a.a', 'student-136', '123qwe', 'student', '101859367', '870032331', '20100419', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-137@a.a', 'student-137', '123qwe', 'student', '952101624', '270578943', '20100824', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-138@a.a', 'student-138', '123qwe', 'student', '459007584', '164389362', '20101026', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-139@a.a', 'student-139', '123qwe', 'student', '538088475', '381654431', '20080813', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-140@a.a', 'student-140', '123qwe', 'student', '811940333', '858592627', '20081118', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-141@a.a', 'student-141', '123qwe', 'student', '155302773', '431569223', '20090513', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-142@a.a', 'student-142', '123qwe', 'student', '112477741', '279556516', '20111102', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-143@a.a', 'student-143', '123qwe', 'student', '196951724', '471249213', '20100906', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-144@a.a', 'student-144', '123qwe', 'student', '288302966', '450084108', '20070222', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-145@a.a', 'student-145', '123qwe', 'student', '464931074', '764817017', '20090212', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-146@a.a', 'student-146', '123qwe', 'student', '889659129', '541797974', '20080227', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-147@a.a', 'student-147', '123qwe', 'student', '992342937', '612402597', '20080926', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-148@a.a', 'student-148', '123qwe', 'student', '396690513', '207854182', '20100309', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-149@a.a', 'student-149', '123qwe', 'student', '792889850', '332326701', '20100818', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-150@a.a', 'student-150', '123qwe', 'student', '573041064', '345855315', '20090524', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-151@a.a', 'student-151', '123qwe', 'student', '414107832', '448340961', '20070717', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-152@a.a', 'student-152', '123qwe', 'student', '685292828', '723175705', '20100403', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-153@a.a', 'student-153', '123qwe', 'student', '278221894', '706916137', '20100419', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-154@a.a', 'student-154', '123qwe', 'student', '450235047', '505350272', '20090822', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-155@a.a', 'student-155', '123qwe', 'student', '675802981', '877762204', '20070115', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-156@a.a', 'student-156', '123qwe', 'student', '897380534', '759875059', '20080716', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-157@a.a', 'student-157', '123qwe', 'student', '935439367', '505754424', '20100421', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-158@a.a', 'student-158', '123qwe', 'student', '854167285', '763941881', '20100903', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-159@a.a', 'student-159', '123qwe', 'student', '626517569', '763400776', '20110123', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-160@a.a', 'student-160', '123qwe', 'student', '341111735', '983334662', '20111018', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-161@a.a', 'student-161', '123qwe', 'student', '326572139', '638846959', '20090507', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-162@a.a', 'student-162', '123qwe', 'student', '575563859', '194003091', '20111213', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-163@a.a', 'student-163', '123qwe', 'student', '826987746', '643359762', '20090825', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-164@a.a', 'student-164', '123qwe', 'student', '121244689', '828212806', '20100217', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-165@a.a', 'student-165', '123qwe', 'student', '533971579', '335984273', '20110516', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-166@a.a', 'student-166', '123qwe', 'student', '765155134', '305881764', '20080708', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-167@a.a', 'student-167', '123qwe', 'student', '297043072', '208801687', '20100203', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-168@a.a', 'student-168', '123qwe', 'student', '577620024', '934370633', '20100502', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-169@a.a', 'student-169', '123qwe', 'student', '201169167', '459430554', '20100813', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-170@a.a', 'student-170', '123qwe', 'student', '253977239', '549783235', '20100326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-171@a.a', 'student-171', '123qwe', 'student', '489722226', '979533911', '20090608', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-172@a.a', 'student-172', '123qwe', 'student', '443179694', '251887245', '20100519', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-173@a.a', 'student-173', '123qwe', 'student', '234857833', '111105466', '20080405', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-174@a.a', 'student-174', '123qwe', 'student', '640136323', '424428432', '20100615', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-175@a.a', 'student-175', '123qwe', 'student', '647682178', '332330766', '20090303', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-176@a.a', 'student-176', '123qwe', 'student', '217380050', '621530063', '20110324', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-177@a.a', 'student-177', '123qwe', 'student', '165901614', '625714167', '20091114', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-178@a.a', 'student-178', '123qwe', 'student', '225249650', '535624532', '20090809', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-179@a.a', 'student-179', '123qwe', 'student', '617942279', '693141096', '20081001', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-180@a.a', 'student-180', '123qwe', 'student', '255718797', '595993087', '20080701', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-181@a.a', 'student-181', '123qwe', 'student', '914279192', '735510793', '20080310', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-182@a.a', 'student-182', '123qwe', 'student', '882098357', '215263824', '20080812', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-183@a.a', 'student-183', '123qwe', 'student', '263351573', '626454912', '20070526', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-184@a.a', 'student-184', '123qwe', 'student', '636570683', '603732445', '20101020', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-185@a.a', 'student-185', '123qwe', 'student', '546969889', '402174171', '20080423', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-186@a.a', 'student-186', '123qwe', 'student', '231661422', '762859563', '20100225', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-187@a.a', 'student-187', '123qwe', 'student', '218298498', '707015792', '20111120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-188@a.a', 'student-188', '123qwe', 'student', '647867555', '747616553', '20110621', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-189@a.a', 'student-189', '123qwe', 'student', '489953786', '847946143', '20100508', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-190@a.a', 'student-190', '123qwe', 'student', '175976655', '731088250', '20090515', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-191@a.a', 'student-191', '123qwe', 'student', '775166791', '388680908', '20091227', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-192@a.a', 'student-192', '123qwe', 'student', '323868319', '441008272', '20100816', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-193@a.a', 'student-193', '123qwe', 'student', '311394326', '404952148', '20080610', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-194@a.a', 'student-194', '123qwe', 'student', '758141345', '670661653', '20080127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-195@a.a', 'student-195', '123qwe', 'student', '111696898', '800963960', '20080818', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-196@a.a', 'student-196', '123qwe', 'student', '754579750', '743348991', '20090203', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-197@a.a', 'student-197', '123qwe', 'student', '652794537', '893249010', '20091207', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-198@a.a', 'student-198', '123qwe', 'student', '701253639', '317368095', '20070927', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-199@a.a', 'student-199', '123qwe', 'student', '843459961', '225349185', '20100917', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-200@a.a', 'student-200', '123qwe', 'student', '151495827', '894830311', '20101026', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-201@a.a', 'student-201', '123qwe', 'student', '507599773', '510364984', '20101106', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-202@a.a', 'student-202', '123qwe', 'student', '421474905', '594069416', '20070807', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-203@a.a', 'student-203', '123qwe', 'student', '378477034', '556873370', '20080508', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-204@a.a', 'student-204', '123qwe', 'student', '763014191', '955968131', '20110824', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-205@a.a', 'student-205', '123qwe', 'student', '322723736', '370012755', '20081113', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-206@a.a', 'student-206', '123qwe', 'student', '727036157', '613421417', '20081103', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-207@a.a', 'student-207', '123qwe', 'student', '822929513', '758394252', '20100219', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-208@a.a', 'student-208', '123qwe', 'student', '716780274', '983511437', '20100809', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-209@a.a', 'student-209', '123qwe', 'student', '967840303', '399467655', '20100211', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-210@a.a', 'student-210', '123qwe', 'student', '816208668', '212300740', '20100324', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-211@a.a', 'student-211', '123qwe', 'student', '112533030', '562190995', '20070218', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-212@a.a', 'student-212', '123qwe', 'student', '714479713', '854647394', '20081023', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-213@a.a', 'student-213', '123qwe', 'student', '355080429', '747241022', '20100512', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-214@a.a', 'student-214', '123qwe', 'student', '615200478', '501272301', '20070509', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-215@a.a', 'student-215', '123qwe', 'student', '271349783', '977093199', '20081127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-216@a.a', 'student-216', '123qwe', 'student', '802434627', '252491773', '20090408', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-217@a.a', 'student-217', '123qwe', 'student', '413368316', '636836676', '20091117', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-218@a.a', 'student-218', '123qwe', 'student', '724592697', '773966217', '20091106', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-219@a.a', 'student-219', '123qwe', 'student', '811215468', '981221650', '20091204', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-220@a.a', 'student-220', '123qwe', 'student', '408328485', '408264910', '20080627', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-221@a.a', 'student-221', '123qwe', 'student', '186229181', '516920369', '20100802', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-222@a.a', 'student-222', '123qwe', 'student', '654740365', '244897741', '20091204', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-223@a.a', 'student-223', '123qwe', 'student', '780449813', '489120226', '20080420', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-224@a.a', 'student-224', '123qwe', 'student', '331454965', '123285443', '20080514', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-225@a.a', 'student-225', '123qwe', 'student', '448486597', '790461085', '20081218', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-226@a.a', 'student-226', '123qwe', 'student', '309913422', '313951650', '20111021', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-227@a.a', 'student-227', '123qwe', 'student', '210118799', '284861789', '20110902', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-228@a.a', 'student-228', '123qwe', 'student', '664535633', '375059257', '20100302', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-229@a.a', 'student-229', '123qwe', 'student', '870295486', '958968684', '20070503', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-230@a.a', 'student-230', '123qwe', 'student', '797905912', '372465225', '20081207', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-231@a.a', 'student-231', '123qwe', 'student', '740474964', '237499564', '20090609', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-232@a.a', 'student-232', '123qwe', 'student', '794494919', '863930053', '20100426', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-233@a.a', 'student-233', '123qwe', 'student', '144242853', '896931708', '20090320', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-234@a.a', 'student-234', '123qwe', 'student', '924478496', '835237303', '20110623', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-235@a.a', 'student-235', '123qwe', 'student', '785104741', '991067707', '20070518', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-236@a.a', 'student-236', '123qwe', 'student', '520799807', '300322461', '20100715', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-237@a.a', 'student-237', '123qwe', 'student', '652413003', '231599397', '20080214', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-238@a.a', 'student-238', '123qwe', 'student', '715605712', '219113496', '20101111', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-239@a.a', 'student-239', '123qwe', 'student', '900086134', '529999570', '20100509', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-240@a.a', 'student-240', '123qwe', 'student', '101709112', '245021145', '20110511', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-241@a.a', 'student-241', '123qwe', 'student', '495561204', '753159299', '20080909', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-242@a.a', 'student-242', '123qwe', 'student', '750706624', '352305829', '20100713', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-243@a.a', 'student-243', '123qwe', 'student', '424550403', '977320654', '20100322', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-244@a.a', 'student-244', '123qwe', 'student', '565930850', '878429890', '20111208', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-245@a.a', 'student-245', '123qwe', 'student', '217662099', '625671587', '20081121', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-246@a.a', 'student-246', '123qwe', 'student', '945999890', '722863279', '20080907', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-247@a.a', 'student-247', '123qwe', 'student', '501599104', '305357200', '20080726', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-248@a.a', 'student-248', '123qwe', 'student', '728548989', '518962451', '20100707', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-249@a.a', 'student-249', '123qwe', 'student', '324785468', '763174081', '20090905', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-250@a.a', 'student-250', '123qwe', 'student', '317420638', '475323204', '20080111', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-251@a.a', 'student-251', '123qwe', 'student', '893228103', '245566073', '20091216', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-252@a.a', 'student-252', '123qwe', 'student', '919962675', '919869807', '20090711', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-253@a.a', 'student-253', '123qwe', 'student', '491647009', '507708196', '20071120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-254@a.a', 'student-254', '123qwe', 'student', '826496691', '371230534', '20110415', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-255@a.a', 'student-255', '123qwe', 'student', '595168453', '464244379', '20100309', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-256@a.a', 'student-256', '123qwe', 'student', '722841256', '889643324', '20090413', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-257@a.a', 'student-257', '123qwe', 'student', '263650731', '897778344', '20090303', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-258@a.a', 'student-258', '123qwe', 'student', '432470886', '744728937', '20110428', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-259@a.a', 'student-259', '123qwe', 'student', '897860907', '206024959', '20070626', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-260@a.a', 'student-260', '123qwe', 'student', '180988928', '524982408', '20081021', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-261@a.a', 'student-261', '123qwe', 'student', '548012526', '310054898', '20080713', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-262@a.a', 'student-262', '123qwe', 'student', '376406544', '523552137', '20090818', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-263@a.a', 'student-263', '123qwe', 'student', '681237491', '168603237', '20110605', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-264@a.a', 'student-264', '123qwe', 'student', '413679013', '713884862', '20100205', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-265@a.a', 'student-265', '123qwe', 'student', '979960692', '401214517', '20101012', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-266@a.a', 'student-266', '123qwe', 'student', '468957757', '553005705', '20090812', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-267@a.a', 'student-267', '123qwe', 'student', '530091682', '168076092', '20090820', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-268@a.a', 'student-268', '123qwe', 'student', '990295545', '399182240', '20091201', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-269@a.a', 'student-269', '123qwe', 'student', '840053369', '108404032', '20090415', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-270@a.a', 'student-270', '123qwe', 'student', '998927016', '286317560', '20110212', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-271@a.a', 'student-271', '123qwe', 'student', '592251464', '588347251', '20100627', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-272@a.a', 'student-272', '123qwe', 'student', '385964142', '987049892', '20070714', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-273@a.a', 'student-273', '123qwe', 'student', '663112327', '495155592', '20100321', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-274@a.a', 'student-274', '123qwe', 'student', '765647354', '935741037', '20090221', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-275@a.a', 'student-275', '123qwe', 'student', '402462185', '158745816', '20081118', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-276@a.a', 'student-276', '123qwe', 'student', '345969773', '763918521', '20071103', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-277@a.a', 'student-277', '123qwe', 'student', '595506753', '352138538', '20090420', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-278@a.a', 'student-278', '123qwe', 'student', '406950704', '488982226', '20080601', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-279@a.a', 'student-279', '123qwe', 'student', '156483286', '515322791', '20090207', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-280@a.a', 'student-280', '123qwe', 'student', '585983630', '443152344', '20080120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-281@a.a', 'student-281', '123qwe', 'student', '339216163', '489541465', '20110814', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-282@a.a', 'student-282', '123qwe', 'student', '842612620', '745539917', '20070514', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-283@a.a', 'student-283', '123qwe', 'student', '117777138', '513329064', '20111223', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-284@a.a', 'student-284', '123qwe', 'student', '680503949', '557756327', '20090420', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-285@a.a', 'student-285', '123qwe', 'student', '572120053', '374451932', '20090316', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-286@a.a', 'student-286', '123qwe', 'student', '699854772', '777625979', '20100606', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-287@a.a', 'student-287', '123qwe', 'student', '907524513', '288466063', '20110828', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-288@a.a', 'student-288', '123qwe', 'student', '645576570', '380905581', '20081009', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-289@a.a', 'student-289', '123qwe', 'student', '705628778', '502246914', '20070614', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-290@a.a', 'student-290', '123qwe', 'student', '847997589', '172196651', '20090124', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-291@a.a', 'student-291', '123qwe', 'student', '721835777', '200039192', '20080126', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-292@a.a', 'student-292', '123qwe', 'student', '761865836', '470457874', '20081013', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-293@a.a', 'student-293', '123qwe', 'student', '339177753', '273935152', '20080914', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-294@a.a', 'student-294', '123qwe', 'student', '497915772', '519575128', '20081017', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-295@a.a', 'student-295', '123qwe', 'student', '171862820', '434407354', '20091015', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-296@a.a', 'student-296', '123qwe', 'student', '954338816', '216228088', '20100526', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-297@a.a', 'student-297', '123qwe', 'student', '562999221', '115423584', '20070410', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-298@a.a', 'student-298', '123qwe', 'student', '450300066', '691359348', '20080926', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-299@a.a', 'student-299', '123qwe', 'student', '238088384', '508261319', '20080208', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo ) VALUES ( '20170731', 'student-300@a.a', 'student-300', '123qwe', 'student', '940566201', '935148329', '20091228', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'student.png' );
 
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-1@a.a', 'teacher-1', '123qwe', 'teacher', '118500160', '508110868', 1966,10,23, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '915488610', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-2@a.a', 'teacher-2', '123qwe', 'teacher', '422339606', '271956817', 1989,10,3, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '918198417', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-3@a.a', 'teacher-3', '123qwe', 'teacher', '688336409', '659334902', 1986,7,2, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '913168874', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-4@a.a', 'teacher-4', '123qwe', 'teacher', '372420217', '109633184', 1964,3,18, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '913700590', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-5@a.a', 'teacher-5', '123qwe', 'teacher', '653976323', '786790787', 1988,10,20, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '915098818', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-6@a.a', 'teacher-6', '123qwe', 'teacher', '128918097', '402522446', 1964,12,17, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '914522806', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-7@a.a', 'teacher-7', '123qwe', 'teacher', '418464391', '435478264', 1978,11,13, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '919709266', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-8@a.a', 'teacher-8', '123qwe', 'teacher', '228824042', '768648721', 1986,11,28, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '912946283', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-9@a.a', 'teacher-9', '123qwe', 'teacher', '666143649', '791894611', 1986,4,12, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '919850280', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-10@a.a', 'teacher-10', '123qwe', 'teacher', '758336010', '989477581', 1966,6,13, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '914414202', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-11@a.a', 'teacher-11', '123qwe', 'teacher', '145387213', '333807801', 1964,6,13, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '919714198', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-12@a.a', 'teacher-12', '123qwe', 'teacher', '669712283', '913259525', 1976,4,20, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '916630141', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-13@a.a', 'teacher-13', '123qwe', 'teacher', '860173360', '549972002', 1985,4,4, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '916673470', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-14@a.a', 'teacher-14', '123qwe', 'teacher', '502122975', '195714154', 1960,1,23, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '917519695', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'teacher-15@a.a', 'teacher-15', '123qwe', 'teacher', '234187123', '789194196', 1988,10,9, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '917920820', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-1@a.a', 'teacher-1', '123qwe', 'teacher', '816677302', '983739425', '19580427', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '917850606', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-2@a.a', 'teacher-2', '123qwe', 'teacher', '775409478', '172534527', '19680912', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '912123481', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-3@a.a', 'teacher-3', '123qwe', 'teacher', '925050526', '257866270', '19751120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '915079443', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-4@a.a', 'teacher-4', '123qwe', 'teacher', '901477728', '213364759', '19640224', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '919644755', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-5@a.a', 'teacher-5', '123qwe', 'teacher', '223694331', '828979298', '19770920', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '914392042', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-6@a.a', 'teacher-6', '123qwe', 'teacher', '152193888', '986847161', '19560504', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '919924151', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-7@a.a', 'teacher-7', '123qwe', 'teacher', '299348799', '301836555', '19771206', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '918309314', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-8@a.a', 'teacher-8', '123qwe', 'teacher', '516816923', '716036308', '19891127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '919905609', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-9@a.a', 'teacher-9', '123qwe', 'teacher', '878554774', '859670550', '19830506', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '918197397', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-10@a.a', 'teacher-10', '123qwe', 'teacher', '659363101', '228374282', '19580825', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '917385845', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-11@a.a', 'teacher-11', '123qwe', 'teacher', '427397125', '695931244', '19580315', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '919238552', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-12@a.a', 'teacher-12', '123qwe', 'teacher', '486335633', '960859961', '19790723', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '913348999', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-13@a.a', 'teacher-13', '123qwe', 'teacher', '938171398', '398812488', '19690909', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '917670460', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-14@a.a', 'teacher-14', '123qwe', 'teacher', '698034567', '368533566', '19900819', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '918192831', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'teacher-15@a.a', 'teacher-15', '123qwe', 'teacher', '575110002', '244236340', '19740226', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'teacher.png', '911057200', 'curriculumExemple.pdf' );
 
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'secretary-1@a.a', 'secretary-1', '123qwe', 'secretary', '723350185', '704561336', 1962,9,8, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'secretary.png', '914476147', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'secretary-2@a.a', 'secretary-2', '123qwe', 'secretary', '147711112', '503701695', 1961,7,20, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'secretary.png', '914503250', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'secretary-3@a.a', 'secretary-3', '123qwe', 'secretary', '100691830', '878896036', 1972,8,9, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'secretary.png', '912702515', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'secretary-1@a.a', 'secretary-1', '123qwe', 'secretary', '531703867', '317755011', '19660712', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'secretary.png', '915452962', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'secretary-2@a.a', 'secretary-2', '123qwe', 'secretary', '553712671', '926305232', '19780612', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'secretary.png', '913914128', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'secretary-3@a.a', 'secretary-3', '123qwe', 'secretary', '871821745', '674435306', '19891016', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'secretary.png', '913958274', 'curriculumExemple.pdf' );
 
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-1@a.a', 'assistant-1', '123qwe', 'assistant', '177310985', '747578108', 1976,6,20, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '919737134', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-2@a.a', 'assistant-2', '123qwe', 'assistant', '694847197', '153937141', 1959,4,10, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '917261741', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-3@a.a', 'assistant-3', '123qwe', 'assistant', '123214517', '354270340', 1990,3,8, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '914567176', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-4@a.a', 'assistant-4', '123qwe', 'assistant', '324649686', '564308241', 1956,11,4, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '916787787', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-5@a.a', 'assistant-5', '123qwe', 'assistant', '785783193', '241849835', 1982,7,17, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '919082779', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-6@a.a', 'assistant-6', '123qwe', 'assistant', '298081472', '186850972', 1973,2,1, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '916933090', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-7@a.a', 'assistant-7', '123qwe', 'assistant', '872534710', '775698074', 1975,12,23, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '918189554', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-8@a.a', 'assistant-8', '123qwe', 'assistant', '203436716', '123276155', 1964,5,7, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '917918852', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-9@a.a', 'assistant-9', '123qwe', 'assistant', '983101180', '549086851', 1974,9,25, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '915598991', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-10@a.a', 'assistant-10', '123qwe', 'assistant', '595193292', '444748306', 1988,5,10, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '918929831', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-11@a.a', 'assistant-11', '123qwe', 'assistant', '454914823', '544937924', 1989,12,18, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '913068135', 'curriculumExemple.pdf' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '2017,7,31', 'assistant-12@a.a', 'assistant-12', '123qwe', 'assistant', '176347254', '479174352', 1957,12,26, 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '916604245', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-1@a.a', 'assistant-1', '123qwe', 'assistant', '247261727', '459239126', '19850522', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '915151242', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-2@a.a', 'assistant-2', '123qwe', 'assistant', '268352491', '750786427', '19670827', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '914953929', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-3@a.a', 'assistant-3', '123qwe', 'assistant', '388188930', '280243361', '19651214', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '915429913', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-4@a.a', 'assistant-4', '123qwe', 'assistant', '954177095', '126300391', '19600125', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '916708435', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-5@a.a', 'assistant-5', '123qwe', 'assistant', '556306469', '134873583', '19860708', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '916466641', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-6@a.a', 'assistant-6', '123qwe', 'assistant', '432554881', '220666050', '19750719', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '918534219', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-7@a.a', 'assistant-7', '123qwe', 'assistant', '541922273', '278999921', '19630607', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '916073014', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-8@a.a', 'assistant-8', '123qwe', 'assistant', '566021413', '529832999', '19791015', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '914504832', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-9@a.a', 'assistant-9', '123qwe', 'assistant', '749749555', '950588022', '19750609', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '919989319', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-10@a.a', 'assistant-10', '123qwe', 'assistant', '542937019', '915098453', '19610303', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '918307686', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-11@a.a', 'assistant-11', '123qwe', 'assistant', '857156461', '770820341', '19900326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '919724583', 'curriculumExemple.pdf' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES ( '20170731', 'assistant-12@a.a', 'assistant-12', '123qwe', 'assistant', '175058970', '117569605', '19780405', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', 'assistant.png', '919670460', 'curriculumExemple.pdf' );
 
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-1@a.a', 'guardian-1', '123qwe', 'guardian', '893966181', '766259017', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919526119' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-2@a.a', 'guardian-2', '123qwe', 'guardian', '690872823', '555592466', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916828583' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-3@a.a', 'guardian-3', '123qwe', 'guardian', '858193209', '847221326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917267422' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-4@a.a', 'guardian-4', '123qwe', 'guardian', '506825638', '260484841', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915941002' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-5@a.a', 'guardian-5', '123qwe', 'guardian', '728977721', '681077715', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915586725' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-6@a.a', 'guardian-6', '123qwe', 'guardian', '298599405', '620176733', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914304377' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-7@a.a', 'guardian-7', '123qwe', 'guardian', '587300571', '120065120', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911562582' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-8@a.a', 'guardian-8', '123qwe', 'guardian', '727005289', '175037787', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919492233' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-9@a.a', 'guardian-9', '123qwe', 'guardian', '200382099', '569777242', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917504381' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-10@a.a', 'guardian-10', '123qwe', 'guardian', '572340174', '256487047', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913816117' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-11@a.a', 'guardian-11', '123qwe', 'guardian', '415643350', '762137513', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914419068' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-12@a.a', 'guardian-12', '123qwe', 'guardian', '382711527', '496813891', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917429189' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-13@a.a', 'guardian-13', '123qwe', 'guardian', '676730276', '406435752', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911129651' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-14@a.a', 'guardian-14', '123qwe', 'guardian', '532912104', '873529545', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915805443' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-15@a.a', 'guardian-15', '123qwe', 'guardian', '522995016', '342961409', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918310899' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-16@a.a', 'guardian-16', '123qwe', 'guardian', '136636780', '881228154', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919544526' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-17@a.a', 'guardian-17', '123qwe', 'guardian', '846368632', '551260680', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918148676' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-18@a.a', 'guardian-18', '123qwe', 'guardian', '648236676', '364406691', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913604896' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-19@a.a', 'guardian-19', '123qwe', 'guardian', '816538569', '238234088', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916301782' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-20@a.a', 'guardian-20', '123qwe', 'guardian', '690506139', '657333848', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913223537' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-21@a.a', 'guardian-21', '123qwe', 'guardian', '546706155', '317165475', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916535835' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-22@a.a', 'guardian-22', '123qwe', 'guardian', '405679363', '803023838', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915887242' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-23@a.a', 'guardian-23', '123qwe', 'guardian', '681158531', '890817356', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918296383' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-24@a.a', 'guardian-24', '123qwe', 'guardian', '848463250', '328092034', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919247073' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-25@a.a', 'guardian-25', '123qwe', 'guardian', '389806548', '570247532', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918459712' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-26@a.a', 'guardian-26', '123qwe', 'guardian', '885197620', '497256355', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914032700' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-27@a.a', 'guardian-27', '123qwe', 'guardian', '848766868', '155108346', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912424581' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-28@a.a', 'guardian-28', '123qwe', 'guardian', '336200546', '143929653', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914975720' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-29@a.a', 'guardian-29', '123qwe', 'guardian', '292865178', '886337209', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914560279' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-30@a.a', 'guardian-30', '123qwe', 'guardian', '566637148', '727520264', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912714768' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-31@a.a', 'guardian-31', '123qwe', 'guardian', '439952246', '814756165', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911667384' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-32@a.a', 'guardian-32', '123qwe', 'guardian', '123450532', '929267066', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919832275' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-33@a.a', 'guardian-33', '123qwe', 'guardian', '218758400', '516367447', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913655821' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-34@a.a', 'guardian-34', '123qwe', 'guardian', '694099773', '475602583', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915374807' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-35@a.a', 'guardian-35', '123qwe', 'guardian', '174250962', '992666875', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916024852' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-36@a.a', 'guardian-36', '123qwe', 'guardian', '604366302', '589554178', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917637628' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-37@a.a', 'guardian-37', '123qwe', 'guardian', '148376642', '930003412', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914843461' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-38@a.a', 'guardian-38', '123qwe', 'guardian', '818606901', '588663350', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916803502' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-39@a.a', 'guardian-39', '123qwe', 'guardian', '859832930', '884173643', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917236349' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-40@a.a', 'guardian-40', '123qwe', 'guardian', '841472348', '439376815', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917007547' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-41@a.a', 'guardian-41', '123qwe', 'guardian', '677711087', '139576711', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911505218' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-42@a.a', 'guardian-42', '123qwe', 'guardian', '272682058', '185820713', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913454985' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-43@a.a', 'guardian-43', '123qwe', 'guardian', '504121809', '555988403', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911242323' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-44@a.a', 'guardian-44', '123qwe', 'guardian', '592509392', '824221376', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913533626' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-45@a.a', 'guardian-45', '123qwe', 'guardian', '437860061', '593928957', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915157874' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-46@a.a', 'guardian-46', '123qwe', 'guardian', '377472897', '664127443', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917952235' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-47@a.a', 'guardian-47', '123qwe', 'guardian', '982787476', '499227183', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912694340' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-48@a.a', 'guardian-48', '123qwe', 'guardian', '931975076', '316368748', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914216573' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-49@a.a', 'guardian-49', '123qwe', 'guardian', '175819096', '842358921', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916763439' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-50@a.a', 'guardian-50', '123qwe', 'guardian', '668419101', '780015402', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919843309' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-51@a.a', 'guardian-51', '123qwe', 'guardian', '396781021', '553550539', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914400740' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-52@a.a', 'guardian-52', '123qwe', 'guardian', '443102635', '490294374', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916002055' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-53@a.a', 'guardian-53', '123qwe', 'guardian', '249518539', '939487274', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913446948' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-54@a.a', 'guardian-54', '123qwe', 'guardian', '576518848', '600637951', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919917953' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-55@a.a', 'guardian-55', '123qwe', 'guardian', '620795979', '928152785', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913353668' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-56@a.a', 'guardian-56', '123qwe', 'guardian', '105298096', '230852359', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913822497' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-57@a.a', 'guardian-57', '123qwe', 'guardian', '674222467', '243088241', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917364222' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-58@a.a', 'guardian-58', '123qwe', 'guardian', '163304496', '136700553', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915659286' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-59@a.a', 'guardian-59', '123qwe', 'guardian', '682749702', '297228210', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918325559' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-60@a.a', 'guardian-60', '123qwe', 'guardian', '254177327', '659193158', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919142526' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-61@a.a', 'guardian-61', '123qwe', 'guardian', '768868724', '898771818', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911590563' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-62@a.a', 'guardian-62', '123qwe', 'guardian', '850474078', '938681048', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915047489' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-63@a.a', 'guardian-63', '123qwe', 'guardian', '228468702', '279566638', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919348504' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-64@a.a', 'guardian-64', '123qwe', 'guardian', '412683392', '356287489', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919509611' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-65@a.a', 'guardian-65', '123qwe', 'guardian', '635529556', '368195658', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918003766' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-66@a.a', 'guardian-66', '123qwe', 'guardian', '784215977', '867869922', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912216591' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-67@a.a', 'guardian-67', '123qwe', 'guardian', '121150853', '572608685', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915375673' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-68@a.a', 'guardian-68', '123qwe', 'guardian', '506546738', '982697872', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916765096' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-69@a.a', 'guardian-69', '123qwe', 'guardian', '396467356', '937240617', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914581831' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-70@a.a', 'guardian-70', '123qwe', 'guardian', '663487480', '170749398', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913974298' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-71@a.a', 'guardian-71', '123qwe', 'guardian', '831185993', '644317176', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913777703' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-72@a.a', 'guardian-72', '123qwe', 'guardian', '518997078', '990847423', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911357687' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-73@a.a', 'guardian-73', '123qwe', 'guardian', '931343995', '561014658', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919005478' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-74@a.a', 'guardian-74', '123qwe', 'guardian', '790704699', '456897935', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913629218' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-75@a.a', 'guardian-75', '123qwe', 'guardian', '470952704', '951988671', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912324095' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-76@a.a', 'guardian-76', '123qwe', 'guardian', '645793298', '357129395', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917623807' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-77@a.a', 'guardian-77', '123qwe', 'guardian', '719575118', '755796699', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913001147' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-78@a.a', 'guardian-78', '123qwe', 'guardian', '376118019', '940091516', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916526408' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-79@a.a', 'guardian-79', '123qwe', 'guardian', '649451507', '363293085', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917373211' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-80@a.a', 'guardian-80', '123qwe', 'guardian', '614434398', '119942351', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916040525' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-81@a.a', 'guardian-81', '123qwe', 'guardian', '775501824', '545897643', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914935645' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-82@a.a', 'guardian-82', '123qwe', 'guardian', '259750824', '176917010', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911490813' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-83@a.a', 'guardian-83', '123qwe', 'guardian', '140152120', '364727144', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913907225' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-84@a.a', 'guardian-84', '123qwe', 'guardian', '836217740', '713165557', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914621443' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-85@a.a', 'guardian-85', '123qwe', 'guardian', '569077560', '815930404', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916291917' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-86@a.a', 'guardian-86', '123qwe', 'guardian', '907620479', '647026709', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912313158' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-87@a.a', 'guardian-87', '123qwe', 'guardian', '924419813', '868206470', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915857868' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-88@a.a', 'guardian-88', '123qwe', 'guardian', '523746172', '672564689', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914868259' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-89@a.a', 'guardian-89', '123qwe', 'guardian', '625501838', '165802730', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912353006' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-90@a.a', 'guardian-90', '123qwe', 'guardian', '245688974', '945577400', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916276705' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-91@a.a', 'guardian-91', '123qwe', 'guardian', '998972525', '594943903', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916290126' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-92@a.a', 'guardian-92', '123qwe', 'guardian', '419683469', '531054655', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917426112' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-93@a.a', 'guardian-93', '123qwe', 'guardian', '651480922', '665712907', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914404109' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-94@a.a', 'guardian-94', '123qwe', 'guardian', '104180238', '144732082', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916823937' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-95@a.a', 'guardian-95', '123qwe', 'guardian', '790897080', '634471847', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919950500' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-96@a.a', 'guardian-96', '123qwe', 'guardian', '774643534', '222250863', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913359095' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-97@a.a', 'guardian-97', '123qwe', 'guardian', '164204415', '410900016', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912692498' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-98@a.a', 'guardian-98', '123qwe', 'guardian', '425409364', '769914683', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915653079' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-99@a.a', 'guardian-99', '123qwe', 'guardian', '474555200', '429329348', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917410611' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-100@a.a', 'guardian-100', '123qwe', 'guardian', '387006904', '631035836', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913393360' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-101@a.a', 'guardian-101', '123qwe', 'guardian', '162366990', '473742593', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915356566' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-102@a.a', 'guardian-102', '123qwe', 'guardian', '467839339', '673050049', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915292535' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-103@a.a', 'guardian-103', '123qwe', 'guardian', '972486139', '175845790', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916865342' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-104@a.a', 'guardian-104', '123qwe', 'guardian', '841061969', '868549911', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911304418' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-105@a.a', 'guardian-105', '123qwe', 'guardian', '305783410', '695940355', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915797164' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-106@a.a', 'guardian-106', '123qwe', 'guardian', '546654087', '703872916', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914138010' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-107@a.a', 'guardian-107', '123qwe', 'guardian', '709454388', '949747158', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919101280' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-108@a.a', 'guardian-108', '123qwe', 'guardian', '977034793', '861148411', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911104990' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-109@a.a', 'guardian-109', '123qwe', 'guardian', '615783990', '595001871', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919483104' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-110@a.a', 'guardian-110', '123qwe', 'guardian', '877478815', '455517463', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918067464' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-111@a.a', 'guardian-111', '123qwe', 'guardian', '429956598', '962746129', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919540409' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-112@a.a', 'guardian-112', '123qwe', 'guardian', '211912699', '197668304', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913971439' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-113@a.a', 'guardian-113', '123qwe', 'guardian', '711601076', '301521268', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914353707' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-114@a.a', 'guardian-114', '123qwe', 'guardian', '585316018', '780401686', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913740903' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-115@a.a', 'guardian-115', '123qwe', 'guardian', '816286283', '798044631', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912557976' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-116@a.a', 'guardian-116', '123qwe', 'guardian', '227933563', '445228517', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918427263' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-117@a.a', 'guardian-117', '123qwe', 'guardian', '279908673', '349587830', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918935121' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-118@a.a', 'guardian-118', '123qwe', 'guardian', '715349839', '942319633', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916963327' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-119@a.a', 'guardian-119', '123qwe', 'guardian', '699780645', '692019920', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914238842' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-120@a.a', 'guardian-120', '123qwe', 'guardian', '950115993', '631101491', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911543283' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-121@a.a', 'guardian-121', '123qwe', 'guardian', '759434017', '519284268', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918864948' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-122@a.a', 'guardian-122', '123qwe', 'guardian', '582630270', '117660925', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911155084' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-123@a.a', 'guardian-123', '123qwe', 'guardian', '986721750', '251091759', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916360574' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-124@a.a', 'guardian-124', '123qwe', 'guardian', '663923168', '249540543', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916792699' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-125@a.a', 'guardian-125', '123qwe', 'guardian', '662423373', '315055281', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916825741' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-126@a.a', 'guardian-126', '123qwe', 'guardian', '232596199', '967395152', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918498203' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-127@a.a', 'guardian-127', '123qwe', 'guardian', '489317114', '680636353', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911473112' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-128@a.a', 'guardian-128', '123qwe', 'guardian', '571820301', '783981152', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915750605' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-129@a.a', 'guardian-129', '123qwe', 'guardian', '557735220', '412284692', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918835352' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-130@a.a', 'guardian-130', '123qwe', 'guardian', '561990280', '837379665', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917837784' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-131@a.a', 'guardian-131', '123qwe', 'guardian', '687722588', '742229633', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919933451' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-132@a.a', 'guardian-132', '123qwe', 'guardian', '631790569', '116049937', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911801138' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-133@a.a', 'guardian-133', '123qwe', 'guardian', '937058606', '487112992', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917573009' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-134@a.a', 'guardian-134', '123qwe', 'guardian', '139358569', '258002615', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917766994' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-135@a.a', 'guardian-135', '123qwe', 'guardian', '954901133', '446636252', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915899565' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-136@a.a', 'guardian-136', '123qwe', 'guardian', '562712302', '698095546', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914424536' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-137@a.a', 'guardian-137', '123qwe', 'guardian', '607620186', '922821613', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917644473' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-138@a.a', 'guardian-138', '123qwe', 'guardian', '657371494', '694054062', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911451560' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-139@a.a', 'guardian-139', '123qwe', 'guardian', '341532837', '964005027', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917922380' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-140@a.a', 'guardian-140', '123qwe', 'guardian', '494221300', '278390835', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918353760' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-141@a.a', 'guardian-141', '123qwe', 'guardian', '889895577', '712143256', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911059926' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-142@a.a', 'guardian-142', '123qwe', 'guardian', '784687216', '455818521', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916498467' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-143@a.a', 'guardian-143', '123qwe', 'guardian', '599204662', '864958435', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916346345' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-144@a.a', 'guardian-144', '123qwe', 'guardian', '646856911', '921602222', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912088693' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-145@a.a', 'guardian-145', '123qwe', 'guardian', '649243672', '740814558', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915311442' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-146@a.a', 'guardian-146', '123qwe', 'guardian', '961024994', '984048424', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913987872' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-147@a.a', 'guardian-147', '123qwe', 'guardian', '904788932', '759714929', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917391559' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-148@a.a', 'guardian-148', '123qwe', 'guardian', '354880060', '186620248', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919354783' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-149@a.a', 'guardian-149', '123qwe', 'guardian', '471232341', '255029636', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917744587' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-150@a.a', 'guardian-150', '123qwe', 'guardian', '222904664', '260961431', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913467570' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-151@a.a', 'guardian-151', '123qwe', 'guardian', '788616517', '153261476', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916240563' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-152@a.a', 'guardian-152', '123qwe', 'guardian', '345209410', '600732940', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918799603' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-153@a.a', 'guardian-153', '123qwe', 'guardian', '987469920', '581102040', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914203197' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-154@a.a', 'guardian-154', '123qwe', 'guardian', '526039058', '485372291', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919119613' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-155@a.a', 'guardian-155', '123qwe', 'guardian', '212546072', '610686300', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911350879' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-156@a.a', 'guardian-156', '123qwe', 'guardian', '967306107', '611435985', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917885565' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-157@a.a', 'guardian-157', '123qwe', 'guardian', '994663417', '298815748', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915078901' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-158@a.a', 'guardian-158', '123qwe', 'guardian', '872595031', '824196493', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915453800' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-159@a.a', 'guardian-159', '123qwe', 'guardian', '107108478', '311533137', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913248411' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-160@a.a', 'guardian-160', '123qwe', 'guardian', '719997941', '350880320', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915501786' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-161@a.a', 'guardian-161', '123qwe', 'guardian', '124510434', '824395958', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918716969' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-162@a.a', 'guardian-162', '123qwe', 'guardian', '712615284', '374499834', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913750210' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-163@a.a', 'guardian-163', '123qwe', 'guardian', '618425056', '516771338', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912278574' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-164@a.a', 'guardian-164', '123qwe', 'guardian', '146527908', '990021822', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917812535' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-165@a.a', 'guardian-165', '123qwe', 'guardian', '655982158', '477985345', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916417412' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-166@a.a', 'guardian-166', '123qwe', 'guardian', '522180110', '852439578', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917931850' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-167@a.a', 'guardian-167', '123qwe', 'guardian', '648958077', '424308927', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916150921' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-168@a.a', 'guardian-168', '123qwe', 'guardian', '967015591', '953930582', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915730593' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-169@a.a', 'guardian-169', '123qwe', 'guardian', '208278858', '908147461', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918787081' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-170@a.a', 'guardian-170', '123qwe', 'guardian', '272506455', '469407857', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915107102' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-171@a.a', 'guardian-171', '123qwe', 'guardian', '483683200', '169635126', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917094673' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-172@a.a', 'guardian-172', '123qwe', 'guardian', '458196959', '495038855', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917239548' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-173@a.a', 'guardian-173', '123qwe', 'guardian', '851813434', '789294379', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913058182' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-174@a.a', 'guardian-174', '123qwe', 'guardian', '205016349', '864250185', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916176672' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-175@a.a', 'guardian-175', '123qwe', 'guardian', '954200086', '859335591', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912918706' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-176@a.a', 'guardian-176', '123qwe', 'guardian', '777160625', '537458089', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918926524' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-177@a.a', 'guardian-177', '123qwe', 'guardian', '887244809', '319792036', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917034900' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-178@a.a', 'guardian-178', '123qwe', 'guardian', '388716084', '574843347', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919297356' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-179@a.a', 'guardian-179', '123qwe', 'guardian', '118808679', '715563343', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913596665' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-180@a.a', 'guardian-180', '123qwe', 'guardian', '928953240', '948511421', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919950542' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-181@a.a', 'guardian-181', '123qwe', 'guardian', '740904550', '396153555', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911934431' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-182@a.a', 'guardian-182', '123qwe', 'guardian', '621996783', '436072677', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919599622' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-183@a.a', 'guardian-183', '123qwe', 'guardian', '318174395', '687490138', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917001716' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-184@a.a', 'guardian-184', '123qwe', 'guardian', '642249699', '982415490', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911306526' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-185@a.a', 'guardian-185', '123qwe', 'guardian', '757873836', '621427359', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912940478' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-186@a.a', 'guardian-186', '123qwe', 'guardian', '250285362', '981801516', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915310775' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-187@a.a', 'guardian-187', '123qwe', 'guardian', '664305940', '112860946', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919583877' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-188@a.a', 'guardian-188', '123qwe', 'guardian', '181199402', '849049958', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919444808' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-189@a.a', 'guardian-189', '123qwe', 'guardian', '838117542', '795619814', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914869101' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-190@a.a', 'guardian-190', '123qwe', 'guardian', '722076249', '143633407', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915855689' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-191@a.a', 'guardian-191', '123qwe', 'guardian', '689437022', '708589953', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911199262' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-192@a.a', 'guardian-192', '123qwe', 'guardian', '377567867', '619874588', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916074518' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-193@a.a', 'guardian-193', '123qwe', 'guardian', '971574412', '776062408', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915007247' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-194@a.a', 'guardian-194', '123qwe', 'guardian', '462572267', '876426732', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918396740' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-195@a.a', 'guardian-195', '123qwe', 'guardian', '545289208', '705091519', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919273932' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-196@a.a', 'guardian-196', '123qwe', 'guardian', '895639976', '915225933', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915275666' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-197@a.a', 'guardian-197', '123qwe', 'guardian', '651390192', '790956277', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918938927' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-198@a.a', 'guardian-198', '123qwe', 'guardian', '915303543', '337017254', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912126650' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-199@a.a', 'guardian-199', '123qwe', 'guardian', '109380246', '420237560', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912908209' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-200@a.a', 'guardian-200', '123qwe', 'guardian', '465115375', '353233299', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917218449' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-201@a.a', 'guardian-201', '123qwe', 'guardian', '908281592', '850434733', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918637906' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-202@a.a', 'guardian-202', '123qwe', 'guardian', '937175083', '194540830', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914096137' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-203@a.a', 'guardian-203', '123qwe', 'guardian', '200085625', '839827295', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913470708' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-204@a.a', 'guardian-204', '123qwe', 'guardian', '407466879', '305683735', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919635423' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-205@a.a', 'guardian-205', '123qwe', 'guardian', '426681353', '438630950', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912564437' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-206@a.a', 'guardian-206', '123qwe', 'guardian', '526374756', '216203764', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913705393' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-207@a.a', 'guardian-207', '123qwe', 'guardian', '497274501', '963058992', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914150923' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-208@a.a', 'guardian-208', '123qwe', 'guardian', '173960031', '422509616', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913443592' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-209@a.a', 'guardian-209', '123qwe', 'guardian', '570574218', '622908777', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911449676' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-210@a.a', 'guardian-210', '123qwe', 'guardian', '489675439', '916455495', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915481153' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-211@a.a', 'guardian-211', '123qwe', 'guardian', '939095054', '297772763', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914213778' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-212@a.a', 'guardian-212', '123qwe', 'guardian', '983208986', '711456513', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912591853' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-213@a.a', 'guardian-213', '123qwe', 'guardian', '554122264', '385936410', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916674796' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-214@a.a', 'guardian-214', '123qwe', 'guardian', '207120566', '570162103', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915281360' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-215@a.a', 'guardian-215', '123qwe', 'guardian', '765425712', '673544071', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919013919' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-216@a.a', 'guardian-216', '123qwe', 'guardian', '614389229', '559068330', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919197293' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-217@a.a', 'guardian-217', '123qwe', 'guardian', '177921046', '456113372', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917785299' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-218@a.a', 'guardian-218', '123qwe', 'guardian', '417366341', '738556994', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919883526' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-219@a.a', 'guardian-219', '123qwe', 'guardian', '599106562', '350462583', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918100325' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-220@a.a', 'guardian-220', '123qwe', 'guardian', '346027329', '663291723', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912150521' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-221@a.a', 'guardian-221', '123qwe', 'guardian', '928179760', '812304127', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919657704' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-222@a.a', 'guardian-222', '123qwe', 'guardian', '683588987', '288509374', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914416812' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-223@a.a', 'guardian-223', '123qwe', 'guardian', '293507363', '968182797', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917660481' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-224@a.a', 'guardian-224', '123qwe', 'guardian', '772822729', '668733063', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911175435' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-225@a.a', 'guardian-225', '123qwe', 'guardian', '420582667', '869838914', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912732757' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-226@a.a', 'guardian-226', '123qwe', 'guardian', '821533976', '549852440', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917191075' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-227@a.a', 'guardian-227', '123qwe', 'guardian', '206471469', '477328647', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911922109' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-228@a.a', 'guardian-228', '123qwe', 'guardian', '895936525', '549695213', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911656899' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-229@a.a', 'guardian-229', '123qwe', 'guardian', '126977990', '589130626', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917388111' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-230@a.a', 'guardian-230', '123qwe', 'guardian', '611570432', '882603043', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915567301' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-231@a.a', 'guardian-231', '123qwe', 'guardian', '224472402', '336023910', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911749164' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-232@a.a', 'guardian-232', '123qwe', 'guardian', '406612486', '312925622', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916706707' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-233@a.a', 'guardian-233', '123qwe', 'guardian', '935990287', '291555778', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911713446' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-234@a.a', 'guardian-234', '123qwe', 'guardian', '450819060', '907081507', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919484134' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-235@a.a', 'guardian-235', '123qwe', 'guardian', '190155453', '621558248', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919022877' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-236@a.a', 'guardian-236', '123qwe', 'guardian', '851759740', '859339482', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918571927' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-237@a.a', 'guardian-237', '123qwe', 'guardian', '207447063', '888615747', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911600012' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-238@a.a', 'guardian-238', '123qwe', 'guardian', '665865274', '569228819', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919286357' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-239@a.a', 'guardian-239', '123qwe', 'guardian', '450066451', '710189277', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911628984' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '2017,7,31', 'guardian-240@a.a', 'guardian-240', '123qwe', 'guardian', '507333250', '775928879', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918598532' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-1@a.a', 'guardian-1', '123qwe', 'guardian', '391823364', '458186439', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915491906' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-2@a.a', 'guardian-2', '123qwe', 'guardian', '959683521', '631927310', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919760108' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-3@a.a', 'guardian-3', '123qwe', 'guardian', '927305312', '722631816', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912472862' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-4@a.a', 'guardian-4', '123qwe', 'guardian', '735328739', '242704808', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917404684' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-5@a.a', 'guardian-5', '123qwe', 'guardian', '846547652', '723126670', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917239544' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-6@a.a', 'guardian-6', '123qwe', 'guardian', '182800953', '250260236', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912662742' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-7@a.a', 'guardian-7', '123qwe', 'guardian', '954816682', '142766409', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914636445' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-8@a.a', 'guardian-8', '123qwe', 'guardian', '409502018', '255893175', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913609452' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-9@a.a', 'guardian-9', '123qwe', 'guardian', '643856747', '531283512', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911395843' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-10@a.a', 'guardian-10', '123qwe', 'guardian', '903588149', '581847739', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916707422' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-11@a.a', 'guardian-11', '123qwe', 'guardian', '984407819', '426103839', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915563384' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-12@a.a', 'guardian-12', '123qwe', 'guardian', '478732001', '253278752', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912090345' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-13@a.a', 'guardian-13', '123qwe', 'guardian', '286802652', '465880565', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919162864' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-14@a.a', 'guardian-14', '123qwe', 'guardian', '261465349', '123912329', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919689270' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-15@a.a', 'guardian-15', '123qwe', 'guardian', '403874099', '419992972', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914415352' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-16@a.a', 'guardian-16', '123qwe', 'guardian', '872439857', '605411841', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916241364' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-17@a.a', 'guardian-17', '123qwe', 'guardian', '996288877', '329686876', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916993529' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-18@a.a', 'guardian-18', '123qwe', 'guardian', '141214763', '129476431', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911098763' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-19@a.a', 'guardian-19', '123qwe', 'guardian', '118197623', '649265318', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912186377' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-20@a.a', 'guardian-20', '123qwe', 'guardian', '780171642', '158215367', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911727695' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-21@a.a', 'guardian-21', '123qwe', 'guardian', '347510429', '493352245', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917872979' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-22@a.a', 'guardian-22', '123qwe', 'guardian', '134323457', '378114927', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917026916' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-23@a.a', 'guardian-23', '123qwe', 'guardian', '168340177', '554157914', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917148816' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-24@a.a', 'guardian-24', '123qwe', 'guardian', '541708710', '407521986', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919931710' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-25@a.a', 'guardian-25', '123qwe', 'guardian', '314376407', '665901125', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911679781' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-26@a.a', 'guardian-26', '123qwe', 'guardian', '511334273', '492631010', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917835007' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-27@a.a', 'guardian-27', '123qwe', 'guardian', '101676412', '238564762', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919489536' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-28@a.a', 'guardian-28', '123qwe', 'guardian', '314352943', '462997346', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913643603' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-29@a.a', 'guardian-29', '123qwe', 'guardian', '997340244', '399851025', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918628351' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-30@a.a', 'guardian-30', '123qwe', 'guardian', '561290424', '187673002', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912213646' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-31@a.a', 'guardian-31', '123qwe', 'guardian', '793724865', '794592758', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919968065' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-32@a.a', 'guardian-32', '123qwe', 'guardian', '626730499', '289626475', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912393365' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-33@a.a', 'guardian-33', '123qwe', 'guardian', '180766792', '584799639', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911629537' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-34@a.a', 'guardian-34', '123qwe', 'guardian', '864699056', '958669438', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914495825' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-35@a.a', 'guardian-35', '123qwe', 'guardian', '735332166', '266476241', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917350978' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-36@a.a', 'guardian-36', '123qwe', 'guardian', '560478238', '542714015', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918907813' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-37@a.a', 'guardian-37', '123qwe', 'guardian', '177509853', '496243240', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911445268' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-38@a.a', 'guardian-38', '123qwe', 'guardian', '874818785', '331933932', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917071408' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-39@a.a', 'guardian-39', '123qwe', 'guardian', '664123602', '488829928', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916931015' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-40@a.a', 'guardian-40', '123qwe', 'guardian', '277036800', '581891204', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912683096' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-41@a.a', 'guardian-41', '123qwe', 'guardian', '337036218', '554012399', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916174187' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-42@a.a', 'guardian-42', '123qwe', 'guardian', '912507160', '966470484', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912738470' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-43@a.a', 'guardian-43', '123qwe', 'guardian', '681163253', '155438730', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918233260' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-44@a.a', 'guardian-44', '123qwe', 'guardian', '605064863', '355586144', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919054865' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-45@a.a', 'guardian-45', '123qwe', 'guardian', '671003675', '727539889', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912551051' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-46@a.a', 'guardian-46', '123qwe', 'guardian', '762070168', '755431095', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918366136' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-47@a.a', 'guardian-47', '123qwe', 'guardian', '183791714', '331406940', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913835794' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-48@a.a', 'guardian-48', '123qwe', 'guardian', '557416336', '204085957', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913847260' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-49@a.a', 'guardian-49', '123qwe', 'guardian', '748893530', '766149226', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915255928' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-50@a.a', 'guardian-50', '123qwe', 'guardian', '615075535', '197040931', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919970411' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-51@a.a', 'guardian-51', '123qwe', 'guardian', '285246487', '904865582', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919084073' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-52@a.a', 'guardian-52', '123qwe', 'guardian', '971013722', '378360458', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915331251' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-53@a.a', 'guardian-53', '123qwe', 'guardian', '446442098', '357913063', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913593489' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-54@a.a', 'guardian-54', '123qwe', 'guardian', '488093413', '542174524', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911279983' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-55@a.a', 'guardian-55', '123qwe', 'guardian', '947879390', '350610785', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912981067' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-56@a.a', 'guardian-56', '123qwe', 'guardian', '254189819', '925249146', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917862857' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-57@a.a', 'guardian-57', '123qwe', 'guardian', '719663713', '171794387', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911369220' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-58@a.a', 'guardian-58', '123qwe', 'guardian', '626748994', '862712284', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916494568' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-59@a.a', 'guardian-59', '123qwe', 'guardian', '182911682', '724080545', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913235202' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-60@a.a', 'guardian-60', '123qwe', 'guardian', '770464175', '253548444', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916345862' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-61@a.a', 'guardian-61', '123qwe', 'guardian', '575899334', '257466641', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912092619' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-62@a.a', 'guardian-62', '123qwe', 'guardian', '814283720', '756595688', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919956429' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-63@a.a', 'guardian-63', '123qwe', 'guardian', '903453407', '770208251', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913557221' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-64@a.a', 'guardian-64', '123qwe', 'guardian', '390768372', '407246604', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916960809' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-65@a.a', 'guardian-65', '123qwe', 'guardian', '912109962', '854403799', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914753894' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-66@a.a', 'guardian-66', '123qwe', 'guardian', '875633761', '903991062', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912402144' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-67@a.a', 'guardian-67', '123qwe', 'guardian', '445222958', '979772894', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917577789' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-68@a.a', 'guardian-68', '123qwe', 'guardian', '522113755', '999366812', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919669310' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-69@a.a', 'guardian-69', '123qwe', 'guardian', '871927935', '521507340', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916724738' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-70@a.a', 'guardian-70', '123qwe', 'guardian', '716532075', '308051595', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916312113' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-71@a.a', 'guardian-71', '123qwe', 'guardian', '963692208', '621017784', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918186756' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-72@a.a', 'guardian-72', '123qwe', 'guardian', '455707404', '108516506', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914183466' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-73@a.a', 'guardian-73', '123qwe', 'guardian', '964631459', '440109520', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913149997' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-74@a.a', 'guardian-74', '123qwe', 'guardian', '732365684', '605487975', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913364191' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-75@a.a', 'guardian-75', '123qwe', 'guardian', '694366000', '917946002', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913159185' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-76@a.a', 'guardian-76', '123qwe', 'guardian', '963366867', '920937298', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917224224' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-77@a.a', 'guardian-77', '123qwe', 'guardian', '344060900', '714116661', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912650344' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-78@a.a', 'guardian-78', '123qwe', 'guardian', '159642678', '722976195', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913460489' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-79@a.a', 'guardian-79', '123qwe', 'guardian', '650879558', '800087073', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916620376' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-80@a.a', 'guardian-80', '123qwe', 'guardian', '408147296', '540304239', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911389727' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-81@a.a', 'guardian-81', '123qwe', 'guardian', '353924025', '686795920', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911977980' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-82@a.a', 'guardian-82', '123qwe', 'guardian', '526615039', '414862432', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912923491' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-83@a.a', 'guardian-83', '123qwe', 'guardian', '963088642', '310028150', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917865919' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-84@a.a', 'guardian-84', '123qwe', 'guardian', '306016620', '653600158', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917326369' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-85@a.a', 'guardian-85', '123qwe', 'guardian', '211715660', '920887858', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917078372' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-86@a.a', 'guardian-86', '123qwe', 'guardian', '417314072', '397765385', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914436335' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-87@a.a', 'guardian-87', '123qwe', 'guardian', '781803497', '714243217', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919512899' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-88@a.a', 'guardian-88', '123qwe', 'guardian', '418571446', '965498076', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912623810' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-89@a.a', 'guardian-89', '123qwe', 'guardian', '946620065', '886925217', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915230372' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-90@a.a', 'guardian-90', '123qwe', 'guardian', '224587251', '597523436', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915129838' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-91@a.a', 'guardian-91', '123qwe', 'guardian', '513409525', '339774170', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917595553' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-92@a.a', 'guardian-92', '123qwe', 'guardian', '285355261', '185595583', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913389461' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-93@a.a', 'guardian-93', '123qwe', 'guardian', '431837706', '832573683', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911559328' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-94@a.a', 'guardian-94', '123qwe', 'guardian', '234427201', '631803337', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917529042' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-95@a.a', 'guardian-95', '123qwe', 'guardian', '267382084', '983039881', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911661863' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-96@a.a', 'guardian-96', '123qwe', 'guardian', '144705448', '816216851', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916570715' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-97@a.a', 'guardian-97', '123qwe', 'guardian', '124923889', '683571878', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917076766' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-98@a.a', 'guardian-98', '123qwe', 'guardian', '403252287', '160395499', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911099718' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-99@a.a', 'guardian-99', '123qwe', 'guardian', '747108839', '437488488', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911496740' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-100@a.a', 'guardian-100', '123qwe', 'guardian', '521158720', '682237407', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914877321' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-101@a.a', 'guardian-101', '123qwe', 'guardian', '312852526', '833953249', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912632939' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-102@a.a', 'guardian-102', '123qwe', 'guardian', '735937469', '585220610', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912525050' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-103@a.a', 'guardian-103', '123qwe', 'guardian', '871114989', '554544793', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919877960' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-104@a.a', 'guardian-104', '123qwe', 'guardian', '586720573', '824583376', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914733841' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-105@a.a', 'guardian-105', '123qwe', 'guardian', '763441592', '945372726', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912507611' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-106@a.a', 'guardian-106', '123qwe', 'guardian', '487037812', '309245159', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913561792' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-107@a.a', 'guardian-107', '123qwe', 'guardian', '858803648', '750516658', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912981365' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-108@a.a', 'guardian-108', '123qwe', 'guardian', '708529665', '858118821', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912397046' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-109@a.a', 'guardian-109', '123qwe', 'guardian', '224423478', '214011531', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918119792' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-110@a.a', 'guardian-110', '123qwe', 'guardian', '717058188', '758187028', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914091395' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-111@a.a', 'guardian-111', '123qwe', 'guardian', '613689052', '157607067', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915729067' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-112@a.a', 'guardian-112', '123qwe', 'guardian', '377448107', '635525579', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913907029' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-113@a.a', 'guardian-113', '123qwe', 'guardian', '172822092', '982906044', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911442280' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-114@a.a', 'guardian-114', '123qwe', 'guardian', '839819066', '329720222', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918432731' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-115@a.a', 'guardian-115', '123qwe', 'guardian', '326513728', '593452012', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918577490' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-116@a.a', 'guardian-116', '123qwe', 'guardian', '266644159', '879620774', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913409915' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-117@a.a', 'guardian-117', '123qwe', 'guardian', '293151823', '309636876', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913727470' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-118@a.a', 'guardian-118', '123qwe', 'guardian', '364552711', '206864587', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914976139' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-119@a.a', 'guardian-119', '123qwe', 'guardian', '883811893', '652474466', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918622517' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-120@a.a', 'guardian-120', '123qwe', 'guardian', '305235427', '937573735', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915849287' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-121@a.a', 'guardian-121', '123qwe', 'guardian', '841195135', '358946760', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915380287' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-122@a.a', 'guardian-122', '123qwe', 'guardian', '701086803', '273086634', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915117681' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-123@a.a', 'guardian-123', '123qwe', 'guardian', '423337805', '416211118', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914203472' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-124@a.a', 'guardian-124', '123qwe', 'guardian', '561414306', '237628635', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917253451' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-125@a.a', 'guardian-125', '123qwe', 'guardian', '747872173', '661818776', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917117490' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-126@a.a', 'guardian-126', '123qwe', 'guardian', '716119810', '585708956', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915255543' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-127@a.a', 'guardian-127', '123qwe', 'guardian', '598626121', '422867618', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912931640' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-128@a.a', 'guardian-128', '123qwe', 'guardian', '194739745', '445198708', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918366729' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-129@a.a', 'guardian-129', '123qwe', 'guardian', '127097744', '148355183', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913927155' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-130@a.a', 'guardian-130', '123qwe', 'guardian', '640163331', '345911205', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913212245' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-131@a.a', 'guardian-131', '123qwe', 'guardian', '319204043', '308393465', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915965619' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-132@a.a', 'guardian-132', '123qwe', 'guardian', '564241501', '943442648', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911639082' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-133@a.a', 'guardian-133', '123qwe', 'guardian', '118591123', '878335434', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918641323' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-134@a.a', 'guardian-134', '123qwe', 'guardian', '215989708', '785718257', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912150337' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-135@a.a', 'guardian-135', '123qwe', 'guardian', '576557494', '772330459', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912312592' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-136@a.a', 'guardian-136', '123qwe', 'guardian', '531195603', '170626265', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918936018' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-137@a.a', 'guardian-137', '123qwe', 'guardian', '650870995', '501298236', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915211708' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-138@a.a', 'guardian-138', '123qwe', 'guardian', '975264453', '700943706', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912445674' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-139@a.a', 'guardian-139', '123qwe', 'guardian', '633615894', '493795480', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912998590' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-140@a.a', 'guardian-140', '123qwe', 'guardian', '764206671', '515470029', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917172900' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-141@a.a', 'guardian-141', '123qwe', 'guardian', '819413005', '211616326', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919296101' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-142@a.a', 'guardian-142', '123qwe', 'guardian', '807954193', '101025578', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915035058' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-143@a.a', 'guardian-143', '123qwe', 'guardian', '339353680', '866461179', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919987567' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-144@a.a', 'guardian-144', '123qwe', 'guardian', '948456109', '646895631', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919699994' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-145@a.a', 'guardian-145', '123qwe', 'guardian', '594500890', '140940362', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911715482' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-146@a.a', 'guardian-146', '123qwe', 'guardian', '391675849', '891555744', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916061936' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-147@a.a', 'guardian-147', '123qwe', 'guardian', '397578980', '646610467', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911159880' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-148@a.a', 'guardian-148', '123qwe', 'guardian', '226199950', '445935187', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916972290' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-149@a.a', 'guardian-149', '123qwe', 'guardian', '663162042', '505194946', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915652628' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-150@a.a', 'guardian-150', '123qwe', 'guardian', '834709665', '710002965', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915585410' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-151@a.a', 'guardian-151', '123qwe', 'guardian', '566376100', '643473889', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918924975' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-152@a.a', 'guardian-152', '123qwe', 'guardian', '188592385', '590965957', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913140801' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-153@a.a', 'guardian-153', '123qwe', 'guardian', '318753685', '249771834', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919729086' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-154@a.a', 'guardian-154', '123qwe', 'guardian', '259562508', '749384681', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911922618' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-155@a.a', 'guardian-155', '123qwe', 'guardian', '579755185', '405761909', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917103131' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-156@a.a', 'guardian-156', '123qwe', 'guardian', '358897103', '601570057', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915864354' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-157@a.a', 'guardian-157', '123qwe', 'guardian', '302760080', '599636359', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919144183' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-158@a.a', 'guardian-158', '123qwe', 'guardian', '267852354', '434527571', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912068358' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-159@a.a', 'guardian-159', '123qwe', 'guardian', '768249375', '944529343', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915958547' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-160@a.a', 'guardian-160', '123qwe', 'guardian', '168963845', '429079048', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912061238' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-161@a.a', 'guardian-161', '123qwe', 'guardian', '334973598', '185027079', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911545243' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-162@a.a', 'guardian-162', '123qwe', 'guardian', '295856558', '255382077', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912251133' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-163@a.a', 'guardian-163', '123qwe', 'guardian', '413838026', '380702580', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912940607' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-164@a.a', 'guardian-164', '123qwe', 'guardian', '764605409', '210302304', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912610265' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-165@a.a', 'guardian-165', '123qwe', 'guardian', '877413277', '173850247', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912349550' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-166@a.a', 'guardian-166', '123qwe', 'guardian', '308661615', '494236246', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918451514' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-167@a.a', 'guardian-167', '123qwe', 'guardian', '978976856', '496235594', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918427183' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-168@a.a', 'guardian-168', '123qwe', 'guardian', '971275440', '950207014', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919379294' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-169@a.a', 'guardian-169', '123qwe', 'guardian', '681744788', '214912603', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914170011' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-170@a.a', 'guardian-170', '123qwe', 'guardian', '523757721', '604171332', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911734403' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-171@a.a', 'guardian-171', '123qwe', 'guardian', '752336230', '509088061', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919588933' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-172@a.a', 'guardian-172', '123qwe', 'guardian', '125560127', '252887274', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917099933' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-173@a.a', 'guardian-173', '123qwe', 'guardian', '953265745', '450821502', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916305591' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-174@a.a', 'guardian-174', '123qwe', 'guardian', '685413970', '595310632', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916460544' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-175@a.a', 'guardian-175', '123qwe', 'guardian', '683273275', '894340106', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919404795' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-176@a.a', 'guardian-176', '123qwe', 'guardian', '873198816', '216814680', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915931004' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-177@a.a', 'guardian-177', '123qwe', 'guardian', '345508873', '928835611', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918524057' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-178@a.a', 'guardian-178', '123qwe', 'guardian', '772982632', '349272508', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918228337' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-179@a.a', 'guardian-179', '123qwe', 'guardian', '658374136', '356871239', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917747802' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-180@a.a', 'guardian-180', '123qwe', 'guardian', '639020534', '417935946', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911597198' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-181@a.a', 'guardian-181', '123qwe', 'guardian', '596777404', '482405097', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913394652' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-182@a.a', 'guardian-182', '123qwe', 'guardian', '470283002', '202789000', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916270613' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-183@a.a', 'guardian-183', '123qwe', 'guardian', '976216179', '139968461', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912199560' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-184@a.a', 'guardian-184', '123qwe', 'guardian', '961098412', '508954186', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917816519' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-185@a.a', 'guardian-185', '123qwe', 'guardian', '982443690', '446991389', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912523254' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-186@a.a', 'guardian-186', '123qwe', 'guardian', '506712932', '770808901', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917922767' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-187@a.a', 'guardian-187', '123qwe', 'guardian', '193555190', '344116219', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919384212' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-188@a.a', 'guardian-188', '123qwe', 'guardian', '779657243', '355575973', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911125343' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-189@a.a', 'guardian-189', '123qwe', 'guardian', '596772544', '525305415', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919141662' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-190@a.a', 'guardian-190', '123qwe', 'guardian', '919905872', '281723609', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913472766' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-191@a.a', 'guardian-191', '123qwe', 'guardian', '298721090', '640369888', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917063786' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-192@a.a', 'guardian-192', '123qwe', 'guardian', '354428576', '553666965', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914501859' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-193@a.a', 'guardian-193', '123qwe', 'guardian', '584754572', '735701411', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917412229' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-194@a.a', 'guardian-194', '123qwe', 'guardian', '197230023', '508642413', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913025992' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-195@a.a', 'guardian-195', '123qwe', 'guardian', '412141322', '195344361', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911929512' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-196@a.a', 'guardian-196', '123qwe', 'guardian', '857256451', '805459237', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918000237' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-197@a.a', 'guardian-197', '123qwe', 'guardian', '394831208', '272668323', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915428729' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-198@a.a', 'guardian-198', '123qwe', 'guardian', '585024117', '325524978', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915542285' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-199@a.a', 'guardian-199', '123qwe', 'guardian', '485484721', '857068678', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916965909' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-200@a.a', 'guardian-200', '123qwe', 'guardian', '301411828', '471476514', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917997218' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-201@a.a', 'guardian-201', '123qwe', 'guardian', '345185520', '699910757', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915346321' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-202@a.a', 'guardian-202', '123qwe', 'guardian', '975294002', '365215623', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918054936' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-203@a.a', 'guardian-203', '123qwe', 'guardian', '116088651', '353533074', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914632438' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-204@a.a', 'guardian-204', '123qwe', 'guardian', '767877065', '970399953', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916550310' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-205@a.a', 'guardian-205', '123qwe', 'guardian', '916534853', '214532225', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '914156407' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-206@a.a', 'guardian-206', '123qwe', 'guardian', '671024827', '790384691', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916988261' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-207@a.a', 'guardian-207', '123qwe', 'guardian', '696124714', '758341034', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911402447' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-208@a.a', 'guardian-208', '123qwe', 'guardian', '703896310', '815237232', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917660953' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-209@a.a', 'guardian-209', '123qwe', 'guardian', '911821545', '147833301', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913814515' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-210@a.a', 'guardian-210', '123qwe', 'guardian', '985151169', '730667647', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917025348' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-211@a.a', 'guardian-211', '123qwe', 'guardian', '102987910', '241325014', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913292584' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-212@a.a', 'guardian-212', '123qwe', 'guardian', '389326953', '650483340', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911816973' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-213@a.a', 'guardian-213', '123qwe', 'guardian', '795036555', '770386415', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915048168' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-214@a.a', 'guardian-214', '123qwe', 'guardian', '762673707', '570627978', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918991677' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-215@a.a', 'guardian-215', '123qwe', 'guardian', '914378103', '880034063', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911911193' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-216@a.a', 'guardian-216', '123qwe', 'guardian', '923685823', '234630409', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918688560' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-217@a.a', 'guardian-217', '123qwe', 'guardian', '785470587', '626914387', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915259338' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-218@a.a', 'guardian-218', '123qwe', 'guardian', '475598703', '336903606', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '918048586' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-219@a.a', 'guardian-219', '123qwe', 'guardian', '611395889', '708829009', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917749744' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-220@a.a', 'guardian-220', '123qwe', 'guardian', '512185719', '618477330', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915093877' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-221@a.a', 'guardian-221', '123qwe', 'guardian', '246999449', '583969933', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915423316' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-222@a.a', 'guardian-222', '123qwe', 'guardian', '272291687', '309179692', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917960124' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-223@a.a', 'guardian-223', '123qwe', 'guardian', '706449990', '536969122', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917316046' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-224@a.a', 'guardian-224', '123qwe', 'guardian', '836159920', '276759994', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '912250535' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-225@a.a', 'guardian-225', '123qwe', 'guardian', '656882067', '599558169', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '917108368' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-226@a.a', 'guardian-226', '123qwe', 'guardian', '746312342', '405176739', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913261788' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-227@a.a', 'guardian-227', '123qwe', 'guardian', '848064772', '906872297', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913211490' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-228@a.a', 'guardian-228', '123qwe', 'guardian', '606650530', '586274316', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916379063' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-229@a.a', 'guardian-229', '123qwe', 'guardian', '548252103', '519979993', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916026283' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-230@a.a', 'guardian-230', '123qwe', 'guardian', '462693290', '137671357', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915717323' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-231@a.a', 'guardian-231', '123qwe', 'guardian', '167174679', '252629496', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911879452' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-232@a.a', 'guardian-232', '123qwe', 'guardian', '758499747', '876722650', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915991558' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-233@a.a', 'guardian-233', '123qwe', 'guardian', '510591945', '596476647', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919427711' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-234@a.a', 'guardian-234', '123qwe', 'guardian', '330065491', '504342307', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919908206' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-235@a.a', 'guardian-235', '123qwe', 'guardian', '929802066', '538894608', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '913459470' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-236@a.a', 'guardian-236', '123qwe', 'guardian', '821704172', '185895689', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '911478363' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-237@a.a', 'guardian-237', '123qwe', 'guardian', '605029273', '300707831', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '916934629' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-238@a.a', 'guardian-238', '123qwe', 'guardian', '610593416', '721441650', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '919216777' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-239@a.a', 'guardian-239', '123qwe', 'guardian', '456482925', '205795147', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915581366' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, IsActive, Address, PhoneNumber ) VALUES ( '20170731', 'guardian-240@a.a', 'guardian-240', '123qwe', 'guardian', '346465118', '559672198', 1, 'Rua Exemplo Nº56 Alberga 3XXX-5YY Menor', '915273426' );
 
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, Photo, PhoneNumber ) VALUES ( '2017,7,31', 'admin-1@a.a', 'admin-1', '123qwe', 'admin', '285019682', '139380017', 'admin.png', '916422523' );
-	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, Function, CitizenCard, FiscalNumber, Photo, PhoneNumber ) VALUES ( '2017,7,31', 'admin-2@a.a', 'admin-2', '123qwe', 'admin', '427071939', '389450174', 'admin.png', '918704621' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, Photo, PhoneNumber ) VALUES ( '20170731', 'admin-1@a.a', 'admin-1', '123qwe', 'admin', '815248669', '945318188', 'admin.png', '916838556' );
+	INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, Photo, PhoneNumber ) VALUES ( '20170731', 'admin-2@a.a', 'admin-2', '123qwe', 'admin', '394639207', '213593205', 'admin.png', '915649074' );
 
 
--- SCHOOLS
+-- SCHOOLS ------------------------------------------------------------------------------------------------
 
 	INSERT INTO TblSchools( Name, Logo, ProfilePicture, Acronym ) VALUES ( 'school-1', 'logoExemple.png', 'profileExemple.png', 'XPTO' );
 
 
--- CLASSES
+-- CLASSES ------------------------------------------------------------------------------------------------
 
 	INSERT INTO TblClasses( SchoolYear, Year, ClassDesc, SchoolFK, TeacherFK ) VALUES( '2017/2018', '1º', 'A', 1, 301 );
 	INSERT INTO TblClasses( SchoolYear, Year, ClassDesc, SchoolFK, TeacherFK ) VALUES( '2017/2018', '1º', 'B', 1, 302 );
@@ -621,7 +621,7 @@ TRUNCATE TABLE [TblValidations]
 	INSERT INTO TblClasses( SchoolYear, Year, ClassDesc, SchoolFK, TeacherFK ) VALUES( '2017/2018', '4º', 'C', 1, 312 );
 
 
--- CLASSES-STUDENTS
+-- CLASSES-STUDENTS ------------------------------------------------------------------------------------------------
 
 	INSERT INTO TblClassStudents( ClassFK, StudentFK ) VALUES( 1, 1 );
 	INSERT INTO TblClassStudents( ClassFK, StudentFK ) VALUES( 1, 2 );
@@ -925,1291 +925,1542 @@ TRUNCATE TABLE [TblValidations]
 	INSERT INTO TblClassStudents( ClassFK, StudentFK ) VALUES( 12, 300 );
 
 
--- DOCUMENTS
+-- DOCUMENTS ------------------------------------------------------------------------------------------------
 
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 1 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 1 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 1 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 2 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 2 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 2 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 3 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 3 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 3 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 4 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 4 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 4 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 5 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 5 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 5 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 6 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 6 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 6 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 7 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 7 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 7 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 8 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 8 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 8 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 9 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 9 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 9 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 10 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 10 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 10 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 11 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 11 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 11 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 12 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 12 );
-	INSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 12 );
-
-
--- ACTIONS
-
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171126' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171013' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171010' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171030' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171003' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171109' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171024' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171028' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171013' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171013' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171006' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171021' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171106' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 315, 'An Action exemple... An Action exemple... An Action exemple...', '20171024' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171005' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171120' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170827' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170907' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170809' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170915' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170927' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170827' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170925' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171015' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171119' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171119' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170907' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 315, 'An Action exemple... An Action exemple... An Action exemple...', '20171021' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170812' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171016' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170917' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171113' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171113' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170905' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171129' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170914' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170914' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170826' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170908' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170909' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170810' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 315, 'An Action exemple... An Action exemple... An Action exemple...', '20171130' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170928' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170927' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171002' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171112' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171018' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171113' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170926' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170825' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170906' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171024' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170918' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170802' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170924' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 315, 'An Action exemple... An Action exemple... An Action exemple...', '20171006' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170820' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170904' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170818' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170917' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170922' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170926' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171119' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171005' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170915' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170916' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171013' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170906' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171103' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 315, 'An Action exemple... An Action exemple... An Action exemple...', '20171117' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170827' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171006' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171120' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171111' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170907' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171116' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171010' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171015' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171129' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171022' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171002' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170923' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171016' );
-	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 315, 'An Action exemple... An Action exemple... An Action exemple...', '20170813' );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 1 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 1 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 1 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 2 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 2 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 2 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 3 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 3 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 3 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 4 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 4 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 4 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 5 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 5 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 5 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 6 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 6 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 6 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 7 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 7 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 7 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 8 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 8 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 8 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 9 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 9 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 9 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 10 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 10 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 10 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 11 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 11 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 11 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 12 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), 12 );
+	INSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', 1, GETDATE(), 12 );
 
 
-var rooms = new List<TblRooms>{
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R1"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R2"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R3"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R4"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R5"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R6"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R7"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R8"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R9"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R10"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R11"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R12"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R13"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R14"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R15"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R16"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R17"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R18"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R19"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R20"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R21"},
-	new TblRoomns { SchoolFK = schools[0].ID, Name="S1-R22"},
-};
-rooms.ForEach(rr => context.TblRooms.AddOrUpdate(r => r.ID, rr));
-context.SaveChanges();
+-- ACTIONS ------------------------------------------------------------------------------------------------
 
-var sensors = new List<TblSensors>{
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=244, Temperature=29, Energy=178},
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=620, Temperature=25, Energy=167},
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=384, Temperature=28, Energy=134},
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=482, Temperature=7, Energy=322},
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=225, Temperature=28, Energy=363},
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=525, Temperature=10, Energy=243},
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=636, Temperature=11, Energy=252},
-	new TblSensors { RoomFK = 1, Hour=RandomDay(), Luminosity=494, Temperature=5, Energy=196},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=574, Temperature=23, Energy=305},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=366, Temperature=28, Energy=319},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=586, Temperature=12, Energy=372},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=313, Temperature=18, Energy=159},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=499, Temperature=13, Energy=273},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=667, Temperature=22, Energy=275},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=507, Temperature=21, Energy=147},
-	new TblSensors { RoomFK = 2, Hour=RandomDay(), Luminosity=363, Temperature=21, Energy=211},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=403, Temperature=12, Energy=374},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=696, Temperature=11, Energy=223},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=364, Temperature=17, Energy=280},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=383, Temperature=18, Energy=304},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=394, Temperature=16, Energy=112},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=209, Temperature=30, Energy=171},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=497, Temperature=12, Energy=337},
-	new TblSensors { RoomFK = 3, Hour=RandomDay(), Luminosity=284, Temperature=7, Energy=213},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=332, Temperature=18, Energy=248},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=645, Temperature=12, Energy=179},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=659, Temperature=22, Energy=392},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=636, Temperature=12, Energy=101},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=582, Temperature=20, Energy=211},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=355, Temperature=26, Energy=328},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=335, Temperature=7, Energy=396},
-	new TblSensors { RoomFK = 4, Hour=RandomDay(), Luminosity=622, Temperature=25, Energy=151},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=632, Temperature=26, Energy=156},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=358, Temperature=7, Energy=303},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=359, Temperature=23, Energy=122},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=596, Temperature=26, Energy=203},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=576, Temperature=22, Energy=188},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=460, Temperature=23, Energy=133},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=464, Temperature=8, Energy=185},
-	new TblSensors { RoomFK = 5, Hour=RandomDay(), Luminosity=374, Temperature=20, Energy=286},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=539, Temperature=24, Energy=110},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=309, Temperature=21, Energy=101},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=632, Temperature=30, Energy=154},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=528, Temperature=20, Energy=386},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=549, Temperature=23, Energy=348},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=679, Temperature=26, Energy=140},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=325, Temperature=14, Energy=123},
-	new TblSensors { RoomFK = 6, Hour=RandomDay(), Luminosity=320, Temperature=12, Energy=332},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=537, Temperature=19, Energy=350},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=323, Temperature=18, Energy=264},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=466, Temperature=28, Energy=227},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=352, Temperature=11, Energy=243},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=667, Temperature=19, Energy=153},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=328, Temperature=15, Energy=101},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=380, Temperature=19, Energy=307},
-	new TblSensors { RoomFK = 7, Hour=RandomDay(), Luminosity=249, Temperature=12, Energy=199},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=460, Temperature=7, Energy=244},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=271, Temperature=17, Energy=384},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=278, Temperature=22, Energy=387},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=481, Temperature=18, Energy=346},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=306, Temperature=11, Energy=122},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=419, Temperature=29, Energy=326},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=287, Temperature=17, Energy=190},
-	new TblSensors { RoomFK = 8, Hour=RandomDay(), Luminosity=479, Temperature=25, Energy=199},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=311, Temperature=25, Energy=202},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=453, Temperature=19, Energy=320},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=529, Temperature=8, Energy=191},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=369, Temperature=26, Energy=184},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=624, Temperature=13, Energy=291},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=426, Temperature=10, Energy=244},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=230, Temperature=14, Energy=180},
-	new TblSensors { RoomFK = 9, Hour=RandomDay(), Luminosity=526, Temperature=8, Energy=282},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=378, Temperature=7, Energy=265},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=303, Temperature=11, Energy=271},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=444, Temperature=22, Energy=153},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=664, Temperature=16, Energy=224},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=633, Temperature=12, Energy=273},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=481, Temperature=28, Energy=311},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=575, Temperature=15, Energy=111},
-	new TblSensors { RoomFK = 10, Hour=RandomDay(), Luminosity=390, Temperature=6, Energy=202},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=312, Temperature=13, Energy=396},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=655, Temperature=24, Energy=242},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=537, Temperature=28, Energy=103},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=531, Temperature=11, Energy=340},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=477, Temperature=28, Energy=171},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=318, Temperature=25, Energy=381},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=607, Temperature=9, Energy=306},
-	new TblSensors { RoomFK = 11, Hour=RandomDay(), Luminosity=572, Temperature=11, Energy=348},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=458, Temperature=22, Energy=177},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=472, Temperature=10, Energy=100},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=280, Temperature=15, Energy=373},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=288, Temperature=28, Energy=325},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=317, Temperature=16, Energy=360},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=405, Temperature=13, Energy=235},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=238, Temperature=29, Energy=327},
-	new TblSensors { RoomFK = 12, Hour=RandomDay(), Luminosity=523, Temperature=23, Energy=169},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=400, Temperature=14, Energy=384},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=524, Temperature=12, Energy=159},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=371, Temperature=15, Energy=331},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=640, Temperature=16, Energy=258},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=279, Temperature=28, Energy=118},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=336, Temperature=28, Energy=332},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=233, Temperature=7, Energy=384},
-	new TblSensors { RoomFK = 13, Hour=RandomDay(), Luminosity=400, Temperature=23, Energy=387},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=233, Temperature=14, Energy=105},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=669, Temperature=15, Energy=345},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=689, Temperature=21, Energy=353},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=439, Temperature=11, Energy=307},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=606, Temperature=12, Energy=179},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=674, Temperature=12, Energy=234},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=574, Temperature=14, Energy=357},
-	new TblSensors { RoomFK = 14, Hour=RandomDay(), Luminosity=583, Temperature=28, Energy=389},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=271, Temperature=22, Energy=106},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=465, Temperature=8, Energy=123},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=643, Temperature=9, Energy=372},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=494, Temperature=9, Energy=298},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=244, Temperature=29, Energy=352},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=568, Temperature=28, Energy=115},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=248, Temperature=9, Energy=336},
-	new TblSensors { RoomFK = 15, Hour=RandomDay(), Luminosity=570, Temperature=7, Energy=129},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=475, Temperature=19, Energy=282},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=518, Temperature=14, Energy=395},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=246, Temperature=21, Energy=361},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=598, Temperature=30, Energy=248},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=223, Temperature=22, Energy=109},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=574, Temperature=9, Energy=246},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=353, Temperature=24, Energy=192},
-	new TblSensors { RoomFK = 16, Hour=RandomDay(), Luminosity=457, Temperature=30, Energy=170},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=540, Temperature=5, Energy=229},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=557, Temperature=27, Energy=392},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=382, Temperature=28, Energy=235},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=556, Temperature=6, Energy=277},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=332, Temperature=14, Energy=344},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=272, Temperature=6, Energy=142},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=541, Temperature=10, Energy=142},
-	new TblSensors { RoomFK = 17, Hour=RandomDay(), Luminosity=368, Temperature=25, Energy=374},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=686, Temperature=11, Energy=233},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=377, Temperature=18, Energy=223},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=337, Temperature=5, Energy=188},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=631, Temperature=27, Energy=336},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=698, Temperature=24, Energy=259},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=345, Temperature=23, Energy=185},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=442, Temperature=25, Energy=258},
-	new TblSensors { RoomFK = 18, Hour=RandomDay(), Luminosity=303, Temperature=11, Energy=306},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=335, Temperature=9, Energy=165},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=398, Temperature=25, Energy=163},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=318, Temperature=9, Energy=282},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=442, Temperature=25, Energy=106},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=512, Temperature=22, Energy=330},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=462, Temperature=8, Energy=371},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=356, Temperature=15, Energy=135},
-	new TblSensors { RoomFK = 19, Hour=RandomDay(), Luminosity=499, Temperature=24, Energy=199},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=472, Temperature=10, Energy=315},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=222, Temperature=26, Energy=279},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=276, Temperature=5, Energy=165},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=474, Temperature=30, Energy=257},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=262, Temperature=21, Energy=346},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=391, Temperature=22, Energy=349},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=585, Temperature=29, Energy=128},
-	new TblSensors { RoomFK = 20, Hour=RandomDay(), Luminosity=536, Temperature=9, Energy=319},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=631, Temperature=21, Energy=319},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=696, Temperature=5, Energy=327},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=511, Temperature=10, Energy=295},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=496, Temperature=16, Energy=191},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=472, Temperature=10, Energy=344},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=421, Temperature=11, Energy=346},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=444, Temperature=21, Energy=105},
-	new TblSensors { RoomFK = 21, Hour=RandomDay(), Luminosity=542, Temperature=15, Energy=110},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=537, Temperature=13, Energy=355},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=619, Temperature=15, Energy=382},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=630, Temperature=17, Energy=271},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=281, Temperature=6, Energy=190},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=555, Temperature=25, Energy=165},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=281, Temperature=29, Energy=391},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=597, Temperature=27, Energy=303},
-	new TblSensors { RoomFK = 22, Hour=RandomDay(), Luminosity=450, Temperature=11, Energy=214},
-};
-sensors.ForEach(ss => context.TblSensors.AddOrUpdate(s => s.ID, ss));
-context.SaveChanges();
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170820 04:03:58 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 13:28:43 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170812 13:56:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 07:06:51 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171117 07:45:17 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171012 08:04:05 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170816 03:57:21 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170828 09:17:17 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 13:31:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171122 07:50:05 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170922 03:45:27 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170918 01:08:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170922 03:27:35 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170806 12:14:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170814 02:11:23 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170810 13:01:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170918 04:35:18 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171102 04:02:00 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170927 09:34:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171107 03:26:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170906 02:45:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171009 12:44:55 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170927 06:26:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170912 03:08:55 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171012 05:15:56 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171020 01:41:43 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170816 05:51:36 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170929 13:20:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171116 06:44:50 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171014 01:15:48 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 04:40:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 13:13:57 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170818 02:48:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171026 02:40:35 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171121 02:19:52 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171027 01:36:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170829 03:14:15 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170907 07:39:43 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171019 02:04:13 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170908 11:36:34 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170829 12:27:08 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171004 07:23:00 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 03:10:30 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171020 03:42:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171126 03:18:08 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171029 05:52:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 04:44:21 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170920 05:36:02 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171013 10:46:40 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170926 06:33:54 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171117 08:52:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171111 06:37:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171019 09:20:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171013 02:47:55 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171029 02:53:18 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171012 04:26:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 06:03:56 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171112 08:36:30 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170819 07:55:58 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170925 10:52:04 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171003 03:39:38 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171027 12:37:21 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170816 05:25:50 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 12:39:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170828 09:23:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 06:23:38 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171013 09:48:18 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170902 10:11:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171024 13:51:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 11:15:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171109 10:50:09 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171026 08:17:08 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170828 03:38:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170822 05:37:17 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 13:08:51 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170925 11:08:35 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171007 12:21:17 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171128 09:14:27 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 02:54:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170802 06:39:46 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170826 09:09:36 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171024 07:40:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171014 11:08:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171105 13:37:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170928 07:00:40 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 09:34:25 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171012 02:22:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171105 07:39:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170903 01:19:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170817 02:51:58 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171009 12:07:05 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170908 09:20:18 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171129 07:44:04 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171023 09:12:00 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171102 06:28:47 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171011 09:50:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170913 05:01:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171030 03:21:38 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 05:20:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170821 05:53:46 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170802 03:19:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171012 12:20:22 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171124 03:34:54 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171008 03:00:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171008 02:41:02 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170827 12:28:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171010 12:46:01 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170807 02:08:08 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171022 05:07:45 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170810 05:26:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171119 09:33:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170922 05:31:35 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171018 03:31:41 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170918 07:31:43 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170827 04:30:18 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171007 04:58:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171127 07:55:23 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171005 06:05:56 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171020 09:20:35 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170915 10:10:30 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170920 10:09:57 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171130 09:15:00 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171014 08:47:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 03:28:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170925 12:03:47 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 13:23:08 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170903 12:10:23 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170902 05:41:42 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171114 08:20:48 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 06:32:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171027 09:49:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171015 03:26:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171118 05:02:14 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171006 03:23:48 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171015 13:56:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170808 07:57:08 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170826 13:25:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171003 02:55:57 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171123 06:15:50 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171008 04:14:16 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170806 03:01:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170912 04:06:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170820 12:30:34 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170822 01:46:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171124 09:42:57 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171015 02:18:22 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171010 09:14:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170916 11:12:52 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171029 08:34:34 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171022 13:14:55 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 03:45:25 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170807 09:11:48 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170918 03:23:16 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 06:27:05 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170924 12:26:40 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170807 04:11:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170828 11:11:10 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171027 08:50:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171121 11:50:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170905 11:38:42 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170928 09:35:40 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170809 02:46:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170921 07:22:12 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170927 01:43:17 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170825 06:15:04 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170916 04:36:18 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171007 05:14:54 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170913 11:34:51 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171018 09:01:46 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170916 08:46:15 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171006 04:52:34 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171003 11:17:23 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170920 08:35:19 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171121 03:49:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170927 04:39:19 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171127 02:49:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171126 10:36:45 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171007 10:50:57 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171026 06:47:31 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171010 11:16:27 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170925 08:42:58 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170803 07:22:04 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170823 05:11:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171107 13:24:42 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170928 12:45:14 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170805 13:43:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 10:43:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170908 06:00:38 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170918 05:23:01 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170821 08:07:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170906 04:58:56 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171019 07:11:34 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170820 11:37:43 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171129 09:18:22 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171003 06:19:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171010 02:28:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171006 02:04:04 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170818 09:23:41 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170905 10:17:04 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171125 13:58:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 02:01:54 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171024 08:08:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170915 02:16:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171113 03:08:46 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171007 02:32:16 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170929 02:55:47 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171029 04:03:34 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171030 07:28:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171102 08:18:33 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171008 08:12:47 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171029 12:52:23 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 08:16:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170902 13:33:57 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170905 07:51:38 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 10:48:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171020 11:35:04 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171127 02:56:12 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170827 08:23:10 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171002 12:42:33 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171126 12:41:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171101 03:36:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170903 07:08:31 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 07:11:17 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170926 05:33:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171005 12:02:35 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171105 04:22:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170928 11:19:47 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170902 05:50:31 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171022 06:35:41 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170925 03:00:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170805 10:39:33 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20170913 04:39:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171028 13:28:43 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170918 11:59:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170826 05:20:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171024 10:09:05 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170816 11:50:55 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171011 08:57:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 03:56:25 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 09:32:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 09:08:48 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170921 01:13:33 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171127 05:38:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170824 06:02:14 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170819 02:53:22 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171012 12:46:51 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170926 12:36:29 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170827 03:07:21 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170813 11:38:40 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170906 11:33:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170912 06:44:29 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170928 11:53:33 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171120 06:35:51 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170820 01:56:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171105 08:25:42 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170925 04:19:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171028 02:13:15 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 03:50:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20170905 08:27:36 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 05:54:53 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 11:03:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171004 08:10:03 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171014 02:46:34 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170824 10:04:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170913 01:04:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170930 03:53:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170909 02:28:16 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170918 06:52:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170810 08:49:30 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170812 12:17:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170823 12:56:47 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171010 02:23:50 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171125 09:51:47 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170819 10:13:41 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 09:37:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171020 07:37:23 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171019 05:08:19 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170821 08:23:13 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170929 11:25:08 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170823 02:39:55 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171126 07:45:14 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171021 07:34:33 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20170930 11:45:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 301, 'An Action exemple... An Action exemple... An Action exemple...', '20171020 10:40:36 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171001 08:02:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 03:11:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171117 08:58:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 302, 'An Action exemple... An Action exemple... An Action exemple...', '20171006 08:51:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171013 12:30:01 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170910 11:49:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20171115 03:18:05 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 303, 'An Action exemple... An Action exemple... An Action exemple...', '20170913 09:25:25 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20170919 08:46:05 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 12:36:20 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171011 01:55:09 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 304, 'An Action exemple... An Action exemple... An Action exemple...', '20171122 07:13:17 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171026 08:09:35 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 10:28:38 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171105 04:38:59 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 305, 'An Action exemple... An Action exemple... An Action exemple...', '20171104 11:34:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170904 05:16:41 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171008 01:42:54 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 09:07:27 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 306, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 05:38:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170905 02:39:28 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170830 08:27:42 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20171015 08:59:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 307, 'An Action exemple... An Action exemple... An Action exemple...', '20170914 13:03:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170823 10:22:06 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20171117 07:46:49 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170928 04:02:27 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 308, 'An Action exemple... An Action exemple... An Action exemple...', '20170917 03:39:22 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171017 11:22:19 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171021 06:45:31 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171008 09:14:38 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 309, 'An Action exemple... An Action exemple... An Action exemple...', '20171021 13:08:09 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170902 02:34:41 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20171012 06:43:26 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170926 11:37:57 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 310, 'An Action exemple... An Action exemple... An Action exemple...', '20170909 04:05:44 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20170811 04:15:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171007 11:13:39 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171004 03:05:46 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 311, 'An Action exemple... An Action exemple... An Action exemple...', '20171016 05:16:40 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171123 03:27:37 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170903 12:42:50 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20170818 11:23:54 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 312, 'An Action exemple... An Action exemple... An Action exemple...', '20171026 12:11:11 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171028 04:49:14 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20171027 08:04:07 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170925 08:21:32 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 313, 'An Action exemple... An Action exemple... An Action exemple...', '20170922 11:50:13 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171023 11:29:24 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170920 12:06:46 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20171025 02:58:45 PM' );
+	INSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( 314, 'An Action exemple... An Action exemple... An Action exemple...', '20170930 09:39:40 PM' );
 
-var roles = new List<TblRoles>{
-	new TblRoles { Name="student"},
-	new TblRoles { Name="teacher"},
-	new TblRoles { Name="secretary"},
-	new TblRoles { Name="assistant"},
-	new TblRoles { Name="guardian"},
-	new TblRoles { Name="admin"},
-};
-roles.ForEach(rr => context.TblRoles.AddOrUpdate(r => r.ID, rr));
-context.SaveChanges();
 
-var userRole = new List<TblUserRoles>{
-	new TblUserRoles{ UserFK=1, RoleFK=1 },
-	new TblUserRoles{ UserFK=2, RoleFK=1 },
-	new TblUserRoles{ UserFK=3, RoleFK=1 },
-	new TblUserRoles{ UserFK=4, RoleFK=1 },
-	new TblUserRoles{ UserFK=5, RoleFK=1 },
-	new TblUserRoles{ UserFK=6, RoleFK=1 },
-	new TblUserRoles{ UserFK=7, RoleFK=1 },
-	new TblUserRoles{ UserFK=8, RoleFK=1 },
-	new TblUserRoles{ UserFK=9, RoleFK=1 },
-	new TblUserRoles{ UserFK=10, RoleFK=1 },
-	new TblUserRoles{ UserFK=11, RoleFK=1 },
-	new TblUserRoles{ UserFK=12, RoleFK=1 },
-	new TblUserRoles{ UserFK=13, RoleFK=1 },
-	new TblUserRoles{ UserFK=14, RoleFK=1 },
-	new TblUserRoles{ UserFK=15, RoleFK=1 },
-	new TblUserRoles{ UserFK=16, RoleFK=1 },
-	new TblUserRoles{ UserFK=17, RoleFK=1 },
-	new TblUserRoles{ UserFK=18, RoleFK=1 },
-	new TblUserRoles{ UserFK=19, RoleFK=1 },
-	new TblUserRoles{ UserFK=20, RoleFK=1 },
-	new TblUserRoles{ UserFK=21, RoleFK=1 },
-	new TblUserRoles{ UserFK=22, RoleFK=1 },
-	new TblUserRoles{ UserFK=23, RoleFK=1 },
-	new TblUserRoles{ UserFK=24, RoleFK=1 },
-	new TblUserRoles{ UserFK=25, RoleFK=1 },
-	new TblUserRoles{ UserFK=26, RoleFK=1 },
-	new TblUserRoles{ UserFK=27, RoleFK=1 },
-	new TblUserRoles{ UserFK=28, RoleFK=1 },
-	new TblUserRoles{ UserFK=29, RoleFK=1 },
-	new TblUserRoles{ UserFK=30, RoleFK=1 },
-	new TblUserRoles{ UserFK=31, RoleFK=1 },
-	new TblUserRoles{ UserFK=32, RoleFK=1 },
-	new TblUserRoles{ UserFK=33, RoleFK=1 },
-	new TblUserRoles{ UserFK=34, RoleFK=1 },
-	new TblUserRoles{ UserFK=35, RoleFK=1 },
-	new TblUserRoles{ UserFK=36, RoleFK=1 },
-	new TblUserRoles{ UserFK=37, RoleFK=1 },
-	new TblUserRoles{ UserFK=38, RoleFK=1 },
-	new TblUserRoles{ UserFK=39, RoleFK=1 },
-	new TblUserRoles{ UserFK=40, RoleFK=1 },
-	new TblUserRoles{ UserFK=41, RoleFK=1 },
-	new TblUserRoles{ UserFK=42, RoleFK=1 },
-	new TblUserRoles{ UserFK=43, RoleFK=1 },
-	new TblUserRoles{ UserFK=44, RoleFK=1 },
-	new TblUserRoles{ UserFK=45, RoleFK=1 },
-	new TblUserRoles{ UserFK=46, RoleFK=1 },
-	new TblUserRoles{ UserFK=47, RoleFK=1 },
-	new TblUserRoles{ UserFK=48, RoleFK=1 },
-	new TblUserRoles{ UserFK=49, RoleFK=1 },
-	new TblUserRoles{ UserFK=50, RoleFK=1 },
-	new TblUserRoles{ UserFK=51, RoleFK=1 },
-	new TblUserRoles{ UserFK=52, RoleFK=1 },
-	new TblUserRoles{ UserFK=53, RoleFK=1 },
-	new TblUserRoles{ UserFK=54, RoleFK=1 },
-	new TblUserRoles{ UserFK=55, RoleFK=1 },
-	new TblUserRoles{ UserFK=56, RoleFK=1 },
-	new TblUserRoles{ UserFK=57, RoleFK=1 },
-	new TblUserRoles{ UserFK=58, RoleFK=1 },
-	new TblUserRoles{ UserFK=59, RoleFK=1 },
-	new TblUserRoles{ UserFK=60, RoleFK=1 },
-	new TblUserRoles{ UserFK=61, RoleFK=1 },
-	new TblUserRoles{ UserFK=62, RoleFK=1 },
-	new TblUserRoles{ UserFK=63, RoleFK=1 },
-	new TblUserRoles{ UserFK=64, RoleFK=1 },
-	new TblUserRoles{ UserFK=65, RoleFK=1 },
-	new TblUserRoles{ UserFK=66, RoleFK=1 },
-	new TblUserRoles{ UserFK=67, RoleFK=1 },
-	new TblUserRoles{ UserFK=68, RoleFK=1 },
-	new TblUserRoles{ UserFK=69, RoleFK=1 },
-	new TblUserRoles{ UserFK=70, RoleFK=1 },
-	new TblUserRoles{ UserFK=71, RoleFK=1 },
-	new TblUserRoles{ UserFK=72, RoleFK=1 },
-	new TblUserRoles{ UserFK=73, RoleFK=1 },
-	new TblUserRoles{ UserFK=74, RoleFK=1 },
-	new TblUserRoles{ UserFK=75, RoleFK=1 },
-	new TblUserRoles{ UserFK=76, RoleFK=1 },
-	new TblUserRoles{ UserFK=77, RoleFK=1 },
-	new TblUserRoles{ UserFK=78, RoleFK=1 },
-	new TblUserRoles{ UserFK=79, RoleFK=1 },
-	new TblUserRoles{ UserFK=80, RoleFK=1 },
-	new TblUserRoles{ UserFK=81, RoleFK=1 },
-	new TblUserRoles{ UserFK=82, RoleFK=1 },
-	new TblUserRoles{ UserFK=83, RoleFK=1 },
-	new TblUserRoles{ UserFK=84, RoleFK=1 },
-	new TblUserRoles{ UserFK=85, RoleFK=1 },
-	new TblUserRoles{ UserFK=86, RoleFK=1 },
-	new TblUserRoles{ UserFK=87, RoleFK=1 },
-	new TblUserRoles{ UserFK=88, RoleFK=1 },
-	new TblUserRoles{ UserFK=89, RoleFK=1 },
-	new TblUserRoles{ UserFK=90, RoleFK=1 },
-	new TblUserRoles{ UserFK=91, RoleFK=1 },
-	new TblUserRoles{ UserFK=92, RoleFK=1 },
-	new TblUserRoles{ UserFK=93, RoleFK=1 },
-	new TblUserRoles{ UserFK=94, RoleFK=1 },
-	new TblUserRoles{ UserFK=95, RoleFK=1 },
-	new TblUserRoles{ UserFK=96, RoleFK=1 },
-	new TblUserRoles{ UserFK=97, RoleFK=1 },
-	new TblUserRoles{ UserFK=98, RoleFK=1 },
-	new TblUserRoles{ UserFK=99, RoleFK=1 },
-	new TblUserRoles{ UserFK=100, RoleFK=1 },
-	new TblUserRoles{ UserFK=101, RoleFK=1 },
-	new TblUserRoles{ UserFK=102, RoleFK=1 },
-	new TblUserRoles{ UserFK=103, RoleFK=1 },
-	new TblUserRoles{ UserFK=104, RoleFK=1 },
-	new TblUserRoles{ UserFK=105, RoleFK=1 },
-	new TblUserRoles{ UserFK=106, RoleFK=1 },
-	new TblUserRoles{ UserFK=107, RoleFK=1 },
-	new TblUserRoles{ UserFK=108, RoleFK=1 },
-	new TblUserRoles{ UserFK=109, RoleFK=1 },
-	new TblUserRoles{ UserFK=110, RoleFK=1 },
-	new TblUserRoles{ UserFK=111, RoleFK=1 },
-	new TblUserRoles{ UserFK=112, RoleFK=1 },
-	new TblUserRoles{ UserFK=113, RoleFK=1 },
-	new TblUserRoles{ UserFK=114, RoleFK=1 },
-	new TblUserRoles{ UserFK=115, RoleFK=1 },
-	new TblUserRoles{ UserFK=116, RoleFK=1 },
-	new TblUserRoles{ UserFK=117, RoleFK=1 },
-	new TblUserRoles{ UserFK=118, RoleFK=1 },
-	new TblUserRoles{ UserFK=119, RoleFK=1 },
-	new TblUserRoles{ UserFK=120, RoleFK=1 },
-	new TblUserRoles{ UserFK=121, RoleFK=1 },
-	new TblUserRoles{ UserFK=122, RoleFK=1 },
-	new TblUserRoles{ UserFK=123, RoleFK=1 },
-	new TblUserRoles{ UserFK=124, RoleFK=1 },
-	new TblUserRoles{ UserFK=125, RoleFK=1 },
-	new TblUserRoles{ UserFK=126, RoleFK=1 },
-	new TblUserRoles{ UserFK=127, RoleFK=1 },
-	new TblUserRoles{ UserFK=128, RoleFK=1 },
-	new TblUserRoles{ UserFK=129, RoleFK=1 },
-	new TblUserRoles{ UserFK=130, RoleFK=1 },
-	new TblUserRoles{ UserFK=131, RoleFK=1 },
-	new TblUserRoles{ UserFK=132, RoleFK=1 },
-	new TblUserRoles{ UserFK=133, RoleFK=1 },
-	new TblUserRoles{ UserFK=134, RoleFK=1 },
-	new TblUserRoles{ UserFK=135, RoleFK=1 },
-	new TblUserRoles{ UserFK=136, RoleFK=1 },
-	new TblUserRoles{ UserFK=137, RoleFK=1 },
-	new TblUserRoles{ UserFK=138, RoleFK=1 },
-	new TblUserRoles{ UserFK=139, RoleFK=1 },
-	new TblUserRoles{ UserFK=140, RoleFK=1 },
-	new TblUserRoles{ UserFK=141, RoleFK=1 },
-	new TblUserRoles{ UserFK=142, RoleFK=1 },
-	new TblUserRoles{ UserFK=143, RoleFK=1 },
-	new TblUserRoles{ UserFK=144, RoleFK=1 },
-	new TblUserRoles{ UserFK=145, RoleFK=1 },
-	new TblUserRoles{ UserFK=146, RoleFK=1 },
-	new TblUserRoles{ UserFK=147, RoleFK=1 },
-	new TblUserRoles{ UserFK=148, RoleFK=1 },
-	new TblUserRoles{ UserFK=149, RoleFK=1 },
-	new TblUserRoles{ UserFK=150, RoleFK=1 },
-	new TblUserRoles{ UserFK=151, RoleFK=1 },
-	new TblUserRoles{ UserFK=152, RoleFK=1 },
-	new TblUserRoles{ UserFK=153, RoleFK=1 },
-	new TblUserRoles{ UserFK=154, RoleFK=1 },
-	new TblUserRoles{ UserFK=155, RoleFK=1 },
-	new TblUserRoles{ UserFK=156, RoleFK=1 },
-	new TblUserRoles{ UserFK=157, RoleFK=1 },
-	new TblUserRoles{ UserFK=158, RoleFK=1 },
-	new TblUserRoles{ UserFK=159, RoleFK=1 },
-	new TblUserRoles{ UserFK=160, RoleFK=1 },
-	new TblUserRoles{ UserFK=161, RoleFK=1 },
-	new TblUserRoles{ UserFK=162, RoleFK=1 },
-	new TblUserRoles{ UserFK=163, RoleFK=1 },
-	new TblUserRoles{ UserFK=164, RoleFK=1 },
-	new TblUserRoles{ UserFK=165, RoleFK=1 },
-	new TblUserRoles{ UserFK=166, RoleFK=1 },
-	new TblUserRoles{ UserFK=167, RoleFK=1 },
-	new TblUserRoles{ UserFK=168, RoleFK=1 },
-	new TblUserRoles{ UserFK=169, RoleFK=1 },
-	new TblUserRoles{ UserFK=170, RoleFK=1 },
-	new TblUserRoles{ UserFK=171, RoleFK=1 },
-	new TblUserRoles{ UserFK=172, RoleFK=1 },
-	new TblUserRoles{ UserFK=173, RoleFK=1 },
-	new TblUserRoles{ UserFK=174, RoleFK=1 },
-	new TblUserRoles{ UserFK=175, RoleFK=1 },
-	new TblUserRoles{ UserFK=176, RoleFK=1 },
-	new TblUserRoles{ UserFK=177, RoleFK=1 },
-	new TblUserRoles{ UserFK=178, RoleFK=1 },
-	new TblUserRoles{ UserFK=179, RoleFK=1 },
-	new TblUserRoles{ UserFK=180, RoleFK=1 },
-	new TblUserRoles{ UserFK=181, RoleFK=1 },
-	new TblUserRoles{ UserFK=182, RoleFK=1 },
-	new TblUserRoles{ UserFK=183, RoleFK=1 },
-	new TblUserRoles{ UserFK=184, RoleFK=1 },
-	new TblUserRoles{ UserFK=185, RoleFK=1 },
-	new TblUserRoles{ UserFK=186, RoleFK=1 },
-	new TblUserRoles{ UserFK=187, RoleFK=1 },
-	new TblUserRoles{ UserFK=188, RoleFK=1 },
-	new TblUserRoles{ UserFK=189, RoleFK=1 },
-	new TblUserRoles{ UserFK=190, RoleFK=1 },
-	new TblUserRoles{ UserFK=191, RoleFK=1 },
-	new TblUserRoles{ UserFK=192, RoleFK=1 },
-	new TblUserRoles{ UserFK=193, RoleFK=1 },
-	new TblUserRoles{ UserFK=194, RoleFK=1 },
-	new TblUserRoles{ UserFK=195, RoleFK=1 },
-	new TblUserRoles{ UserFK=196, RoleFK=1 },
-	new TblUserRoles{ UserFK=197, RoleFK=1 },
-	new TblUserRoles{ UserFK=198, RoleFK=1 },
-	new TblUserRoles{ UserFK=199, RoleFK=1 },
-	new TblUserRoles{ UserFK=200, RoleFK=1 },
-	new TblUserRoles{ UserFK=201, RoleFK=1 },
-	new TblUserRoles{ UserFK=202, RoleFK=1 },
-	new TblUserRoles{ UserFK=203, RoleFK=1 },
-	new TblUserRoles{ UserFK=204, RoleFK=1 },
-	new TblUserRoles{ UserFK=205, RoleFK=1 },
-	new TblUserRoles{ UserFK=206, RoleFK=1 },
-	new TblUserRoles{ UserFK=207, RoleFK=1 },
-	new TblUserRoles{ UserFK=208, RoleFK=1 },
-	new TblUserRoles{ UserFK=209, RoleFK=1 },
-	new TblUserRoles{ UserFK=210, RoleFK=1 },
-	new TblUserRoles{ UserFK=211, RoleFK=1 },
-	new TblUserRoles{ UserFK=212, RoleFK=1 },
-	new TblUserRoles{ UserFK=213, RoleFK=1 },
-	new TblUserRoles{ UserFK=214, RoleFK=1 },
-	new TblUserRoles{ UserFK=215, RoleFK=1 },
-	new TblUserRoles{ UserFK=216, RoleFK=1 },
-	new TblUserRoles{ UserFK=217, RoleFK=1 },
-	new TblUserRoles{ UserFK=218, RoleFK=1 },
-	new TblUserRoles{ UserFK=219, RoleFK=1 },
-	new TblUserRoles{ UserFK=220, RoleFK=1 },
-	new TblUserRoles{ UserFK=221, RoleFK=1 },
-	new TblUserRoles{ UserFK=222, RoleFK=1 },
-	new TblUserRoles{ UserFK=223, RoleFK=1 },
-	new TblUserRoles{ UserFK=224, RoleFK=1 },
-	new TblUserRoles{ UserFK=225, RoleFK=1 },
-	new TblUserRoles{ UserFK=226, RoleFK=1 },
-	new TblUserRoles{ UserFK=227, RoleFK=1 },
-	new TblUserRoles{ UserFK=228, RoleFK=1 },
-	new TblUserRoles{ UserFK=229, RoleFK=1 },
-	new TblUserRoles{ UserFK=230, RoleFK=1 },
-	new TblUserRoles{ UserFK=231, RoleFK=1 },
-	new TblUserRoles{ UserFK=232, RoleFK=1 },
-	new TblUserRoles{ UserFK=233, RoleFK=1 },
-	new TblUserRoles{ UserFK=234, RoleFK=1 },
-	new TblUserRoles{ UserFK=235, RoleFK=1 },
-	new TblUserRoles{ UserFK=236, RoleFK=1 },
-	new TblUserRoles{ UserFK=237, RoleFK=1 },
-	new TblUserRoles{ UserFK=238, RoleFK=1 },
-	new TblUserRoles{ UserFK=239, RoleFK=1 },
-	new TblUserRoles{ UserFK=240, RoleFK=1 },
-	new TblUserRoles{ UserFK=241, RoleFK=1 },
-	new TblUserRoles{ UserFK=242, RoleFK=1 },
-	new TblUserRoles{ UserFK=243, RoleFK=1 },
-	new TblUserRoles{ UserFK=244, RoleFK=1 },
-	new TblUserRoles{ UserFK=245, RoleFK=1 },
-	new TblUserRoles{ UserFK=246, RoleFK=1 },
-	new TblUserRoles{ UserFK=247, RoleFK=1 },
-	new TblUserRoles{ UserFK=248, RoleFK=1 },
-	new TblUserRoles{ UserFK=249, RoleFK=1 },
-	new TblUserRoles{ UserFK=250, RoleFK=1 },
-	new TblUserRoles{ UserFK=251, RoleFK=1 },
-	new TblUserRoles{ UserFK=252, RoleFK=1 },
-	new TblUserRoles{ UserFK=253, RoleFK=1 },
-	new TblUserRoles{ UserFK=254, RoleFK=1 },
-	new TblUserRoles{ UserFK=255, RoleFK=1 },
-	new TblUserRoles{ UserFK=256, RoleFK=1 },
-	new TblUserRoles{ UserFK=257, RoleFK=1 },
-	new TblUserRoles{ UserFK=258, RoleFK=1 },
-	new TblUserRoles{ UserFK=259, RoleFK=1 },
-	new TblUserRoles{ UserFK=260, RoleFK=1 },
-	new TblUserRoles{ UserFK=261, RoleFK=1 },
-	new TblUserRoles{ UserFK=262, RoleFK=1 },
-	new TblUserRoles{ UserFK=263, RoleFK=1 },
-	new TblUserRoles{ UserFK=264, RoleFK=1 },
-	new TblUserRoles{ UserFK=265, RoleFK=1 },
-	new TblUserRoles{ UserFK=266, RoleFK=1 },
-	new TblUserRoles{ UserFK=267, RoleFK=1 },
-	new TblUserRoles{ UserFK=268, RoleFK=1 },
-	new TblUserRoles{ UserFK=269, RoleFK=1 },
-	new TblUserRoles{ UserFK=270, RoleFK=1 },
-	new TblUserRoles{ UserFK=271, RoleFK=1 },
-	new TblUserRoles{ UserFK=272, RoleFK=1 },
-	new TblUserRoles{ UserFK=273, RoleFK=1 },
-	new TblUserRoles{ UserFK=274, RoleFK=1 },
-	new TblUserRoles{ UserFK=275, RoleFK=1 },
-	new TblUserRoles{ UserFK=276, RoleFK=1 },
-	new TblUserRoles{ UserFK=277, RoleFK=1 },
-	new TblUserRoles{ UserFK=278, RoleFK=1 },
-	new TblUserRoles{ UserFK=279, RoleFK=1 },
-	new TblUserRoles{ UserFK=280, RoleFK=1 },
-	new TblUserRoles{ UserFK=281, RoleFK=1 },
-	new TblUserRoles{ UserFK=282, RoleFK=1 },
-	new TblUserRoles{ UserFK=283, RoleFK=1 },
-	new TblUserRoles{ UserFK=284, RoleFK=1 },
-	new TblUserRoles{ UserFK=285, RoleFK=1 },
-	new TblUserRoles{ UserFK=286, RoleFK=1 },
-	new TblUserRoles{ UserFK=287, RoleFK=1 },
-	new TblUserRoles{ UserFK=288, RoleFK=1 },
-	new TblUserRoles{ UserFK=289, RoleFK=1 },
-	new TblUserRoles{ UserFK=290, RoleFK=1 },
-	new TblUserRoles{ UserFK=291, RoleFK=1 },
-	new TblUserRoles{ UserFK=292, RoleFK=1 },
-	new TblUserRoles{ UserFK=293, RoleFK=1 },
-	new TblUserRoles{ UserFK=294, RoleFK=1 },
-	new TblUserRoles{ UserFK=295, RoleFK=1 },
-	new TblUserRoles{ UserFK=296, RoleFK=1 },
-	new TblUserRoles{ UserFK=297, RoleFK=1 },
-	new TblUserRoles{ UserFK=298, RoleFK=1 },
-	new TblUserRoles{ UserFK=299, RoleFK=1 },
-	new TblUserRoles{ UserFK=300, RoleFK=1 },
-	new TblUserRoles{ UserFK=301, RoleFK=2 },
-	new TblUserRoles{ UserFK=302, RoleFK=2 },
-	new TblUserRoles{ UserFK=303, RoleFK=2 },
-	new TblUserRoles{ UserFK=304, RoleFK=2 },
-	new TblUserRoles{ UserFK=305, RoleFK=2 },
-	new TblUserRoles{ UserFK=306, RoleFK=2 },
-	new TblUserRoles{ UserFK=307, RoleFK=2 },
-	new TblUserRoles{ UserFK=308, RoleFK=2 },
-	new TblUserRoles{ UserFK=309, RoleFK=2 },
-	new TblUserRoles{ UserFK=310, RoleFK=2 },
-	new TblUserRoles{ UserFK=311, RoleFK=2 },
-	new TblUserRoles{ UserFK=312, RoleFK=2 },
-	new TblUserRoles{ UserFK=313, RoleFK=2 },
-	new TblUserRoles{ UserFK=314, RoleFK=2 },
-	new TblUserRoles{ UserFK=315, RoleFK=2 },
-	new TblUserRoles{ UserFK=316, RoleFK=3 },
-	new TblUserRoles{ UserFK=317, RoleFK=3 },
-	new TblUserRoles{ UserFK=318, RoleFK=3 },
-	new TblUserRoles{ UserFK=319, RoleFK=4 },
-	new TblUserRoles{ UserFK=320, RoleFK=4 },
-	new TblUserRoles{ UserFK=321, RoleFK=4 },
-	new TblUserRoles{ UserFK=322, RoleFK=4 },
-	new TblUserRoles{ UserFK=323, RoleFK=4 },
-	new TblUserRoles{ UserFK=324, RoleFK=4 },
-	new TblUserRoles{ UserFK=325, RoleFK=4 },
-	new TblUserRoles{ UserFK=326, RoleFK=4 },
-	new TblUserRoles{ UserFK=327, RoleFK=4 },
-	new TblUserRoles{ UserFK=328, RoleFK=4 },
-	new TblUserRoles{ UserFK=329, RoleFK=4 },
-	new TblUserRoles{ UserFK=330, RoleFK=4 },
-	new TblUserRoles{ UserFK=331, RoleFK=5 },
-	new TblUserRoles{ UserFK=332, RoleFK=5 },
-	new TblUserRoles{ UserFK=333, RoleFK=5 },
-	new TblUserRoles{ UserFK=334, RoleFK=5 },
-	new TblUserRoles{ UserFK=335, RoleFK=5 },
-	new TblUserRoles{ UserFK=336, RoleFK=5 },
-	new TblUserRoles{ UserFK=337, RoleFK=5 },
-	new TblUserRoles{ UserFK=338, RoleFK=5 },
-	new TblUserRoles{ UserFK=339, RoleFK=5 },
-	new TblUserRoles{ UserFK=340, RoleFK=5 },
-	new TblUserRoles{ UserFK=341, RoleFK=5 },
-	new TblUserRoles{ UserFK=342, RoleFK=5 },
-	new TblUserRoles{ UserFK=343, RoleFK=5 },
-	new TblUserRoles{ UserFK=344, RoleFK=5 },
-	new TblUserRoles{ UserFK=345, RoleFK=5 },
-	new TblUserRoles{ UserFK=346, RoleFK=5 },
-	new TblUserRoles{ UserFK=347, RoleFK=5 },
-	new TblUserRoles{ UserFK=348, RoleFK=5 },
-	new TblUserRoles{ UserFK=349, RoleFK=5 },
-	new TblUserRoles{ UserFK=350, RoleFK=5 },
-	new TblUserRoles{ UserFK=351, RoleFK=5 },
-	new TblUserRoles{ UserFK=352, RoleFK=5 },
-	new TblUserRoles{ UserFK=353, RoleFK=5 },
-	new TblUserRoles{ UserFK=354, RoleFK=5 },
-	new TblUserRoles{ UserFK=355, RoleFK=5 },
-	new TblUserRoles{ UserFK=356, RoleFK=5 },
-	new TblUserRoles{ UserFK=357, RoleFK=5 },
-	new TblUserRoles{ UserFK=358, RoleFK=5 },
-	new TblUserRoles{ UserFK=359, RoleFK=5 },
-	new TblUserRoles{ UserFK=360, RoleFK=5 },
-	new TblUserRoles{ UserFK=361, RoleFK=5 },
-	new TblUserRoles{ UserFK=362, RoleFK=5 },
-	new TblUserRoles{ UserFK=363, RoleFK=5 },
-	new TblUserRoles{ UserFK=364, RoleFK=5 },
-	new TblUserRoles{ UserFK=365, RoleFK=5 },
-	new TblUserRoles{ UserFK=366, RoleFK=5 },
-	new TblUserRoles{ UserFK=367, RoleFK=5 },
-	new TblUserRoles{ UserFK=368, RoleFK=5 },
-	new TblUserRoles{ UserFK=369, RoleFK=5 },
-	new TblUserRoles{ UserFK=370, RoleFK=5 },
-	new TblUserRoles{ UserFK=371, RoleFK=5 },
-	new TblUserRoles{ UserFK=372, RoleFK=5 },
-	new TblUserRoles{ UserFK=373, RoleFK=5 },
-	new TblUserRoles{ UserFK=374, RoleFK=5 },
-	new TblUserRoles{ UserFK=375, RoleFK=5 },
-	new TblUserRoles{ UserFK=376, RoleFK=5 },
-	new TblUserRoles{ UserFK=377, RoleFK=5 },
-	new TblUserRoles{ UserFK=378, RoleFK=5 },
-	new TblUserRoles{ UserFK=379, RoleFK=5 },
-	new TblUserRoles{ UserFK=380, RoleFK=5 },
-	new TblUserRoles{ UserFK=381, RoleFK=5 },
-	new TblUserRoles{ UserFK=382, RoleFK=5 },
-	new TblUserRoles{ UserFK=383, RoleFK=5 },
-	new TblUserRoles{ UserFK=384, RoleFK=5 },
-	new TblUserRoles{ UserFK=385, RoleFK=5 },
-	new TblUserRoles{ UserFK=386, RoleFK=5 },
-	new TblUserRoles{ UserFK=387, RoleFK=5 },
-	new TblUserRoles{ UserFK=388, RoleFK=5 },
-	new TblUserRoles{ UserFK=389, RoleFK=5 },
-	new TblUserRoles{ UserFK=390, RoleFK=5 },
-	new TblUserRoles{ UserFK=391, RoleFK=5 },
-	new TblUserRoles{ UserFK=392, RoleFK=5 },
-	new TblUserRoles{ UserFK=393, RoleFK=5 },
-	new TblUserRoles{ UserFK=394, RoleFK=5 },
-	new TblUserRoles{ UserFK=395, RoleFK=5 },
-	new TblUserRoles{ UserFK=396, RoleFK=5 },
-	new TblUserRoles{ UserFK=397, RoleFK=5 },
-	new TblUserRoles{ UserFK=398, RoleFK=5 },
-	new TblUserRoles{ UserFK=399, RoleFK=5 },
-	new TblUserRoles{ UserFK=400, RoleFK=5 },
-	new TblUserRoles{ UserFK=401, RoleFK=5 },
-	new TblUserRoles{ UserFK=402, RoleFK=5 },
-	new TblUserRoles{ UserFK=403, RoleFK=5 },
-	new TblUserRoles{ UserFK=404, RoleFK=5 },
-	new TblUserRoles{ UserFK=405, RoleFK=5 },
-	new TblUserRoles{ UserFK=406, RoleFK=5 },
-	new TblUserRoles{ UserFK=407, RoleFK=5 },
-	new TblUserRoles{ UserFK=408, RoleFK=5 },
-	new TblUserRoles{ UserFK=409, RoleFK=5 },
-	new TblUserRoles{ UserFK=410, RoleFK=5 },
-	new TblUserRoles{ UserFK=411, RoleFK=5 },
-	new TblUserRoles{ UserFK=412, RoleFK=5 },
-	new TblUserRoles{ UserFK=413, RoleFK=5 },
-	new TblUserRoles{ UserFK=414, RoleFK=5 },
-	new TblUserRoles{ UserFK=415, RoleFK=5 },
-	new TblUserRoles{ UserFK=416, RoleFK=5 },
-	new TblUserRoles{ UserFK=417, RoleFK=5 },
-	new TblUserRoles{ UserFK=418, RoleFK=5 },
-	new TblUserRoles{ UserFK=419, RoleFK=5 },
-	new TblUserRoles{ UserFK=420, RoleFK=5 },
-	new TblUserRoles{ UserFK=421, RoleFK=5 },
-	new TblUserRoles{ UserFK=422, RoleFK=5 },
-	new TblUserRoles{ UserFK=423, RoleFK=5 },
-	new TblUserRoles{ UserFK=424, RoleFK=5 },
-	new TblUserRoles{ UserFK=425, RoleFK=5 },
-	new TblUserRoles{ UserFK=426, RoleFK=5 },
-	new TblUserRoles{ UserFK=427, RoleFK=5 },
-	new TblUserRoles{ UserFK=428, RoleFK=5 },
-	new TblUserRoles{ UserFK=429, RoleFK=5 },
-	new TblUserRoles{ UserFK=430, RoleFK=5 },
-	new TblUserRoles{ UserFK=431, RoleFK=5 },
-	new TblUserRoles{ UserFK=432, RoleFK=5 },
-	new TblUserRoles{ UserFK=433, RoleFK=5 },
-	new TblUserRoles{ UserFK=434, RoleFK=5 },
-	new TblUserRoles{ UserFK=435, RoleFK=5 },
-	new TblUserRoles{ UserFK=436, RoleFK=5 },
-	new TblUserRoles{ UserFK=437, RoleFK=5 },
-	new TblUserRoles{ UserFK=438, RoleFK=5 },
-	new TblUserRoles{ UserFK=439, RoleFK=5 },
-	new TblUserRoles{ UserFK=440, RoleFK=5 },
-	new TblUserRoles{ UserFK=441, RoleFK=5 },
-	new TblUserRoles{ UserFK=442, RoleFK=5 },
-	new TblUserRoles{ UserFK=443, RoleFK=5 },
-	new TblUserRoles{ UserFK=444, RoleFK=5 },
-	new TblUserRoles{ UserFK=445, RoleFK=5 },
-	new TblUserRoles{ UserFK=446, RoleFK=5 },
-	new TblUserRoles{ UserFK=447, RoleFK=5 },
-	new TblUserRoles{ UserFK=448, RoleFK=5 },
-	new TblUserRoles{ UserFK=449, RoleFK=5 },
-	new TblUserRoles{ UserFK=450, RoleFK=5 },
-	new TblUserRoles{ UserFK=451, RoleFK=5 },
-	new TblUserRoles{ UserFK=452, RoleFK=5 },
-	new TblUserRoles{ UserFK=453, RoleFK=5 },
-	new TblUserRoles{ UserFK=454, RoleFK=5 },
-	new TblUserRoles{ UserFK=455, RoleFK=5 },
-	new TblUserRoles{ UserFK=456, RoleFK=5 },
-	new TblUserRoles{ UserFK=457, RoleFK=5 },
-	new TblUserRoles{ UserFK=458, RoleFK=5 },
-	new TblUserRoles{ UserFK=459, RoleFK=5 },
-	new TblUserRoles{ UserFK=460, RoleFK=5 },
-	new TblUserRoles{ UserFK=461, RoleFK=5 },
-	new TblUserRoles{ UserFK=462, RoleFK=5 },
-	new TblUserRoles{ UserFK=463, RoleFK=5 },
-	new TblUserRoles{ UserFK=464, RoleFK=5 },
-	new TblUserRoles{ UserFK=465, RoleFK=5 },
-	new TblUserRoles{ UserFK=466, RoleFK=5 },
-	new TblUserRoles{ UserFK=467, RoleFK=5 },
-	new TblUserRoles{ UserFK=468, RoleFK=5 },
-	new TblUserRoles{ UserFK=469, RoleFK=5 },
-	new TblUserRoles{ UserFK=470, RoleFK=5 },
-	new TblUserRoles{ UserFK=471, RoleFK=5 },
-	new TblUserRoles{ UserFK=472, RoleFK=5 },
-	new TblUserRoles{ UserFK=473, RoleFK=5 },
-	new TblUserRoles{ UserFK=474, RoleFK=5 },
-	new TblUserRoles{ UserFK=475, RoleFK=5 },
-	new TblUserRoles{ UserFK=476, RoleFK=5 },
-	new TblUserRoles{ UserFK=477, RoleFK=5 },
-	new TblUserRoles{ UserFK=478, RoleFK=5 },
-	new TblUserRoles{ UserFK=479, RoleFK=5 },
-	new TblUserRoles{ UserFK=480, RoleFK=5 },
-	new TblUserRoles{ UserFK=481, RoleFK=5 },
-	new TblUserRoles{ UserFK=482, RoleFK=5 },
-	new TblUserRoles{ UserFK=483, RoleFK=5 },
-	new TblUserRoles{ UserFK=484, RoleFK=5 },
-	new TblUserRoles{ UserFK=485, RoleFK=5 },
-	new TblUserRoles{ UserFK=486, RoleFK=5 },
-	new TblUserRoles{ UserFK=487, RoleFK=5 },
-	new TblUserRoles{ UserFK=488, RoleFK=5 },
-	new TblUserRoles{ UserFK=489, RoleFK=5 },
-	new TblUserRoles{ UserFK=490, RoleFK=5 },
-	new TblUserRoles{ UserFK=491, RoleFK=5 },
-	new TblUserRoles{ UserFK=492, RoleFK=5 },
-	new TblUserRoles{ UserFK=493, RoleFK=5 },
-	new TblUserRoles{ UserFK=494, RoleFK=5 },
-	new TblUserRoles{ UserFK=495, RoleFK=5 },
-	new TblUserRoles{ UserFK=496, RoleFK=5 },
-	new TblUserRoles{ UserFK=497, RoleFK=5 },
-	new TblUserRoles{ UserFK=498, RoleFK=5 },
-	new TblUserRoles{ UserFK=499, RoleFK=5 },
-	new TblUserRoles{ UserFK=500, RoleFK=5 },
-	new TblUserRoles{ UserFK=501, RoleFK=5 },
-	new TblUserRoles{ UserFK=502, RoleFK=5 },
-	new TblUserRoles{ UserFK=503, RoleFK=5 },
-	new TblUserRoles{ UserFK=504, RoleFK=5 },
-	new TblUserRoles{ UserFK=505, RoleFK=5 },
-	new TblUserRoles{ UserFK=506, RoleFK=5 },
-	new TblUserRoles{ UserFK=507, RoleFK=5 },
-	new TblUserRoles{ UserFK=508, RoleFK=5 },
-	new TblUserRoles{ UserFK=509, RoleFK=5 },
-	new TblUserRoles{ UserFK=510, RoleFK=5 },
-	new TblUserRoles{ UserFK=511, RoleFK=5 },
-	new TblUserRoles{ UserFK=512, RoleFK=5 },
-	new TblUserRoles{ UserFK=513, RoleFK=5 },
-	new TblUserRoles{ UserFK=514, RoleFK=5 },
-	new TblUserRoles{ UserFK=515, RoleFK=5 },
-	new TblUserRoles{ UserFK=516, RoleFK=5 },
-	new TblUserRoles{ UserFK=517, RoleFK=5 },
-	new TblUserRoles{ UserFK=518, RoleFK=5 },
-	new TblUserRoles{ UserFK=519, RoleFK=5 },
-	new TblUserRoles{ UserFK=520, RoleFK=5 },
-	new TblUserRoles{ UserFK=521, RoleFK=5 },
-	new TblUserRoles{ UserFK=522, RoleFK=5 },
-	new TblUserRoles{ UserFK=523, RoleFK=5 },
-	new TblUserRoles{ UserFK=524, RoleFK=5 },
-	new TblUserRoles{ UserFK=525, RoleFK=5 },
-	new TblUserRoles{ UserFK=526, RoleFK=5 },
-	new TblUserRoles{ UserFK=527, RoleFK=5 },
-	new TblUserRoles{ UserFK=528, RoleFK=5 },
-	new TblUserRoles{ UserFK=529, RoleFK=5 },
-	new TblUserRoles{ UserFK=530, RoleFK=5 },
-	new TblUserRoles{ UserFK=531, RoleFK=5 },
-	new TblUserRoles{ UserFK=532, RoleFK=5 },
-	new TblUserRoles{ UserFK=533, RoleFK=5 },
-	new TblUserRoles{ UserFK=534, RoleFK=5 },
-	new TblUserRoles{ UserFK=535, RoleFK=5 },
-	new TblUserRoles{ UserFK=536, RoleFK=5 },
-	new TblUserRoles{ UserFK=537, RoleFK=5 },
-	new TblUserRoles{ UserFK=538, RoleFK=5 },
-	new TblUserRoles{ UserFK=539, RoleFK=5 },
-	new TblUserRoles{ UserFK=540, RoleFK=5 },
-	new TblUserRoles{ UserFK=541, RoleFK=5 },
-	new TblUserRoles{ UserFK=542, RoleFK=5 },
-	new TblUserRoles{ UserFK=543, RoleFK=5 },
-	new TblUserRoles{ UserFK=544, RoleFK=5 },
-	new TblUserRoles{ UserFK=545, RoleFK=5 },
-	new TblUserRoles{ UserFK=546, RoleFK=5 },
-	new TblUserRoles{ UserFK=547, RoleFK=5 },
-	new TblUserRoles{ UserFK=548, RoleFK=5 },
-	new TblUserRoles{ UserFK=549, RoleFK=5 },
-	new TblUserRoles{ UserFK=550, RoleFK=5 },
-	new TblUserRoles{ UserFK=551, RoleFK=5 },
-	new TblUserRoles{ UserFK=552, RoleFK=5 },
-	new TblUserRoles{ UserFK=553, RoleFK=5 },
-	new TblUserRoles{ UserFK=554, RoleFK=5 },
-	new TblUserRoles{ UserFK=555, RoleFK=5 },
-	new TblUserRoles{ UserFK=556, RoleFK=5 },
-	new TblUserRoles{ UserFK=557, RoleFK=5 },
-	new TblUserRoles{ UserFK=558, RoleFK=5 },
-	new TblUserRoles{ UserFK=559, RoleFK=5 },
-	new TblUserRoles{ UserFK=560, RoleFK=5 },
-	new TblUserRoles{ UserFK=561, RoleFK=5 },
-	new TblUserRoles{ UserFK=562, RoleFK=5 },
-	new TblUserRoles{ UserFK=563, RoleFK=5 },
-	new TblUserRoles{ UserFK=564, RoleFK=5 },
-	new TblUserRoles{ UserFK=565, RoleFK=5 },
-	new TblUserRoles{ UserFK=566, RoleFK=5 },
-	new TblUserRoles{ UserFK=567, RoleFK=5 },
-	new TblUserRoles{ UserFK=568, RoleFK=5 },
-	new TblUserRoles{ UserFK=569, RoleFK=5 },
-	new TblUserRoles{ UserFK=570, RoleFK=5 },
-	new TblUserRoles{ UserFK=571, RoleFK=6 },
-	new TblUserRoles{ UserFK=572, RoleFK=6 },
-};
-userRole.ForEach(uu => context.TblUserRoles.AddOrUpdate(u => new{ u.UserFK, u.RoleFK }, uu));
-context.SaveChanges();
+-- ROOMS ------------------------------------------------------------------------------------------------
 
-var parenting = new List<TblParenting>{
-	new TblParenting { StudentFK= 1, GuardianFK=331},
-	new TblParenting { StudentFK= 2, GuardianFK=332},
-	new TblParenting { StudentFK= 3, GuardianFK=333},
-	new TblParenting { StudentFK= 4, GuardianFK=334},
-	new TblParenting { StudentFK= 5, GuardianFK=335},
-	new TblParenting { StudentFK= 6, GuardianFK=336},
-	new TblParenting { StudentFK= 7, GuardianFK=337},
-	new TblParenting { StudentFK= 8, GuardianFK=338},
-	new TblParenting { StudentFK= 9, GuardianFK=339},
-	new TblParenting { StudentFK= 10, GuardianFK=340},
-	new TblParenting { StudentFK= 11, GuardianFK=341},
-	new TblParenting { StudentFK= 12, GuardianFK=342},
-	new TblParenting { StudentFK= 13, GuardianFK=343},
-	new TblParenting { StudentFK= 14, GuardianFK=344},
-	new TblParenting { StudentFK= 15, GuardianFK=345},
-	new TblParenting { StudentFK= 16, GuardianFK=346},
-	new TblParenting { StudentFK= 17, GuardianFK=347},
-	new TblParenting { StudentFK= 18, GuardianFK=348},
-	new TblParenting { StudentFK= 19, GuardianFK=349},
-	new TblParenting { StudentFK= 20, GuardianFK=350},
-	new TblParenting { StudentFK= 21, GuardianFK=351},
-	new TblParenting { StudentFK= 22, GuardianFK=352},
-	new TblParenting { StudentFK= 23, GuardianFK=353},
-	new TblParenting { StudentFK= 24, GuardianFK=354},
-	new TblParenting { StudentFK= 25, GuardianFK=355},
-	new TblParenting { StudentFK= 26, GuardianFK=356},
-	new TblParenting { StudentFK= 27, GuardianFK=357},
-	new TblParenting { StudentFK= 28, GuardianFK=358},
-	new TblParenting { StudentFK= 29, GuardianFK=359},
-	new TblParenting { StudentFK= 30, GuardianFK=360},
-	new TblParenting { StudentFK= 31, GuardianFK=361},
-	new TblParenting { StudentFK= 32, GuardianFK=362},
-	new TblParenting { StudentFK= 33, GuardianFK=363},
-	new TblParenting { StudentFK= 34, GuardianFK=364},
-	new TblParenting { StudentFK= 35, GuardianFK=365},
-	new TblParenting { StudentFK= 36, GuardianFK=366},
-	new TblParenting { StudentFK= 37, GuardianFK=367},
-	new TblParenting { StudentFK= 38, GuardianFK=368},
-	new TblParenting { StudentFK= 39, GuardianFK=369},
-	new TblParenting { StudentFK= 40, GuardianFK=370},
-	new TblParenting { StudentFK= 41, GuardianFK=371},
-	new TblParenting { StudentFK= 42, GuardianFK=372},
-	new TblParenting { StudentFK= 43, GuardianFK=373},
-	new TblParenting { StudentFK= 44, GuardianFK=374},
-	new TblParenting { StudentFK= 45, GuardianFK=375},
-	new TblParenting { StudentFK= 46, GuardianFK=376},
-	new TblParenting { StudentFK= 47, GuardianFK=377},
-	new TblParenting { StudentFK= 48, GuardianFK=378},
-	new TblParenting { StudentFK= 49, GuardianFK=379},
-	new TblParenting { StudentFK= 50, GuardianFK=380},
-	new TblParenting { StudentFK= 51, GuardianFK=381},
-	new TblParenting { StudentFK= 52, GuardianFK=382},
-	new TblParenting { StudentFK= 53, GuardianFK=383},
-	new TblParenting { StudentFK= 54, GuardianFK=384},
-	new TblParenting { StudentFK= 55, GuardianFK=385},
-	new TblParenting { StudentFK= 56, GuardianFK=386},
-	new TblParenting { StudentFK= 57, GuardianFK=387},
-	new TblParenting { StudentFK= 58, GuardianFK=388},
-	new TblParenting { StudentFK= 59, GuardianFK=389},
-	new TblParenting { StudentFK= 60, GuardianFK=390},
-	new TblParenting { StudentFK= 61, GuardianFK=391},
-	new TblParenting { StudentFK= 62, GuardianFK=392},
-	new TblParenting { StudentFK= 63, GuardianFK=393},
-	new TblParenting { StudentFK= 64, GuardianFK=394},
-	new TblParenting { StudentFK= 65, GuardianFK=395},
-	new TblParenting { StudentFK= 66, GuardianFK=396},
-	new TblParenting { StudentFK= 67, GuardianFK=397},
-	new TblParenting { StudentFK= 68, GuardianFK=398},
-	new TblParenting { StudentFK= 69, GuardianFK=399},
-	new TblParenting { StudentFK= 70, GuardianFK=400},
-	new TblParenting { StudentFK= 71, GuardianFK=401},
-	new TblParenting { StudentFK= 72, GuardianFK=402},
-	new TblParenting { StudentFK= 73, GuardianFK=403},
-	new TblParenting { StudentFK= 74, GuardianFK=404},
-	new TblParenting { StudentFK= 75, GuardianFK=405},
-	new TblParenting { StudentFK= 76, GuardianFK=406},
-	new TblParenting { StudentFK= 77, GuardianFK=407},
-	new TblParenting { StudentFK= 78, GuardianFK=408},
-	new TblParenting { StudentFK= 79, GuardianFK=409},
-	new TblParenting { StudentFK= 80, GuardianFK=410},
-	new TblParenting { StudentFK= 81, GuardianFK=411},
-	new TblParenting { StudentFK= 82, GuardianFK=412},
-	new TblParenting { StudentFK= 83, GuardianFK=413},
-	new TblParenting { StudentFK= 84, GuardianFK=414},
-	new TblParenting { StudentFK= 85, GuardianFK=415},
-	new TblParenting { StudentFK= 86, GuardianFK=416},
-	new TblParenting { StudentFK= 87, GuardianFK=417},
-	new TblParenting { StudentFK= 88, GuardianFK=418},
-	new TblParenting { StudentFK= 89, GuardianFK=419},
-	new TblParenting { StudentFK= 90, GuardianFK=420},
-	new TblParenting { StudentFK= 91, GuardianFK=421},
-	new TblParenting { StudentFK= 92, GuardianFK=422},
-	new TblParenting { StudentFK= 93, GuardianFK=423},
-	new TblParenting { StudentFK= 94, GuardianFK=424},
-	new TblParenting { StudentFK= 95, GuardianFK=425},
-	new TblParenting { StudentFK= 96, GuardianFK=426},
-	new TblParenting { StudentFK= 97, GuardianFK=427},
-	new TblParenting { StudentFK= 98, GuardianFK=428},
-	new TblParenting { StudentFK= 99, GuardianFK=429},
-	new TblParenting { StudentFK= 100, GuardianFK=430},
-	new TblParenting { StudentFK= 101, GuardianFK=431},
-	new TblParenting { StudentFK= 102, GuardianFK=432},
-	new TblParenting { StudentFK= 103, GuardianFK=433},
-	new TblParenting { StudentFK= 104, GuardianFK=434},
-	new TblParenting { StudentFK= 105, GuardianFK=435},
-	new TblParenting { StudentFK= 106, GuardianFK=436},
-	new TblParenting { StudentFK= 107, GuardianFK=437},
-	new TblParenting { StudentFK= 108, GuardianFK=438},
-	new TblParenting { StudentFK= 109, GuardianFK=439},
-	new TblParenting { StudentFK= 110, GuardianFK=440},
-	new TblParenting { StudentFK= 111, GuardianFK=441},
-	new TblParenting { StudentFK= 112, GuardianFK=442},
-	new TblParenting { StudentFK= 113, GuardianFK=443},
-	new TblParenting { StudentFK= 114, GuardianFK=444},
-	new TblParenting { StudentFK= 115, GuardianFK=445},
-	new TblParenting { StudentFK= 116, GuardianFK=446},
-	new TblParenting { StudentFK= 117, GuardianFK=447},
-	new TblParenting { StudentFK= 118, GuardianFK=448},
-	new TblParenting { StudentFK= 119, GuardianFK=449},
-	new TblParenting { StudentFK= 120, GuardianFK=450},
-	new TblParenting { StudentFK= 121, GuardianFK=451},
-	new TblParenting { StudentFK= 122, GuardianFK=452},
-	new TblParenting { StudentFK= 123, GuardianFK=453},
-	new TblParenting { StudentFK= 124, GuardianFK=454},
-	new TblParenting { StudentFK= 125, GuardianFK=455},
-	new TblParenting { StudentFK= 126, GuardianFK=456},
-	new TblParenting { StudentFK= 127, GuardianFK=457},
-	new TblParenting { StudentFK= 128, GuardianFK=458},
-	new TblParenting { StudentFK= 129, GuardianFK=459},
-	new TblParenting { StudentFK= 130, GuardianFK=460},
-	new TblParenting { StudentFK= 131, GuardianFK=461},
-	new TblParenting { StudentFK= 132, GuardianFK=462},
-	new TblParenting { StudentFK= 133, GuardianFK=463},
-	new TblParenting { StudentFK= 134, GuardianFK=464},
-	new TblParenting { StudentFK= 135, GuardianFK=465},
-	new TblParenting { StudentFK= 136, GuardianFK=466},
-	new TblParenting { StudentFK= 137, GuardianFK=467},
-	new TblParenting { StudentFK= 138, GuardianFK=468},
-	new TblParenting { StudentFK= 139, GuardianFK=469},
-	new TblParenting { StudentFK= 140, GuardianFK=470},
-	new TblParenting { StudentFK= 141, GuardianFK=471},
-	new TblParenting { StudentFK= 142, GuardianFK=472},
-	new TblParenting { StudentFK= 143, GuardianFK=473},
-	new TblParenting { StudentFK= 144, GuardianFK=474},
-	new TblParenting { StudentFK= 145, GuardianFK=475},
-	new TblParenting { StudentFK= 146, GuardianFK=476},
-	new TblParenting { StudentFK= 147, GuardianFK=477},
-	new TblParenting { StudentFK= 148, GuardianFK=478},
-	new TblParenting { StudentFK= 149, GuardianFK=479},
-	new TblParenting { StudentFK= 150, GuardianFK=480},
-	new TblParenting { StudentFK= 151, GuardianFK=481},
-	new TblParenting { StudentFK= 152, GuardianFK=482},
-	new TblParenting { StudentFK= 153, GuardianFK=483},
-	new TblParenting { StudentFK= 154, GuardianFK=484},
-	new TblParenting { StudentFK= 155, GuardianFK=485},
-	new TblParenting { StudentFK= 156, GuardianFK=486},
-	new TblParenting { StudentFK= 157, GuardianFK=487},
-	new TblParenting { StudentFK= 158, GuardianFK=488},
-	new TblParenting { StudentFK= 159, GuardianFK=489},
-	new TblParenting { StudentFK= 160, GuardianFK=490},
-	new TblParenting { StudentFK= 161, GuardianFK=491},
-	new TblParenting { StudentFK= 162, GuardianFK=492},
-	new TblParenting { StudentFK= 163, GuardianFK=493},
-	new TblParenting { StudentFK= 164, GuardianFK=494},
-	new TblParenting { StudentFK= 165, GuardianFK=495},
-	new TblParenting { StudentFK= 166, GuardianFK=496},
-	new TblParenting { StudentFK= 167, GuardianFK=497},
-	new TblParenting { StudentFK= 168, GuardianFK=498},
-	new TblParenting { StudentFK= 169, GuardianFK=499},
-	new TblParenting { StudentFK= 170, GuardianFK=500},
-	new TblParenting { StudentFK= 171, GuardianFK=501},
-	new TblParenting { StudentFK= 172, GuardianFK=502},
-	new TblParenting { StudentFK= 173, GuardianFK=503},
-	new TblParenting { StudentFK= 174, GuardianFK=504},
-	new TblParenting { StudentFK= 175, GuardianFK=505},
-	new TblParenting { StudentFK= 176, GuardianFK=506},
-	new TblParenting { StudentFK= 177, GuardianFK=507},
-	new TblParenting { StudentFK= 178, GuardianFK=508},
-	new TblParenting { StudentFK= 179, GuardianFK=509},
-	new TblParenting { StudentFK= 180, GuardianFK=510},
-	new TblParenting { StudentFK= 181, GuardianFK=511},
-	new TblParenting { StudentFK= 182, GuardianFK=512},
-	new TblParenting { StudentFK= 183, GuardianFK=513},
-	new TblParenting { StudentFK= 184, GuardianFK=514},
-	new TblParenting { StudentFK= 185, GuardianFK=515},
-	new TblParenting { StudentFK= 186, GuardianFK=516},
-	new TblParenting { StudentFK= 187, GuardianFK=517},
-	new TblParenting { StudentFK= 188, GuardianFK=518},
-	new TblParenting { StudentFK= 189, GuardianFK=519},
-	new TblParenting { StudentFK= 190, GuardianFK=520},
-	new TblParenting { StudentFK= 191, GuardianFK=521},
-	new TblParenting { StudentFK= 192, GuardianFK=522},
-	new TblParenting { StudentFK= 193, GuardianFK=523},
-	new TblParenting { StudentFK= 194, GuardianFK=524},
-	new TblParenting { StudentFK= 195, GuardianFK=525},
-	new TblParenting { StudentFK= 196, GuardianFK=526},
-	new TblParenting { StudentFK= 197, GuardianFK=527},
-	new TblParenting { StudentFK= 198, GuardianFK=528},
-	new TblParenting { StudentFK= 199, GuardianFK=529},
-	new TblParenting { StudentFK= 200, GuardianFK=530},
-	new TblParenting { StudentFK= 201, GuardianFK=531},
-	new TblParenting { StudentFK= 202, GuardianFK=532},
-	new TblParenting { StudentFK= 203, GuardianFK=533},
-	new TblParenting { StudentFK= 204, GuardianFK=534},
-	new TblParenting { StudentFK= 205, GuardianFK=535},
-	new TblParenting { StudentFK= 206, GuardianFK=536},
-	new TblParenting { StudentFK= 207, GuardianFK=537},
-	new TblParenting { StudentFK= 208, GuardianFK=538},
-	new TblParenting { StudentFK= 209, GuardianFK=539},
-	new TblParenting { StudentFK= 210, GuardianFK=540},
-	new TblParenting { StudentFK= 211, GuardianFK=541},
-	new TblParenting { StudentFK= 212, GuardianFK=542},
-	new TblParenting { StudentFK= 213, GuardianFK=543},
-	new TblParenting { StudentFK= 214, GuardianFK=544},
-	new TblParenting { StudentFK= 215, GuardianFK=545},
-	new TblParenting { StudentFK= 216, GuardianFK=546},
-	new TblParenting { StudentFK= 217, GuardianFK=547},
-	new TblParenting { StudentFK= 218, GuardianFK=548},
-	new TblParenting { StudentFK= 219, GuardianFK=549},
-	new TblParenting { StudentFK= 220, GuardianFK=550},
-	new TblParenting { StudentFK= 221, GuardianFK=551},
-	new TblParenting { StudentFK= 222, GuardianFK=552},
-	new TblParenting { StudentFK= 223, GuardianFK=553},
-	new TblParenting { StudentFK= 224, GuardianFK=554},
-	new TblParenting { StudentFK= 225, GuardianFK=555},
-	new TblParenting { StudentFK= 226, GuardianFK=556},
-	new TblParenting { StudentFK= 227, GuardianFK=557},
-	new TblParenting { StudentFK= 228, GuardianFK=558},
-	new TblParenting { StudentFK= 229, GuardianFK=559},
-	new TblParenting { StudentFK= 230, GuardianFK=560},
-	new TblParenting { StudentFK= 231, GuardianFK=561},
-	new TblParenting { StudentFK= 232, GuardianFK=562},
-	new TblParenting { StudentFK= 233, GuardianFK=563},
-	new TblParenting { StudentFK= 234, GuardianFK=564},
-	new TblParenting { StudentFK= 235, GuardianFK=565},
-	new TblParenting { StudentFK= 236, GuardianFK=566},
-	new TblParenting { StudentFK= 237, GuardianFK=567},
-	new TblParenting { StudentFK= 238, GuardianFK=568},
-	new TblParenting { StudentFK= 239, GuardianFK=569},
-	new TblParenting { StudentFK= 240, GuardianFK=570},
-	new TblParenting { StudentFK= 241, GuardianFK=371},
-	new TblParenting { StudentFK= 242, GuardianFK=523},
-	new TblParenting { StudentFK= 243, GuardianFK=403},
-	new TblParenting { StudentFK= 244, GuardianFK=352},
-	new TblParenting { StudentFK= 245, GuardianFK=394},
-	new TblParenting { StudentFK= 246, GuardianFK=511},
-	new TblParenting { StudentFK= 247, GuardianFK=472},
-	new TblParenting { StudentFK= 248, GuardianFK=509},
-	new TblParenting { StudentFK= 249, GuardianFK=395},
-	new TblParenting { StudentFK= 250, GuardianFK=438},
-	new TblParenting { StudentFK= 251, GuardianFK=567},
-	new TblParenting { StudentFK= 252, GuardianFK=461},
-	new TblParenting { StudentFK= 253, GuardianFK=424},
-	new TblParenting { StudentFK= 254, GuardianFK=484},
-	new TblParenting { StudentFK= 255, GuardianFK=479},
-	new TblParenting { StudentFK= 256, GuardianFK=343},
-	new TblParenting { StudentFK= 257, GuardianFK=417},
-	new TblParenting { StudentFK= 258, GuardianFK=418},
-	new TblParenting { StudentFK= 259, GuardianFK=441},
-	new TblParenting { StudentFK= 260, GuardianFK=466},
-	new TblParenting { StudentFK= 261, GuardianFK=367},
-	new TblParenting { StudentFK= 262, GuardianFK=544},
-	new TblParenting { StudentFK= 263, GuardianFK=444},
-	new TblParenting { StudentFK= 264, GuardianFK=497},
-	new TblParenting { StudentFK= 265, GuardianFK=453},
-	new TblParenting { StudentFK= 266, GuardianFK=504},
-	new TblParenting { StudentFK= 267, GuardianFK=374},
-	new TblParenting { StudentFK= 268, GuardianFK=393},
-	new TblParenting { StudentFK= 269, GuardianFK=513},
-	new TblParenting { StudentFK= 270, GuardianFK=536},
-	new TblParenting { StudentFK= 271, GuardianFK=361},
-	new TblParenting { StudentFK= 272, GuardianFK=488},
-	new TblParenting { StudentFK= 273, GuardianFK=502},
-	new TblParenting { StudentFK= 274, GuardianFK=376},
-	new TblParenting { StudentFK= 275, GuardianFK=364},
-	new TblParenting { StudentFK= 276, GuardianFK=408},
-	new TblParenting { StudentFK= 277, GuardianFK=418},
-	new TblParenting { StudentFK= 278, GuardianFK=429},
-	new TblParenting { StudentFK= 279, GuardianFK=489},
-	new TblParenting { StudentFK= 280, GuardianFK=391},
-	new TblParenting { StudentFK= 281, GuardianFK=380},
-	new TblParenting { StudentFK= 282, GuardianFK=395},
-	new TblParenting { StudentFK= 283, GuardianFK=444},
-	new TblParenting { StudentFK= 284, GuardianFK=339},
-	new TblParenting { StudentFK= 285, GuardianFK=380},
-	new TblParenting { StudentFK= 286, GuardianFK=501},
-	new TblParenting { StudentFK= 287, GuardianFK=348},
-	new TblParenting { StudentFK= 288, GuardianFK=408},
-	new TblParenting { StudentFK= 289, GuardianFK=399},
-	new TblParenting { StudentFK= 290, GuardianFK=332},
-	new TblParenting { StudentFK= 291, GuardianFK=473},
-	new TblParenting { StudentFK= 292, GuardianFK=366},
-	new TblParenting { StudentFK= 293, GuardianFK=556},
-	new TblParenting { StudentFK= 294, GuardianFK=468},
-	new TblParenting { StudentFK= 295, GuardianFK=457},
-	new TblParenting { StudentFK= 296, GuardianFK=346},
-	new TblParenting { StudentFK= 297, GuardianFK=556},
-	new TblParenting { StudentFK= 298, GuardianFK=335},
-	new TblParenting { StudentFK= 299, GuardianFK=533},
-	new TblParenting { StudentFK= 300, GuardianFK=487},
-	new TblParenting { StudentFK= 143, GuardianFK=434},
-	new TblParenting { StudentFK= 22, GuardianFK=460},
-	new TblParenting { StudentFK= 261, GuardianFK=563},
-	new TblParenting { StudentFK= 174, GuardianFK=492},
-	new TblParenting { StudentFK= 29, GuardianFK=383},
-	new TblParenting { StudentFK= 10, GuardianFK=412},
-	new TblParenting { StudentFK= 183, GuardianFK=331},
-	new TblParenting { StudentFK= 63, GuardianFK=335},
-	new TblParenting { StudentFK= 186, GuardianFK=510},
-	new TblParenting { StudentFK= 161, GuardianFK=560},
-	new TblParenting { StudentFK= 255, GuardianFK=517},
-	new TblParenting { StudentFK= 197, GuardianFK=356},
-	new TblParenting { StudentFK= 283, GuardianFK=429},
-	new TblParenting { StudentFK= 271, GuardianFK=518},
-	new TblParenting { StudentFK= 69, GuardianFK=349},
-	new TblParenting { StudentFK= 55, GuardianFK=407},
-	new TblParenting { StudentFK= 58, GuardianFK=385},
-	new TblParenting { StudentFK= 266, GuardianFK=530},
-	new TblParenting { StudentFK= 24, GuardianFK=368},
-	new TblParenting { StudentFK= 175, GuardianFK=562},
-	new TblParenting { StudentFK= 91, GuardianFK=478},
-	new TblParenting { StudentFK= 288, GuardianFK=479},
-	new TblParenting { StudentFK= 300, GuardianFK=405},
-	new TblParenting { StudentFK= 59, GuardianFK=432},
-	new TblParenting { StudentFK= 246, GuardianFK=427},
-	new TblParenting { StudentFK= 50, GuardianFK=514},
-	new TblParenting { StudentFK= 72, GuardianFK=397},
-	new TblParenting { StudentFK= 72, GuardianFK=383},
-	new TblParenting { StudentFK= 47, GuardianFK=550},
-	new TblParenting { StudentFK= 51, GuardianFK=387},
-	new TblParenting { StudentFK= 39, GuardianFK=459},
-	new TblParenting { StudentFK= 118, GuardianFK=562},
-	new TblParenting { StudentFK= 200, GuardianFK=381},
-	new TblParenting { StudentFK= 182, GuardianFK=412},
-	new TblParenting { StudentFK= 73, GuardianFK=465},
-	new TblParenting { StudentFK= 195, GuardianFK=449},
-	new TblParenting { StudentFK= 72, GuardianFK=513},
-	new TblParenting { StudentFK= 253, GuardianFK=543},
-	new TblParenting { StudentFK= 265, GuardianFK=467},
-	new TblParenting { StudentFK= 260, GuardianFK=494},
-	new TblParenting { StudentFK= 83, GuardianFK=374},
-	new TblParenting { StudentFK= 199, GuardianFK=348},
-	new TblParenting { StudentFK= 32, GuardianFK=430},
-	new TblParenting { StudentFK= 164, GuardianFK=488},
-	new TblParenting { StudentFK= 76, GuardianFK=512},
-	new TblParenting { StudentFK= 183, GuardianFK=341},
-	new TblParenting { StudentFK= 127, GuardianFK=466},
-	new TblParenting { StudentFK= 214, GuardianFK=443},
-	new TblParenting { StudentFK= 79, GuardianFK=554},
-	new TblParenting { StudentFK= 283, GuardianFK=385},
-	new TblParenting { StudentFK= 249, GuardianFK=421},
-	new TblParenting { StudentFK= 7, GuardianFK=434},
-	new TblParenting { StudentFK= 57, GuardianFK=563},
-	new TblParenting { StudentFK= 140, GuardianFK=522},
-	new TblParenting { StudentFK= 262, GuardianFK=347},
-	new TblParenting { StudentFK= 115, GuardianFK=487},
-	new TblParenting { StudentFK= 130, GuardianFK=436},
-	new TblParenting { StudentFK= 185, GuardianFK=561},
-	new TblParenting { StudentFK= 243, GuardianFK=367},
-	new TblParenting { StudentFK= 221, GuardianFK=448},
-};
-parenting.ForEach(pp => context.TblParenting.AddOrUpdate(p => new { p.StudentFK, p.GuardianFK }, pp));
-context.SaveChanges();
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R1' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R2' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R3' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R4' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R5' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R6' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R7' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R8' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R9' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R10' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R11' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R12' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R13' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R14' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R15' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R16' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R17' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R18' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R19' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R20' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R21' );
+	INSERT INTO TblRooms( SchoolFK, Name ) VALUES( 1, 'S1-R22' );
+
+
+-- SENSORS ------------------------------------------------------------------------------------------------
+
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20170910 09:02:43 PM', 200, 28, 274 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20170916 01:31:03 PM', 463, 26, 345 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20171027 10:02:54 PM', 499, 25, 314 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20171102 04:29:46 PM', 696, 19, 298 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20170905 08:29:06 PM', 615, 16, 386 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20171111 10:55:04 PM', 620, 7, 360 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20171120 11:37:43 PM', 636, 9, 265 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 1, '20171011 09:03:02 PM', 439, 13, 275 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20171108 13:09:35 PM', 599, 20, 237 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20171111 06:44:59 PM', 340, 11, 250 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20170820 05:55:24 PM', 379, 11, 267 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20171020 09:17:35 PM', 248, 27, 183 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20171006 06:25:06 PM', 203, 28, 289 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20170926 10:06:04 PM', 368, 8, 233 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20170805 10:05:13 PM', 490, 13, 375 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 2, '20171030 05:50:09 PM', 227, 19, 170 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20170814 10:08:55 PM', 504, 22, 284 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20170914 06:56:36 PM', 678, 13, 244 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20170908 04:19:02 PM', 662, 17, 228 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20171005 11:51:03 PM', 580, 17, 315 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20171017 04:40:28 PM', 675, 15, 168 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20171014 10:10:08 PM', 319, 10, 304 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20170926 10:09:20 PM', 679, 27, 345 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 3, '20171014 07:17:37 PM', 460, 25, 255 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20171004 07:36:05 PM', 642, 20, 231 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20170806 07:03:15 PM', 429, 7, 181 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20171014 02:58:14 PM', 684, 16, 356 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20170920 01:52:02 PM', 320, 13, 129 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20171105 08:03:37 PM', 219, 11, 158 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20171106 01:12:38 PM', 693, 13, 264 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20171107 02:10:55 PM', 339, 11, 365 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 4, '20170919 05:14:46 PM', 273, 13, 297 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20170824 11:39:19 PM', 616, 11, 206 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20170926 06:54:32 PM', 499, 13, 238 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20170815 11:58:13 PM', 633, 25, 310 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20171027 08:02:44 PM', 564, 10, 334 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20171102 12:46:10 PM', 656, 12, 371 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20170826 02:06:15 PM', 506, 14, 257 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20171030 09:46:09 PM', 589, 10, 224 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 5, '20171114 04:42:41 PM', 234, 18, 373 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20171124 07:05:00 PM', 320, 23, 220 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20171014 06:13:53 PM', 307, 23, 186 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20171118 12:37:49 PM', 344, 13, 135 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20171001 09:10:29 PM', 680, 16, 219 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20170827 06:29:21 PM', 478, 30, 112 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20171025 09:19:14 PM', 414, 26, 129 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20171027 04:24:33 PM', 401, 28, 376 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 6, '20171014 08:20:30 PM', 295, 21, 384 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20171129 05:29:12 PM', 699, 17, 193 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20171008 12:58:29 PM', 248, 11, 379 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20171026 02:09:20 PM', 332, 10, 387 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20171015 04:45:37 PM', 566, 17, 151 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20170827 13:38:18 PM', 581, 28, 313 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20171101 08:36:58 PM', 406, 24, 374 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20170924 10:41:26 PM', 299, 18, 291 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 7, '20170802 11:00:56 PM', 509, 12, 242 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20171003 01:31:26 PM', 336, 6, 237 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20170923 10:30:35 PM', 481, 17, 334 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20171014 08:17:07 PM', 561, 27, 260 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20170815 05:22:10 PM', 518, 23, 360 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20170825 02:17:20 PM', 216, 10, 262 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20171023 11:18:20 PM', 310, 18, 300 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20170828 02:53:57 PM', 468, 7, 307 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 8, '20171011 05:11:05 PM', 270, 9, 164 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20170826 09:43:29 PM', 427, 17, 371 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20171108 05:58:40 PM', 563, 11, 317 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20171120 11:16:54 PM', 551, 22, 209 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20171021 02:40:09 PM', 551, 22, 176 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20170913 10:08:39 PM', 297, 9, 369 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20171123 01:37:39 PM', 226, 18, 315 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20171105 06:11:27 PM', 422, 21, 243 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 9, '20170927 09:36:06 PM', 445, 8, 112 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20170919 03:19:14 PM', 358, 8, 241 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20170822 05:49:46 PM', 597, 20, 159 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20170917 09:09:03 PM', 566, 25, 164 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20171018 13:53:23 PM', 602, 30, 343 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20170920 08:16:31 PM', 329, 8, 388 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20170911 09:25:31 PM', 581, 21, 396 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20170905 10:31:44 PM', 544, 28, 232 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 10, '20171013 06:45:19 PM', 408, 15, 368 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20170906 13:32:58 PM', 220, 8, 243 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20170915 09:40:43 PM', 670, 11, 272 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20170904 07:04:45 PM', 229, 7, 289 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20170930 11:56:23 PM', 671, 8, 158 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20170816 13:09:15 PM', 363, 13, 183 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20170806 05:58:48 PM', 680, 14, 291 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20171118 04:25:31 PM', 418, 25, 190 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 11, '20171005 05:46:57 PM', 593, 21, 341 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20171107 10:57:41 PM', 694, 18, 294 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20171116 03:36:23 PM', 492, 11, 142 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20171129 02:08:30 PM', 582, 16, 332 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20171109 10:25:34 PM', 604, 12, 277 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20170924 07:34:04 PM', 471, 14, 109 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20171121 09:02:26 PM', 694, 29, 280 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20170905 06:42:06 PM', 495, 12, 226 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 12, '20170916 02:05:13 PM', 331, 28, 136 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20171123 06:56:17 PM', 417, 6, 191 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20170806 05:54:10 PM', 275, 13, 302 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20171011 03:12:07 PM', 663, 19, 167 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20171106 08:38:59 PM', 322, 22, 102 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20170904 09:51:28 PM', 419, 18, 150 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20170829 05:03:55 PM', 207, 28, 372 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20170816 07:13:55 PM', 281, 29, 360 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 13, '20170919 02:45:43 PM', 337, 17, 323 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20171119 12:14:44 PM', 511, 28, 351 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20170829 02:36:07 PM', 496, 7, 229 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20171019 04:24:55 PM', 368, 19, 125 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20171012 05:51:19 PM', 444, 9, 143 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20171009 13:17:32 PM', 264, 7, 133 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20170901 13:21:39 PM', 531, 11, 242 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20171109 06:08:50 PM', 334, 17, 207 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 14, '20170927 01:28:31 PM', 351, 15, 111 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20170926 12:20:39 PM', 612, 15, 126 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20171019 10:19:44 PM', 342, 9, 119 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20171002 12:13:10 PM', 441, 21, 259 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20170923 09:38:36 PM', 357, 5, 209 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20170817 08:43:31 PM', 303, 10, 303 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20171016 06:50:25 PM', 626, 16, 308 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20171018 12:00:57 PM', 493, 19, 139 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 15, '20171022 04:24:54 PM', 564, 23, 297 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20171003 03:11:37 PM', 358, 18, 132 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20170916 06:25:58 PM', 237, 14, 316 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20171024 12:40:32 PM', 587, 29, 308 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20170829 07:07:17 PM', 433, 6, 389 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20171018 13:54:33 PM', 370, 8, 245 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20171021 08:04:45 PM', 617, 17, 122 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20171123 05:07:37 PM', 404, 21, 241 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 16, '20170925 08:36:06 PM', 582, 14, 244 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20171006 03:09:26 PM', 415, 23, 241 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20171002 05:35:15 PM', 488, 10, 215 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20170802 06:58:47 PM', 317, 9, 230 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20171115 09:16:19 PM', 205, 29, 304 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20171102 09:41:22 PM', 637, 5, 366 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20171112 07:08:03 PM', 481, 8, 317 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20170929 04:34:42 PM', 493, 14, 210 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 17, '20171027 02:42:18 PM', 296, 19, 217 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20171003 11:33:13 PM', 235, 29, 116 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20171026 06:52:27 PM', 201, 22, 167 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20170918 06:15:11 PM', 260, 15, 238 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20171114 10:49:22 PM', 435, 24, 154 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20171128 12:26:16 PM', 673, 14, 188 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20170907 06:52:20 PM', 646, 27, 224 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20171029 12:02:23 PM', 204, 28, 272 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 18, '20170825 03:45:42 PM', 667, 24, 275 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20170913 09:07:34 PM', 395, 21, 106 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20170927 03:14:13 PM', 263, 30, 236 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20170827 11:34:45 PM', 303, 19, 353 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20171126 08:14:37 PM', 650, 18, 398 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20170922 02:13:54 PM', 668, 21, 216 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20170920 06:46:31 PM', 327, 22, 282 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20171027 07:19:04 PM', 417, 8, 126 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 19, '20171028 03:52:38 PM', 552, 21, 303 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20171105 08:01:46 PM', 457, 24, 206 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20170911 12:01:54 PM', 285, 15, 110 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20170929 06:31:35 PM', 550, 15, 355 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20170810 10:42:30 PM', 322, 9, 128 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20171010 04:29:24 PM', 326, 8, 269 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20170903 10:56:13 PM', 586, 26, 264 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20171011 03:14:06 PM', 599, 5, 312 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 20, '20170904 11:44:39 PM', 327, 16, 328 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20170911 13:36:30 PM', 435, 10, 168 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20170917 01:53:08 PM', 549, 24, 155 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20171005 09:36:16 PM', 204, 23, 298 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20171021 11:33:22 PM', 519, 10, 129 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20171108 08:32:54 PM', 582, 24, 305 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20170918 10:06:34 PM', 205, 21, 223 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20170822 05:06:28 PM', 354, 9, 187 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 21, '20170919 11:20:27 PM', 672, 26, 150 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20170919 08:48:21 PM', 574, 29, 118 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20170829 01:08:42 PM', 612, 13, 256 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20171108 04:29:32 PM', 619, 5, 226 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20170928 06:05:56 PM', 458, 7, 339 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20170911 10:46:59 PM', 401, 16, 360 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20170811 06:15:36 PM', 588, 9, 118 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20171002 07:08:36 PM', 685, 20, 351 );
+	INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( 22, '20170923 06:10:52 PM', 531, 9, 287 );
+
+
+-- ROLES ------------------------------------------------------------------------------------------------
+
+	INSERT INTO TblRoles( ID, Name) VALUES ( 1, 'student' );
+	INSERT INTO TblRoles( ID, Name) VALUES ( 2, 'teacher' );
+	INSERT INTO TblRoles( ID, Name) VALUES ( 3, 'secretary' );
+	INSERT INTO TblRoles( ID, Name) VALUES ( 4, 'assistant' );
+	INSERT INTO TblRoles( ID, Name) VALUES ( 5, 'guardian' );
+	INSERT INTO TblRoles( ID, Name) VALUES ( 6, 'admin' );
+
+
+-- USER-ROLES ------------------------------------------------------------------------------------------------
+
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 1, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 2, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 3, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 4, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 5, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 6, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 7, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 8, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 9, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 10, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 11, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 12, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 13, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 14, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 15, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 16, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 17, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 18, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 19, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 20, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 21, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 22, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 23, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 24, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 25, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 26, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 27, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 28, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 29, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 30, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 31, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 32, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 33, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 34, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 35, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 36, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 37, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 38, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 39, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 40, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 41, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 42, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 43, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 44, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 45, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 46, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 47, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 48, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 49, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 50, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 51, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 52, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 53, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 54, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 55, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 56, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 57, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 58, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 59, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 60, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 61, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 62, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 63, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 64, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 65, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 66, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 67, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 68, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 69, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 70, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 71, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 72, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 73, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 74, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 75, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 76, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 77, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 78, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 79, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 80, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 81, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 82, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 83, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 84, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 85, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 86, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 87, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 88, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 89, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 90, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 91, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 92, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 93, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 94, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 95, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 96, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 97, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 98, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 99, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 100, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 101, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 102, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 103, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 104, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 105, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 106, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 107, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 108, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 109, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 110, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 111, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 112, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 113, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 114, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 115, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 116, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 117, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 118, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 119, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 120, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 121, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 122, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 123, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 124, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 125, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 126, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 127, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 128, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 129, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 130, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 131, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 132, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 133, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 134, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 135, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 136, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 137, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 138, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 139, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 140, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 141, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 142, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 143, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 144, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 145, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 146, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 147, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 148, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 149, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 150, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 151, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 152, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 153, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 154, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 155, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 156, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 157, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 158, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 159, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 160, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 161, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 162, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 163, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 164, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 165, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 166, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 167, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 168, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 169, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 170, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 171, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 172, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 173, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 174, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 175, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 176, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 177, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 178, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 179, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 180, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 181, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 182, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 183, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 184, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 185, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 186, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 187, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 188, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 189, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 190, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 191, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 192, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 193, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 194, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 195, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 196, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 197, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 198, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 199, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 200, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 201, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 202, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 203, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 204, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 205, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 206, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 207, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 208, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 209, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 210, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 211, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 212, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 213, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 214, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 215, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 216, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 217, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 218, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 219, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 220, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 221, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 222, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 223, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 224, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 225, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 226, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 227, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 228, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 229, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 230, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 231, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 232, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 233, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 234, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 235, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 236, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 237, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 238, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 239, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 240, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 241, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 242, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 243, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 244, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 245, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 246, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 247, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 248, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 249, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 250, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 251, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 252, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 253, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 254, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 255, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 256, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 257, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 258, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 259, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 260, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 261, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 262, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 263, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 264, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 265, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 266, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 267, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 268, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 269, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 270, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 271, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 272, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 273, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 274, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 275, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 276, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 277, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 278, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 279, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 280, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 281, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 282, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 283, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 284, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 285, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 286, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 287, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 288, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 289, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 290, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 291, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 292, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 293, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 294, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 295, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 296, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 297, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 298, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 299, 1 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 300, 1 );
+
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 301, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 302, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 303, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 304, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 305, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 306, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 307, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 308, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 309, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 310, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 311, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 312, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 313, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 314, 2 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 315, 2 );
+
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 316, 3 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 317, 3 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 318, 3 );
+
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 319, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 320, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 321, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 322, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 323, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 324, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 325, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 326, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 327, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 328, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 329, 4 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 330, 4 );
+
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 331, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 332, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 333, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 334, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 335, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 336, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 337, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 338, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 339, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 340, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 341, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 342, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 343, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 344, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 345, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 346, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 347, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 348, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 349, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 350, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 351, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 352, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 353, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 354, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 355, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 356, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 357, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 358, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 359, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 360, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 361, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 362, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 363, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 364, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 365, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 366, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 367, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 368, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 369, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 370, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 371, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 372, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 373, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 374, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 375, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 376, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 377, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 378, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 379, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 380, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 381, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 382, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 383, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 384, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 385, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 386, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 387, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 388, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 389, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 390, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 391, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 392, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 393, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 394, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 395, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 396, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 397, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 398, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 399, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 400, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 401, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 402, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 403, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 404, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 405, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 406, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 407, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 408, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 409, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 410, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 411, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 412, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 413, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 414, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 415, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 416, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 417, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 418, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 419, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 420, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 421, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 422, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 423, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 424, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 425, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 426, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 427, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 428, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 429, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 430, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 431, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 432, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 433, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 434, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 435, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 436, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 437, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 438, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 439, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 440, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 441, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 442, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 443, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 444, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 445, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 446, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 447, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 448, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 449, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 450, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 451, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 452, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 453, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 454, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 455, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 456, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 457, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 458, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 459, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 460, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 461, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 462, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 463, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 464, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 465, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 466, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 467, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 468, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 469, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 470, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 471, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 472, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 473, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 474, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 475, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 476, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 477, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 478, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 479, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 480, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 481, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 482, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 483, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 484, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 485, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 486, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 487, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 488, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 489, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 490, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 491, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 492, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 493, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 494, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 495, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 496, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 497, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 498, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 499, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 500, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 501, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 502, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 503, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 504, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 505, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 506, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 507, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 508, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 509, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 510, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 511, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 512, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 513, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 514, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 515, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 516, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 517, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 518, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 519, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 520, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 521, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 522, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 523, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 524, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 525, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 526, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 527, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 528, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 529, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 530, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 531, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 532, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 533, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 534, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 535, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 536, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 537, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 538, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 539, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 540, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 541, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 542, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 543, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 544, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 545, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 546, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 547, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 548, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 549, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 550, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 551, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 552, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 553, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 554, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 555, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 556, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 557, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 558, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 559, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 560, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 561, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 562, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 563, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 564, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 565, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 566, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 567, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 568, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 569, 5 );
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 570, 5 );
+
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 571, 6);
+	INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( 572, 6);
+
+
+-- PARENTING ------------------------------------------------------------------------------------------------
+
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 1,  331);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 2,  332);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 3,  333);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 4,  334);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 5,  335);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 6,  336);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 7,  337);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 8,  338);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 9,  339);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 10,  340);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 11,  341);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 12,  342);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 13,  343);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 14,  344);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 15,  345);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 16,  346);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 17,  347);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 18,  348);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 19,  349);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 20,  350);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 21,  351);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 22,  352);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 23,  353);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 24,  354);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 25,  355);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 26,  356);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 27,  357);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 28,  358);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 29,  359);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 30,  360);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 31,  361);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 32,  362);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 33,  363);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 34,  364);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 35,  365);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 36,  366);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 37,  367);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 38,  368);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 39,  369);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 40,  370);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 41,  371);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 42,  372);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 43,  373);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 44,  374);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 45,  375);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 46,  376);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 47,  377);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 48,  378);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 49,  379);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 50,  380);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 51,  381);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 52,  382);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 53,  383);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 54,  384);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 55,  385);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 56,  386);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 57,  387);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 58,  388);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 59,  389);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 60,  390);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 61,  391);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 62,  392);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 63,  393);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 64,  394);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 65,  395);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 66,  396);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 67,  397);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 68,  398);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 69,  399);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 70,  400);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 71,  401);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 72,  402);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 73,  403);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 74,  404);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 75,  405);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 76,  406);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 77,  407);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 78,  408);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 79,  409);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 80,  410);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 81,  411);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 82,  412);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 83,  413);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 84,  414);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 85,  415);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 86,  416);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 87,  417);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 88,  418);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 89,  419);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 90,  420);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 91,  421);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 92,  422);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 93,  423);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 94,  424);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 95,  425);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 96,  426);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 97,  427);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 98,  428);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 99,  429);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 100,  430);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 101,  431);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 102,  432);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 103,  433);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 104,  434);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 105,  435);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 106,  436);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 107,  437);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 108,  438);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 109,  439);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 110,  440);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 111,  441);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 112,  442);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 113,  443);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 114,  444);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 115,  445);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 116,  446);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 117,  447);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 118,  448);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 119,  449);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 120,  450);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 121,  451);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 122,  452);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 123,  453);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 124,  454);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 125,  455);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 126,  456);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 127,  457);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 128,  458);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 129,  459);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 130,  460);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 131,  461);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 132,  462);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 133,  463);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 134,  464);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 135,  465);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 136,  466);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 137,  467);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 138,  468);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 139,  469);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 140,  470);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 141,  471);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 142,  472);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 143,  473);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 144,  474);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 145,  475);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 146,  476);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 147,  477);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 148,  478);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 149,  479);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 150,  480);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 151,  481);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 152,  482);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 153,  483);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 154,  484);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 155,  485);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 156,  486);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 157,  487);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 158,  488);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 159,  489);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 160,  490);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 161,  491);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 162,  492);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 163,  493);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 164,  494);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 165,  495);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 166,  496);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 167,  497);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 168,  498);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 169,  499);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 170,  500);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 171,  501);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 172,  502);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 173,  503);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 174,  504);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 175,  505);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 176,  506);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 177,  507);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 178,  508);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 179,  509);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 180,  510);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 181,  511);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 182,  512);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 183,  513);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 184,  514);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 185,  515);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 186,  516);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 187,  517);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 188,  518);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 189,  519);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 190,  520);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 191,  521);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 192,  522);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 193,  523);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 194,  524);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 195,  525);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 196,  526);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 197,  527);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 198,  528);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 199,  529);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 200,  530);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 201,  531);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 202,  532);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 203,  533);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 204,  534);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 205,  535);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 206,  536);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 207,  537);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 208,  538);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 209,  539);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 210,  540);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 211,  541);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 212,  542);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 213,  543);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 214,  544);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 215,  545);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 216,  546);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 217,  547);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 218,  548);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 219,  549);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 220,  550);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 221,  551);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 222,  552);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 223,  553);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 224,  554);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 225,  555);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 226,  556);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 227,  557);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 228,  558);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 229,  559);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 230,  560);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 231,  561);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 232,  562);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 233,  563);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 234,  564);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 235,  565);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 236,  566);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 237,  567);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 238,  568);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 239,  569);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 240,  570);
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 241, 342 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 242, 365 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 243, 334 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 244, 523 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 245, 516 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 246, 530 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 247, 508 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 248, 419 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 249, 472 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 250, 476 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 251, 402 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 252, 489 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 253, 521 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 254, 519 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 255, 380 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 256, 379 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 257, 449 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 258, 435 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 259, 482 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 260, 412 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 261, 415 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 262, 381 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 263, 494 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 264, 428 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 265, 557 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 266, 504 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 267, 535 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 268, 524 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 269, 488 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 270, 455 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 271, 506 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 272, 512 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 273, 364 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 274, 521 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 275, 385 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 276, 368 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 277, 406 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 278, 503 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 279, 333 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 280, 553 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 281, 446 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 282, 413 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 283, 482 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 284, 543 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 285, 528 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 286, 536 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 287, 500 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 288, 352 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 289, 458 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 290, 347 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 291, 542 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 292, 478 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 293, 375 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 294, 560 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 295, 538 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 296, 413 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 297, 452 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 298, 388 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 299, 477 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 300, 494 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 160, 549 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 283, 494 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 102, 553 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 66, 432 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 280, 390 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 121, 405 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 172, 516 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 250, 351 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 235, 508 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 83, 451 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 196, 467 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 87, 493 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 131, 396 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 273, 408 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 123, 570 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 158, 392 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 6, 433 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 131, 539 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 213, 407 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 5, 414 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 162, 502 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 175, 553 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 190, 541 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 2, 472 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 220, 432 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 268, 361 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 199, 484 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 217, 515 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 90, 441 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 158, 335 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 207, 383 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 274, 530 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 129, 505 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 35, 493 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 259, 344 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 64, 467 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 244, 531 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 128, 503 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 173, 504 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 91, 565 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 145, 401 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 234, 536 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 34, 449 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 271, 477 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 63, 416 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 129, 423 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 231, 501 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 287, 413 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 103, 394 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 130, 374 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 133, 454 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 172, 420 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 70, 460 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 205, 375 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 295, 335 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 189, 427 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 199, 447 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 25, 426 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 269, 567 );
+	INSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( 34, 407 );

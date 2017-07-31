@@ -6,6 +6,7 @@
 package dbseed;
 
 import Classes.Classs;
+import Classes.Methods;
 import Classes.Schedule;
 import Classes.Sensor;
 import Classes.User;
@@ -72,55 +73,55 @@ public class DBSeed {
 
             /* USERS */
             writer.println("");
-            writer.println("-- USERS");
+            writer.println("-- USERS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            
+
             // estudantes
             for (int i = 1; i < (students + 1); i++) {
-                User user = new User(i, "student", students);
+                User user = new User(i, "student", false);
                 writer.println("\t" + user.toString());
                 count++;
             }
             writer.println("");
             // professores
             for (int i = 1; i < (teachers + 1); i++) {
-                User user = new User(i, "teacher");
+                User user = new User(i, "teacher", true);
                 writer.println("\t" + user.toString());
                 count++;
             }
             writer.println("");
             // secretárias
             for (int i = 1; i < (secretaries + 1); i++) {
-                User user = new User(i, "secretary");
+                User user = new User(i, "secretary", true);
                 writer.println("\t" + user.toString());
                 count++;
             }
             writer.println("");
             // contínuas
             for (int i = 1; i < (assistants + 1); i++) {
-                User user = new User(i, "assistant");
+                User user = new User(i, "assistant", true);
                 writer.println("\t" + user.toString());
                 count++;
             }
             writer.println("");
             // enc.educação
             for (int i = 1; i < (guardians + 1); i++) {
-                User user = new User(i, "guardian");
+                User user = new User(i, "guardian", true);
                 writer.println("\t" + user.toString());
                 count++;
             }
             writer.println("");
             // administradores
             for (int i = 1; i < 3; i++) {
-                User user = new User(i, "admin");
+                User user = new User(i, "admin", true);
                 writer.println("\t" + user.toString());
                 count++;
             }
             writer.println("");
-            
+
             /* SCHOOLS */
             writer.println("");
-            writer.println("-- SCHOOLS");
+            writer.println("-- SCHOOLS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < schools; i++) {
                 writer.println("\tINSERT INTO TblSchools( Name, Logo, ProfilePicture, Acronym ) VALUES ( 'school-" + (i + 1) + "', 'logoExemple.png', 'profileExemple.png', 'XPTO' );");
@@ -130,7 +131,7 @@ public class DBSeed {
 
             /* CLASSES */
             writer.println("");
-            writer.println("-- CLASSES");
+            writer.println("-- CLASSES ------------------------------------------------------------------------------------------------");
             writer.println("");
             int teacher = students + 1;
             for (int i = 1; i < 5; i++) {
@@ -149,21 +150,21 @@ public class DBSeed {
 
             /* CLASSES-STUDENTS */
             writer.println("");
-            writer.println("-- CLASSES-STUDENTS");
+            writer.println("-- CLASSES-STUDENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < students; i++) {
-                writer.println("\tINSERT INTO TblClassStudents( ClassFK, StudentFK ) VALUES( " + ((int) i / (students / (classesByYear * 4)) +1) + ", " + (i+1) + " );");
+                writer.println("\tINSERT INTO TblClassStudents( ClassFK, StudentFK ) VALUES( " + ((int) i / (students / (classesByYear * 4)) + 1) + ", " + (i + 1) + " );");
                 count++;
             }
             writer.println("");
 
             /* DOCUMENTS */
             writer.println("");
-            writer.println("-- DOCUMENTS");
+            writer.println("-- DOCUMENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < classesByYear * 4; i++) {
                 for (int j = 0; j < 3; j++) {
-                    writer.println("\tINSERT INTO TblDocuments( File, IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i+1) + " );");
+                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + " );");
                     count++;
                 }
             }
@@ -171,23 +172,25 @@ public class DBSeed {
 
             /* ACTIONS   */
             writer.println("");
-            writer.println("-- ACTIONS");
+            writer.println("-- ACTIONS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int j = 0; j < 6; j++) {
                 for (int i = students + 1; i < students + teachers; i++) {
-                    writer.println("\tINSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( " + (i+1) + ", 'An Action exemple... An Action exemple... An Action exemple...', '"+2017+String.format("%02d", (8 + (int) Math.round(Math.random() * (3)))) +String.format("%02d", (1 + (int) Math.round(Math.random() * (29))))+"' );");
-                    count++;
+                    for (int k = 0; k < 4; k++) {
+                        writer.println("\tINSERT INTO TblActions( UserFK, Description, Hour ) VALUES ( " + i + ", 'An Action exemple... An Action exemple... An Action exemple...', '" + Methods.randDate() + "' );");
+                        count++;
+                    }
                 }
             }
             writer.println("");
 
             /* ROOMS */
             writer.println("");
-            writer.println("-- ROOMS");
+            writer.println("-- ROOMS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int j = 0; j < schools; j++) {
                 for (int i = 0; i < roomsBySchool; i++) {
-                    writer.println("\tINSERT INTO TblRooms( SchoolFK, Name ) VALUES( " + (j+1) + ", 'S" + ((j + 1) + "-R" + (i + 1)) + "' );");
+                    writer.println("\tINSERT INTO TblRooms( SchoolFK, Name ) VALUES( " + (j + 1) + ", 'S" + ((j + 1) + "-R" + (i + 1)) + "' );");
                     count++;
                 }
             }
@@ -195,7 +198,7 @@ public class DBSeed {
 
             /* SENSORS */
             writer.println("");
-            writer.println("-- SENSORS");
+            writer.println("-- SENSORS ------------------------------------------------------------------------------------------------");
             writer.println("");
             int roomID = 1;
             for (int j = 0; j < schools; j++) {
@@ -208,85 +211,87 @@ public class DBSeed {
                     roomID++;
                 }
             }
-            writer.println("};");
-            writer.println("sensors.ForEach(ss => context.TblSensors.AddOrUpdate(s => s.ID, ss));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* ROLES */
             writer.println("");
-            writer.println("var roles = new List<TblRoles>{");
+            writer.println("-- ROLES ------------------------------------------------------------------------------------------------");
+            writer.println("");
             String[] roles = {"student", "teacher", "secretary", "assistant", "guardian", "admin"};
-            for (String role : roles) {
-                writer.println("\tnew TblRoles { Name=\"" + role + "\"},");
+            for (int i = 0; i < roles.length; i++) {
+                //  INSERT INTO TblRoles(Name) VALUES ( '" + role + "' );
+                writer.println("\tINSERT INTO TblRoles( ID, Name) VALUES ( "+(i+1)+", '" + roles[i] + "' );");
                 count++;
             }
-            writer.println("};");
-            writer.println("roles.ForEach(rr => context.TblRoles.AddOrUpdate(r => r.ID, rr));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* USER-ROLES */
             writer.println("");
-            writer.println("var userRole = new List<TblUserRoles>{");
+            writer.println("-- USER-ROLES ------------------------------------------------------------------------------------------------");
+            writer.println("");
             int userID = 1;
             // estudantes
             for (int i = 0; i < students; i++) {
-                writer.println("\tnew TblUserRoles{ UserFK=" + userID + ", RoleFK=1 },");
+                // INSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( " + userID + ", 1 ); 
+                writer.println("\tINSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( " + userID + ", 1 );");
                 count++;
                 userID++;
             }
+            writer.println("");
             // professores
             for (int i = 0; i < teachers; i++) {
-                writer.println("\tnew TblUserRoles{ UserFK=" + userID + ", RoleFK=2 },");
+                writer.println("\tINSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( " + userID + ", 2 );");
                 count++;
                 userID++;
             }
+            writer.println("");
             // secretárias
             for (int i = 0; i < secretaries; i++) {
-                writer.println("\tnew TblUserRoles{ UserFK=" + userID + ", RoleFK=3 },");
+                writer.println("\tINSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( " + userID + ", 3 );");
                 count++;
                 userID++;
             }
+            writer.println("");
             // contínuas
             for (int i = 0; i < assistants; i++) {
-                writer.println("\tnew TblUserRoles{ UserFK=" + userID + ", RoleFK=4 },");
+                writer.println("\tINSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( " + userID + ", 4 );");
                 count++;
                 userID++;
             }
+            writer.println("");
             // enc.educação
             for (int i = 0; i < guardians; i++) {
-                writer.println("\tnew TblUserRoles{ UserFK=" + userID + ", RoleFK=5 },");
+                writer.println("\tINSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( " + userID + ", 5 );");
                 count++;
                 userID++;
             }
+            writer.println("");
             // administradores
             for (int i = 1; i < 3; i++) {
-                writer.println("\tnew TblUserRoles{ UserFK=" + userID + ", RoleFK=6 },");
+                writer.println("\tINSERT INTO TblUserRoles( UserFK, RoleFK ) VALUES ( " + userID + ", 6);");
                 count++;
                 userID++;
             }
-            writer.println("};");
-            writer.println("userRole.ForEach(uu => context.TblUserRoles.AddOrUpdate(u => new{ u.UserFK, u.RoleFK }, uu));");
-            writer.println("context.SaveChanges();");
+            writer.println("");
 
             /* PARENTING */
-            int guardianIndex = students + teachers + secretaries + assistants;
             writer.println("");
-            writer.println("var parenting = new List<TblParenting>{");
+            writer.println("-- PARENTING ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            int guardianIndex = students + teachers + secretaries + assistants;
+
             for (int j = 1; j < guardians + 1; j++) {
-                writer.println("\tnew TblParenting { StudentFK= " + j + ", GuardianFK=" + (guardianIndex + j) + "},");
+                writer.println("\tINSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( " + j + ",  " + (guardianIndex + j) + ");");
                 count++;
             }
             for (int j = 1; j < (students - guardians + 1); j++) {
-                writer.println("\tnew TblParenting { StudentFK= " + (guardians + j) + ", GuardianFK=" + ((guardianIndex + 1) + (int) Math.round(Math.random() * (guardians))) + "},");
+                writer.println("\tINSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( " + (guardians + j) + ", " + Methods.randBetween(guardianIndex+1, guardianIndex+1+guardians) + " );");
                 count++;
             }
             for (int i = 0; i < students * 0.2; i++) {
-                writer.println("\tnew TblParenting { StudentFK= " + (1 + (int) Math.round(Math.random() * (students - 1))) + ", GuardianFK=" + ((guardianIndex + 1) + (int) Math.round(Math.random() * (guardians))) + "},");
+                writer.println("\tINSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( " + Methods.randBetween(1, students) + ", "+Methods.randBetween(guardianIndex+1, guardianIndex+1+guardians) + " );");
                 count++;
             }
-            writer.println("};");
-            writer.println("parenting.ForEach(pp => context.TblParenting.AddOrUpdate(p => new { p.StudentFK, p.GuardianFK }, pp));");
-            writer.println("context.SaveChanges();");
 
             writer.close();
             System.out.println("Inserted rows: " + count);
