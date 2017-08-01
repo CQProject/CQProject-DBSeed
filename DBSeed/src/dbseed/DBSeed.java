@@ -7,7 +7,6 @@ package dbseed;
 
 import Classes.Classs;
 import Classes.Methods;
-import Classes.Schedule;
 import Classes.Sensor;
 import Classes.User;
 import java.io.IOException;
@@ -218,9 +217,8 @@ public class DBSeed {
             writer.println("-- ROLES ------------------------------------------------------------------------------------------------");
             writer.println("");
             String[] roles = {"student", "teacher", "secretary", "assistant", "guardian", "admin"};
-            for (int i = 0; i < roles.length; i++) {
-                //  INSERT INTO TblRoles(Name) VALUES ( '" + role + "' );
-                writer.println("\tINSERT INTO TblRoles( ID, Name) VALUES ( "+(i+1)+", '" + roles[i] + "' );");
+            for (String role : roles) {
+                writer.println("\tINSERT INTO TblRoles( Name) VALUES ( '" + role + "' );");
                 count++;
             }
             writer.println("");
@@ -285,13 +283,84 @@ public class DBSeed {
                 count++;
             }
             for (int j = 1; j < (students - guardians + 1); j++) {
-                writer.println("\tINSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( " + (guardians + j) + ", " + Methods.randBetween(guardianIndex+1, guardianIndex+1+guardians) + " );");
+                writer.println("\tINSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( " + (guardians + j) + ", " + Methods.randBetween(guardianIndex + 1, guardianIndex + 1 + guardians) + " );");
                 count++;
             }
             for (int i = 0; i < students * 0.2; i++) {
-                writer.println("\tINSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( " + Methods.randBetween(1, students) + ", "+Methods.randBetween(guardianIndex+1, guardianIndex+1+guardians) + " );");
+                writer.println("\tINSERT INTO TblParenting( StudentFK, GuardianFK ) VALUES ( " + Methods.randBetween(1, students) + ", " + Methods.randBetween(guardianIndex + 1, guardianIndex + 1 + guardians) + " );");
                 count++;
             }
+
+            /* NOTIFICATIONS */
+            writer.println("");
+            writer.println("-- NOTIFICATIONS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < teachers; i++) {
+                writer.println("\tINSERT INTO TblNotifications( Hour, Subject, Urgency, Description, UserFK ) VALUES ( '" + Methods.randDate() + "', 'Some Subject exemple " + (i + 1) + "', " + ((i % 5 == 0) ? 1 : 0) + " ,'Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description...', " + (students + i) + " );");
+                count++;
+            }
+            writer.println("");
+
+            /* VALIDATIONS */
+            writer.println("");
+            writer.println("-- VALIDATIONS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < guardians; i++) {
+
+                int len = 1 + (int) Math.round(Math.random() * 2);
+                int[] notID = new int[len];
+                for (int j = 0; j < len; j++) {
+                    int rand;
+                    do {
+                        rand = 1 + (int) Math.round(Math.random() * (teachers - 1));
+                    } while (Methods.verify(rand, notID));
+                    notID[j] = rand;
+                }
+
+                for (int j = 0; j < len; j++) {
+                    writer.println("\tINSERT INTO TblValidations( UserFK, NotificationFK, Accepted, Read ) VALUES ( " + (guardianIndex + i) + ", " + notID[j] + ", " + ((i % 6 == 0) ? 1 : 0) + ", " + ((i % 2 == 0) ? 1 : 0) + " );");
+                    count++;
+                }
+            }
+            writer.println("");
+
+            /* TASKS */
+            writer.println("");
+            writer.println("-- TASKS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < assistants; i++) {
+                writer.println("\tINSERT INTO TblTasks( UserFK, Day, Weekly, Description ) VALUES ( " + Methods.randBetween(students + teachers + secretaries, students + teachers + secretaries + assistants) + ", '" + Methods.randDate() + "', " + ((i % 3 == 0) ? 1 : 0) + ", 'Some description exemple... Some description exemple... Some description exemple... Some description exemple... Some description exemple...' );");
+                count++;
+            }
+            writer.println("};");
+
+            /* DONE */
+            writer.println("");
+            writer.println("-- DONE ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < assistants; i++) {
+                if (i % 3 == 0) {
+                    writer.println("\tINSERT INTO TblDone( TaskFK, Hour) VALUES ( " + (i + 1) + ", GETDATE() );");
+                    writer.println("\tINSERT INTO TblDone( TaskFK, Hour) VALUES ( " + (i + 1) + ", '" + Methods.randDate() + "' );");
+                    count++;
+                }
+            }
+            writer.println("");
+
+            /* SCHEDULE */
+            writer.println("");
+            writer.println("-- SCHEDULE ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            String[] subjects = {"Lingua Portuguesa", "Matemática", "Estudo do Meio", "Educação Física", "Informática", "Inglês"};
+            for (int i = 0; i < classesByYear * 4; i++) {
+                for (int j = 0; j < 5; j++) {
+                    for (int k = 0; k < 5; k++) {
+                        writer.println("\tINSERT INTO TblSchedules( Subject, TeacherFK, ClassFK, RoomFK, StartingTime, Duration, DayOfTheWeek ) VALUES ( '"+subjects[Methods.randBetween(0, subjects.length-1)]+"', "+(students+i)+", "+i+", "+Methods.randBetween(1,i)+", "+k+", 1, "+j+" );");
+                        count++;
+                    }
+                }
+            }
+            writer.println("");
 
             writer.close();
             System.out.println("Inserted rows: " + count);

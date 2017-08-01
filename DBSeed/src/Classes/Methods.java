@@ -26,4 +26,10 @@ public final class Methods {
         return (1956 + (int) Math.round(Math.random() * (34)))+String.format("%02d", (1 + (int) Math.round(Math.random() * (11)))) +String.format("%02d", (1 + (int) Math.round(Math.random() * (27))));
     }
     
+    public static boolean verify(int value, int[]array){
+        for (int i = 0; i < array.length; i++) {
+            if(array[i]==value)return true;
+        }
+        return false; 
+    }
 }
