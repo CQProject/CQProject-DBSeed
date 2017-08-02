@@ -29,7 +29,7 @@ public class DBSeed {
 
             int count = 0;
 
-            final int students = 300; // mínimo 1500
+            final int students = 900; // mínimo 1500
             final int schools = (int) students / 200;
             final int guardians = (int) (students * 0.8);
             final int teachers = students / 20;
@@ -318,7 +318,7 @@ public class DBSeed {
                 }
 
                 for (int j = 0; j < len; j++) {
-                    writer.println("\tINSERT INTO TblValidations( UserFK, NotificationFK, Accepted, Read ) VALUES ( " + (guardianIndex + i) + ", " + notID[j] + ", " + ((i % 6 == 0) ? 1 : 0) + ", " + ((i % 2 == 0) ? 1 : 0) + " );");
+                    writer.println("\tINSERT INTO TblValidations( UserFK, NotificationFK, Accepted, [Read]  ) VALUES ( " + (guardianIndex + i) + ", " + notID[j] + ", " + ((i % 6 == 0) ? 1 : 0) + ", " + ((i % 2 == 0) ? 1 : 0) + " );");
                     count++;
                 }
             }
@@ -332,7 +332,7 @@ public class DBSeed {
                 writer.println("\tINSERT INTO TblTasks( UserFK, Day, Weekly, Description ) VALUES ( " + Methods.randBetween(students + teachers + secretaries, students + teachers + secretaries + assistants) + ", '" + Methods.randDate() + "', " + ((i % 3 == 0) ? 1 : 0) + ", 'Some description exemple... Some description exemple... Some description exemple... Some description exemple... Some description exemple...' );");
                 count++;
             }
-            writer.println("};");
+            writer.println("");
 
             /* DONE */
             writer.println("");
@@ -355,9 +355,72 @@ public class DBSeed {
             for (int i = 0; i < classesByYear * 4; i++) {
                 for (int j = 0; j < 5; j++) {
                     for (int k = 0; k < 5; k++) {
-                        writer.println("\tINSERT INTO TblSchedules( Subject, TeacherFK, ClassFK, RoomFK, StartingTime, Duration, DayOfTheWeek ) VALUES ( '"+subjects[Methods.randBetween(0, subjects.length-1)]+"', "+(students+i)+", "+i+", "+Methods.randBetween(1,i)+", "+k+", 1, "+j+" );");
+                        writer.println("\tINSERT INTO TblSchedules( Subject, TeacherFK, ClassFK, RoomFK, StartingTime, Duration, DayOfWeek ) VALUES ( '" + subjects[Methods.randBetween(0, subjects.length - 1)] + "', " + (students + i) + ", " + i + ", " + Methods.randBetween(1, i) + ", " + k + ", 1, " + j + " );");
                         count++;
                     }
+                }
+            }
+            writer.println("");
+
+            /* LESSONS */
+            writer.println("");
+            writer.println("-- LESSONS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < classesByYear * 100; i++) {
+                for (int j = 0; j < 2; j++) {
+                    writer.println("\tINSERT INTO TblLessons( Summary, Observations, Homework, ScheduleFK, Day ) VALUES ( 'Um Sumário Um Sumário  Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário ', 'Uma Observação Uma Observação Uma Observação Uma Observação Uma Observação Uma Observação ', 'Um trabalho de casa... Um trabalho de casa... Um trabalho de casa... Um trabalho de casa... Um trabalho de casa...', " + i + ", GETDATE()  );");
+                    count++;
+                }
+            }
+            writer.println("");
+
+            /* LESSON-STUDENTS */
+            writer.println("");
+            writer.println("-- LESSONS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < classesByYear * 200; i++) {
+                int[] stuID = new int[20];
+                for (int j = 0; j < 20; j++) {
+                    int rand;
+                    do {
+                        rand = 1 + (int) Math.round(Math.random() * (students - 1));
+                    } while (Methods.verify(rand, stuID));
+                    stuID[j] = rand;
+                }
+                for (int j = 0; j < 20; j++) {
+                    writer.println("\tINSERT INTO TblLessonStudents( LessonFK, StudentFK, Presence, Material, Behavior ) VALUES ( " + i + ", " + stuID[j] + ", " + ((j % 8 == 0) ? 0 : 1) + ", " + ((j % 5 == 0) ? 0 : 1) + ", " + Methods.randBetween(1, 5) + " );");
+                    count++;
+                }
+            }
+            writer.println("");
+
+            /* EVALUATION */
+            writer.println("");
+            writer.println("-- EVALUATION ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < classesByYear * 100; i++) {
+                writer.println("\tINSERT INTO TblEvaluations( Purport, EvaluationDate, ScheduleFK ) VALUES ( 'Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo...', '" + Methods.randDate() + "', " + i + " );");
+                count++;
+            }
+            writer.println("");
+
+            /* EVALUATION-STUDENTS */
+            writer.println("");
+            writer.println("-- EVALUATION-STUDENTS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < classesByYear * 100; i++) {
+                int[] stuID = new int[20];
+                for (int j = 0; j < 20; j++) {
+                    int rand;
+                    do {
+                        rand = 1 + (int) Math.round(Math.random() * (students - 1));
+                    } while (Methods.verify(rand, stuID));
+                    stuID[j] = rand;
+                }
+                for (int j = 0; j < 20; j++) {
+                    // INSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK ) VALUES ( "+i+", "+stuID[j]+" );
+                    writer.println("\tINSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK ) VALUES ( "+i+", "+stuID[j]+" );");
+                    count++;
                 }
             }
             writer.println("");
