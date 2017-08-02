@@ -24,7 +24,7 @@ public final class User {
     public String Photo;
     public String Curriculum;
     public String DateOfBirth;
-    public final String Password = "123qwe";
+    public final String Password = "AA+T6brv4/CM1npsCj9pDnVogMH39sHiilT5w1yv8yX5XGoUIlNrPvhnU66qw1vpAg==";
     public String RegisterDate;
     public final int IsActive = 1;
     public String Function;
