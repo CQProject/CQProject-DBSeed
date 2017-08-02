@@ -123,7 +123,7 @@ public class DBSeed {
             writer.println("-- SCHOOLS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < schools; i++) {
-                writer.println("\tINSERT INTO TblSchools( Name, Logo, ProfilePicture, Acronym ) VALUES ( 'school-" + (i + 1) + "', 'logoExemple.png', 'profileExemple.png', 'XPTO' );");
+                writer.println("\tINSERT INTO TblSchools( Name, Logo, ProfilePicture, Acronym, About ) VALUES ( 'school-" + (i + 1) + "', 'logoExemple.png', 'profileExemple.png', 'XPTO', 'Some About of this school... Some About of this school... Some About of this school..Some About of this school...  Some About of this school...  Some About of this school...' );");
                 count++;
             }
             writer.println("");
