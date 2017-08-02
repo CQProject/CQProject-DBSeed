@@ -366,7 +366,7 @@ public class DBSeed {
             writer.println("");
             writer.println("-- LESSONS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 0; i < classesByYear * 100; i++) {
+            for (int i = 1; i < classesByYear * 100; i++) {
                 for (int j = 0; j < 2; j++) {
                     writer.println("\tINSERT INTO TblLessons( Summary, Observations, Homework, ScheduleFK, Day ) VALUES ( 'Um Sumário Um Sumário  Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário Um Sumário ', 'Uma Observação Uma Observação Uma Observação Uma Observação Uma Observação Uma Observação ', 'Um trabalho de casa... Um trabalho de casa... Um trabalho de casa... Um trabalho de casa... Um trabalho de casa...', " + i + ", GETDATE()  );");
                     count++;
@@ -376,9 +376,9 @@ public class DBSeed {
 
             /* LESSON-STUDENTS */
             writer.println("");
-            writer.println("-- LESSONS ------------------------------------------------------------------------------------------------");
+            writer.println("-- LESSONS-STUDENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 0; i < classesByYear * 200; i++) {
+            for (int i = 1; i < classesByYear * 200; i++) {
                 int[] stuID = new int[20];
                 for (int j = 0; j < 20; j++) {
                     int rand;
@@ -398,7 +398,7 @@ public class DBSeed {
             writer.println("");
             writer.println("-- EVALUATION ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 0; i < classesByYear * 100; i++) {
+            for (int i = 1; i < classesByYear * 100; i++) {
                 writer.println("\tINSERT INTO TblEvaluations( Purport, EvaluationDate, ScheduleFK ) VALUES ( 'Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo...', '" + Methods.randDate() + "', " + i + " );");
                 count++;
             }
@@ -408,7 +408,7 @@ public class DBSeed {
             writer.println("");
             writer.println("-- EVALUATION-STUDENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 0; i < classesByYear * 100; i++) {
+            for (int i = 1; i < classesByYear * 100; i++) {
                 int[] stuID = new int[20];
                 for (int j = 0; j < 20; j++) {
                     int rand;
