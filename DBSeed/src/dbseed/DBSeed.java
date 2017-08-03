@@ -132,16 +132,14 @@ public class DBSeed {
             writer.println("");
             writer.println("-- CLASSES ------------------------------------------------------------------------------------------------");
             writer.println("");
-            int teacher = students + 1;
             for (int i = 1; i < 5; i++) {
                 int school = 1, classDesc = 0, j = 0;
                 while (j < classesByYear) {
-                    Classs cla = new Classs(classDesc, i, school, teacher);
+                    Classs cla = new Classs(classDesc, i, school);
                     writer.println("\t" + cla.toString());
                     count++;
                     school = (school < schools) ? school + 1 : 1;
                     classDesc = (school == 1) ? classDesc + 1 : classDesc;
-                    teacher++;
                     j++;
                 }
             }
@@ -157,6 +155,16 @@ public class DBSeed {
             }
             writer.println("");
 
+            /* CLASSES-TEACHERS */
+            writer.println("");
+            writer.println("-- CLASSES-TEACHERS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int i = 0; i < classesByYear*4; i++) {
+                writer.println("\tINSERT INTO TblClassTeachers( ClassFK, TeacherFK ) VALUES( " + (i + 1) + ", " + (i + students + 1) + " );");
+                count++;
+            }
+            writer.println("");
+            
             /* DOCUMENTS */
             writer.println("");
             writer.println("-- DOCUMENTS ------------------------------------------------------------------------------------------------");

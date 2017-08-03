@@ -16,17 +16,15 @@ public class Classs {
     public String Year;
     public String ClassDesc;
     public int SchoolFK;
-    public int TeacherFK;
 
-    public Classs(int classDesc, int year, int school, int teacher) {
+    public Classs(int classDesc, int year, int school) {
         this.Year = year + "º";
         this.ClassDesc = "" + desc[classDesc];
         this.SchoolFK = school;
-        this.TeacherFK=teacher;
     }
 
     @Override
     public String toString() {
-        return "INSERT INTO TblClasses( SchoolYear, Year, ClassDesc, SchoolFK, TeacherFK ) VALUES( '"+SchoolYear+"', '"+Year+"', '"+ClassDesc+"', "+SchoolFK+", "+TeacherFK+" );";
+        return "INSERT INTO TblClasses( SchoolYear, Year, ClassDesc, SchoolFK ) VALUES( '"+SchoolYear+"', '"+Year+"', '"+ClassDesc+"', "+SchoolFK+" );";
     }
 }
