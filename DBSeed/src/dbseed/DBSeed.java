@@ -51,7 +51,7 @@ public class DBSeed {
 
             writer.println("TRUNCATE TABLE [TblActions]");
             writer.println("TRUNCATE TABLE [TblClasses]");
-            writer.println("TRUNCATE TABLE [TblClassStudents]");
+            writer.println("TRUNCATE TABLE [TblClassUsers]");
             writer.println("TRUNCATE TABLE [TblDocuments]");
             writer.println("TRUNCATE TABLE [TblDone]");
             writer.println("TRUNCATE TABLE [TblEvaluations]");
@@ -150,7 +150,7 @@ public class DBSeed {
             writer.println("-- CLASSES-STUDENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < students; i++) {
-                writer.println("\tINSERT INTO TblClassStudents( ClassFK, StudentFK ) VALUES( " + ((int) i / (students / (classesByYear * 4)) + 1) + ", " + (i + 1) + " );");
+                writer.println("\tINSERT INTO TblClassUsers( ClassFK, UserFK ) VALUES( " + ((int) i / (students / (classesByYear * 4)) + 1) + ", " + (i + 1) + " );");
                 count++;
             }
             writer.println("");
@@ -160,7 +160,7 @@ public class DBSeed {
             writer.println("-- CLASSES-TEACHERS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < classesByYear*4; i++) {
-                writer.println("\tINSERT INTO TblClassTeachers( ClassFK, TeacherFK ) VALUES( " + (i + 1) + ", " + (i + students + 1) + " );");
+                writer.println("\tINSERT INTO TblClassUsers( ClassFK, UserFK ) VALUES( " + (i + 1) + ", " + (i + students + 1) + " );");
                 count++;
             }
             writer.println("");
