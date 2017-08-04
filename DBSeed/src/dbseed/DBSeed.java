@@ -171,7 +171,8 @@ public class DBSeed {
             writer.println("");
             for (int i = 0; i < classesByYear * 4; i++) {
                 for (int j = 0; j < 3; j++) {
-                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + " );");
+                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + ", "+(students +i + 1)+" );");
+                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + ", "+Methods.randBetween(students+teachers+1, students+teachers+secretaries+1)+" );");
                     count++;
                 }
             }
