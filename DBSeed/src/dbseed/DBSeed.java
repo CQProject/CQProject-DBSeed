@@ -69,6 +69,8 @@ public class DBSeed {
             writer.println("TRUNCATE TABLE [TblUserRoles]");
             writer.println("TRUNCATE TABLE [TblUsers]");
             writer.println("TRUNCATE TABLE [TblValidations]");
+            writer.println("TRUNCATE TABLE [TblFloors]");
+            writer.println("TRUNCATE TABLE [TblSubjects]");
 
             /* USERS */
             writer.println("");
@@ -191,14 +193,24 @@ public class DBSeed {
                 }
             }
             writer.println("");
+            
+            /* FLOORS */
+            writer.println("");
+            writer.println("-- FLOORS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int j = 1; j <= schools; j++) {
+                    writer.println("\tINSERT INTO TblFloors( Name, Image, SchoolFK ) VALUES( 'Floor-"+j+"', 'planExemple.png', " +j+" );");
+                    count++;
+            }
+            writer.println("");
 
             /* ROOMS */
             writer.println("");
             writer.println("-- ROOMS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int j = 0; j < schools; j++) {
-                for (int i = 0; i < roomsBySchool; i++) {
-                    writer.println("\tINSERT INTO TblRooms( SchoolFK, Name ) VALUES( " + (j + 1) + ", 'S" + ((j + 1) + "-R" + (i + 1)) + "' );");
+            for (int j = 1; j <= schools; j++) {
+                for (int i = 1; i <= roomsBySchool; i++) {
+                    writer.println("\tINSERT INTO TblRooms( FloorFK, Name ) VALUES( " + j + ", 'S" + j  + "-R" + i + "' );");
                     count++;
                 }
             }
@@ -355,16 +367,26 @@ public class DBSeed {
                 }
             }
             writer.println("");
+            
+            /* SUBJECTS */
+            writer.println("");
+            writer.println("-- SUBJECTS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            String[] subjects = {"Matemática", "Língua Portuguesa", "Estudo do Meio", "Educação Física", "Inglês", "Informática"};
+            for (String subject : subjects) {
+                writer.println("\tINSERT INTO TblSubjects( Name ) VALUES ( '" + subject + "' );");
+                count++;
+            }
+            writer.println("");
 
             /* SCHEDULE */
             writer.println("");
             writer.println("-- SCHEDULE ------------------------------------------------------------------------------------------------");
             writer.println("");
-            String[] subjects = {"Lingua Portuguesa", "Matemática", "Estudo do Meio", "Educação Física", "Informática", "Inglês"};
             for (int i = 0; i < classesByYear * 4; i++) {
                 for (int j = 0; j < 5; j++) {
                     for (int k = 0; k < 5; k++) {
-                        writer.println("\tINSERT INTO TblSchedules( Subject, TeacherFK, ClassFK, RoomFK, StartingTime, Duration, DayOfWeek ) VALUES ( '" + subjects[Methods.randBetween(0, subjects.length - 1)] + "', " + (students + i) + ", " + i + ", " + Methods.randBetween(1, i) + ", " + k + ", 1, " + j + " );");
+                        writer.println("\tINSERT INTO TblSchedules( SubjectFK, TeacherFK, ClassFK, RoomFK, StartingTime, Duration, DayOfWeek ) VALUES ( " + Methods.randBetween(1, subjects.length) + ", " + (students + i) + ", " + i + ", " + Methods.randBetween(1, i) + ", " + k + ", 1, " + j + " );");
                         count++;
                     }
                 }
