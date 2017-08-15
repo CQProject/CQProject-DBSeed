@@ -161,20 +161,20 @@ public class DBSeed {
             writer.println("");
             writer.println("-- CLASSES-TEACHERS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 0; i < classesByYear*4; i++) {
+            for (int i = 0; i < classesByYear * 4; i++) {
                 writer.println("\tINSERT INTO TblClassUsers( ClassFK, UserFK ) VALUES( " + (i + 1) + ", " + (i + students + 1) + " );");
                 count++;
             }
             writer.println("");
-            
+
             /* DOCUMENTS */
             writer.println("");
             writer.println("-- DOCUMENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < classesByYear * 4; i++) {
                 for (int j = 0; j < 3; j++) {
-                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + ", "+(students +i + 1)+" );");
-                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + ", "+Methods.randBetween(students+teachers+1, students+teachers+secretaries+1)+" );");
+                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + ", " + (students + i + 1) + " );");
+                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + ", " + Methods.randBetween(students + teachers + 1, students + teachers + secretaries + 1) + " );");
                     count++;
                 }
             }
@@ -193,14 +193,14 @@ public class DBSeed {
                 }
             }
             writer.println("");
-            
+
             /* FLOORS */
             writer.println("");
             writer.println("-- FLOORS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int j = 1; j <= schools; j++) {
-                    writer.println("\tINSERT INTO TblFloors( Name, Image, SchoolFK ) VALUES( 'Floor-"+j+"', 'planExemple.png', " +j+" );");
-                    count++;
+                writer.println("\tINSERT INTO TblFloors( Name, Image, SchoolFK ) VALUES( 'Floor-" + j + "', 'planExemple.png', " + j + " );");
+                count++;
             }
             writer.println("");
 
@@ -210,7 +210,7 @@ public class DBSeed {
             writer.println("");
             for (int j = 1; j <= schools; j++) {
                 for (int i = 1; i <= roomsBySchool; i++) {
-                    writer.println("\tINSERT INTO TblRooms( FloorFK, Name ) VALUES( " + j + ", 'S" + j  + "-R" + i + "' );");
+                    writer.println("\tINSERT INTO TblRooms( FloorFK, Name ) VALUES( " + j + ", 'S" + j + "-R" + i + "' );");
                     count++;
                 }
             }
@@ -350,7 +350,7 @@ public class DBSeed {
             writer.println("-- TASKS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < assistants; i++) {
-                writer.println("\tINSERT INTO TblTasks( UserFK, Day, Weekly, Description ) VALUES ( " + Methods.randBetween(students + teachers + secretaries, students + teachers + secretaries + assistants) + ", '" + Methods.randDate() + "', " + ((i % 3 == 0) ? 1 : 0) + ", 'Some description exemple... Some description exemple... Some description exemple... Some description exemple... Some description exemple...' );");
+                writer.println("\tINSERT INTO TblTasks( UserFK, DayOfWeek, Description ) VALUES ( " + Methods.randBetween(students + teachers + secretaries, students + teachers + secretaries + assistants) + ", " + Methods.randBetween(1, 7) + ", 'Some description exemple... Some description exemple... Some description exemple... Some description exemple... Some description exemple...' );");
                 count++;
             }
             writer.println("");
@@ -367,7 +367,7 @@ public class DBSeed {
                 }
             }
             writer.println("");
-            
+
             /* SUBJECTS */
             writer.println("");
             writer.println("-- SUBJECTS ------------------------------------------------------------------------------------------------");
@@ -429,9 +429,11 @@ public class DBSeed {
             writer.println("");
             writer.println("-- EVALUATION ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 1; i < classesByYear * 100; i++) {
-                writer.println("\tINSERT INTO TblEvaluations( Purport, EvaluationDate, ScheduleFK ) VALUES ( 'Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo...', '" + Methods.randDate() + "', " + i + " );");
-                count++;
+            for (int i = 1; i < classesByYear * 4; i++) {
+                for (int j = 0; j < 3; j++) {
+                    writer.println("\tINSERT INTO TblEvaluations( Purport, EvaluationDate, ClassFK, TeacherFK, SubjectFK ) VALUES ( 'Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo...', '" + Methods.randDate() + "', " + i + "," + (i + students + 1) + ", " + Methods.randBetween(1, 6) + " );");
+                    count++;
+                }
             }
             writer.println("");
 
@@ -450,7 +452,7 @@ public class DBSeed {
                 }
                 for (int j = 0; j < 20; j++) {
                     // INSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK ) VALUES ( "+i+", "+stuID[j]+" );
-                    writer.println("\tINSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK ) VALUES ( "+i+", "+stuID[j]+" );");
+                    writer.println("\tINSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK ) VALUES ( " + i + ", " + stuID[j] + " );");
                     count++;
                 }
             }
