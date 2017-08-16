@@ -9,17 +9,19 @@ package Classes;
  *
  * @author diogo
  */
-public final class Sensor {
+public final class Record {
     public int Temperature;
     public int Luminosity;
+    public int Humidity;
     public int Energy;
-    public int RoomFK;
+    public int SensorFK;
 
-    public Sensor(int RoomFK) {
+    public Record(int SensorFK) {
         this.Temperature= randBetween(5,30);
         this.Luminosity = randBetween(200,700);
         this.Energy = randBetween(400,100);
-        this.RoomFK = RoomFK;
+        this.Humidity = randBetween(1,99);
+        this.SensorFK = SensorFK;
     }
     
     public int randBetween(int start, int end) {
@@ -28,6 +30,6 @@ public final class Sensor {
     
     @Override
     public String toString() {
-        return "INSERT INTO TblSensors( RoomFK, Hour, Luminosity, Temperature, Energy ) VALUES( "+RoomFK+", '"+Methods.randDate()+"', "+Luminosity+", "+Temperature+", "+Energy+" );";
+        return "INSERT INTO TblRecords( SensorFK, Hour, Luminosity, Temperature, Energy, Humidity ) VALUES( "+SensorFK+", '"+Methods.randDate()+"', "+Luminosity+", "+Temperature+", "+Energy+", 0."+Humidity+" );";
     }
 }

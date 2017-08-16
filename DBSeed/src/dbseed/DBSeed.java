@@ -7,7 +7,7 @@ package dbseed;
 
 import Classes.Classs;
 import Classes.Methods;
-import Classes.Sensor;
+import Classes.Record;
 import Classes.User;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -220,15 +220,23 @@ public class DBSeed {
             writer.println("");
             writer.println("-- SENSORS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            int roomID = 1;
-            for (int j = 0; j < schools; j++) {
-                for (int i = 0; i < roomsBySchool; i++) {
-                    for (int k = 0; k < 8; k++) {
-                        Sensor sensor = new Sensor(roomID);
-                        writer.println("\t" + sensor.toString());
-                        count++;
-                    }
-                    roomID++;
+            for (int j = 1; j <= schools; j++) {
+                for (int i = 1; i <= 4; i++) {
+                    writer.println("\tINSERT INTO TblSensors( Name, XCoord, YCoord, FloorFK ) VALUES( 'Sensor-" + i + "-"+j+"', " + Methods.randBetween(1, 900) + ", " + Methods.randBetween(1, 500) + ", " + j + ");");
+                    count++;
+                }
+            }
+            writer.println("");
+
+            /* RECORDS */
+            writer.println("");
+            writer.println("-- RECORDS ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            for (int j = 1; j <= schools * 4; j++) {
+                for (int k = 0; k < 8; k++) {
+                    Record record = new Record(j);
+                    writer.println("\t" + record.toString());
+                    count++;
                 }
             }
             writer.println("");
