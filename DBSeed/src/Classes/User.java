@@ -38,7 +38,7 @@ public final class User {
         this.PhoneNumber = "91" + (new Random().nextInt(8999999) + 1000000);
         this.Photo = Function + ".png";
         this.Curriculum = "curriculumExemple.pdf";
-        this.DateOfBirth = adult? Methods.dateBirth():Methods.dateBirthStudent();
+        this.DateOfBirth = adult ? Methods.dateBirth() : Methods.dateBirthStudent();
         this.Function = Function;
     }
 
@@ -59,12 +59,12 @@ public final class User {
                         + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', " + IsActive + ", '" + Address + "', '" + PhoneNumber + "' );";
                 break;
             case "admin":
-                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, Photo, PhoneNumber ) VALUES "
-                        + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', '" + Photo + "', '" + PhoneNumber + "' );";
+                str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, Photo, PhoneNumber, IsActive ) VALUES "
+                        + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', '" + Photo + "', '" + PhoneNumber + "', " + IsActive + " );";
                 break;
             default:
                 str = "INSERT INTO TblUsers( RegisterDate, Email, Name, Password, [Function], CitizenCard, FiscalNumber, DateOfBirth, IsActive, Address, Photo, PhoneNumber, Curriculum ) VALUES "
-                        + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', '" + DateOfBirth + "', " + IsActive + ", '" + Address + "', '" + Photo + "', '" + PhoneNumber + "', '"+Curriculum+"' );";
+                        + "( '" + RegisterDate + "', '" + Email + "', '" + Name + "', '" + Password + "', '" + Function + "', '" + CitizenCard + "', '" + FiscalNumber + "', '" + DateOfBirth + "', " + IsActive + ", '" + Address + "', '" + Photo + "', '" + PhoneNumber + "', '" + Curriculum + "' );";
                 break;
         }
         return str;
