@@ -325,7 +325,7 @@ public class DBSeed {
             writer.println("-- NOTIFICATIONS ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < teachers; i++) {
-                writer.println("\tINSERT INTO TblNotifications( Hour, Subject, Urgency, Description, UserFK ) VALUES ( '" + Methods.randDate() + "', 'Some Subject exemple " + (i + 1) + "', " + ((i % 5 == 0) ? 1 : 0) + " ,'Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description...', " + (students + i) + " );");
+                writer.println("\tINSERT INTO TblNotifications( Hour, Subject, Urgency, Description, UserFK, Approval ) VALUES ( '" + Methods.randDate() + "', 'Some Subject exemple " + (i + 1) + "', " + ((i % 5 == 0) ? 1 : 0) + " ,'Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description... Some description...', " + (students + i) + ", " + ((i % 3 == 0) ? 0 : 1) + " );");
                 count++;
             }
             writer.println("");
