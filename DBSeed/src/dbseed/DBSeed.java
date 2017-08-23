@@ -347,7 +347,7 @@ public class DBSeed {
                 }
 
                 for (int j = 0; j < len; j++) {
-                    writer.println("\tINSERT INTO TblValidations( UserFK, NotificationFK, Accepted, [Read]  ) VALUES ( " + (guardianIndex + i) + ", " + notID[j] + ", " + ((i % 6 == 0) ? 1 : 0) + ", " + ((i % 2 == 0) ? 1 : 0) + " );");
+                    writer.println("\tINSERT INTO TblValidations( ReceiverFK, NotificationFK, StudentFK , Accepted, [Read]  ) VALUES ( " + (guardianIndex + i) + ", " + notID[j] + ", "+((i%3==0)?(i+1):null)+"," + ((i % 6 == 0) ? 1 : 0) + ", " + ((i % 2 == 0) ? 1 : 0) + " );");
                     count++;
                 }
             }
