@@ -392,7 +392,7 @@ public class DBSeed {
             writer.println("-- SCHEDULE ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 0; i < classesByYear * 4; i++) {
-                for (int j = 0; j < 5; j++) {
+                for (int j = 1; j <= 5; j++) {
                     for (int k = 0; k < 5; k++) {
                         writer.println("\tINSERT INTO TblSchedules( SubjectFK, TeacherFK, ClassFK, RoomFK, StartingTime, Duration, DayOfWeek ) VALUES ( " + Methods.randBetween(1, subjects.length) + ", " + (students + i) + ", " + i + ", " + Methods.randBetween(1, i) + ", " + k + ", 1, " + j + " );");
                         count++;
