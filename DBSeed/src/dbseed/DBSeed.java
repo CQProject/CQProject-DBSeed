@@ -71,6 +71,7 @@ public class DBSeed {
             writer.println("TRUNCATE TABLE [TblValidations]");
             writer.println("TRUNCATE TABLE [TblFloors]");
             writer.println("TRUNCATE TABLE [TblSubjects]");
+            writer.println("TRUNCATE TABLE [TblTimes]");
 
             /* USERS */
             writer.println("");
@@ -210,7 +211,7 @@ public class DBSeed {
             writer.println("");
             for (int j = 1; j <= schools; j++) {
                 for (int i = 1; i <= roomsBySchool; i++) {
-                    writer.println("\tINSERT INTO TblRooms( FloorFK, Name, XCoord, YCoord, HasSensor ) VALUES( " + j + ", 'S" + j + "-R" + i + "', " + Methods.randBetween(1, 900) + ", " + Methods.randBetween(1, 500) + ", "+(i<5?1:0)+" );");
+                    writer.println("\tINSERT INTO TblRooms( FloorFK, Name, XCoord, YCoord, HasSensor ) VALUES( " + j + ", 'S" + j + "-R" + i + "', " + Methods.randBetween(1, 900) + ", " + Methods.randBetween(1, 500) + ", " + (i < 5 ? 1 : 0) + " );");
                     count++;
                 }
             }
@@ -394,7 +395,7 @@ public class DBSeed {
             String[][] times = {{"09h00", "09h45"}, {"10h05", "10h50"}, {"11h00", "11h45"}, {"13h15", "14h00"}, {"14h15", "15h00"}};
             for (int j = 1; j <= schools; j++) {
                 for (int i = 0; i < times.length; i++) {
-                    writer.println("\tINSERT INTO TblTimes( SchoolFK, StartTime, EndTime ) VALUES ( " + j + ", '" + times[i][0] + "', '" + times[i][1] + "' );");
+                    writer.println("\tINSERT INTO TblTimes( [Order], IsKindergarten, SchoolFK, StartTime, EndTime ) VALUES ( " + (i + 1) + ", 0, " + j + ", '" + times[i][0] + "', '" + times[i][1] + "' );");
                     count++;
 
                 }
@@ -405,16 +406,19 @@ public class DBSeed {
             writer.println("");
             writer.println("-- SCHEDULE ------------------------------------------------------------------------------------------------");
             writer.println("");
-            int classesBySchool = classesByYear * 4 / schools;
-            for (int l =0; l < schools; l++) {
+            int classesBySchool = (classesByYear * 4) / schools;
+            int timeFlag = 0, classFlag = 1;
+            for (int l = 0; l < schools; l++) {
                 for (int i = 1; i <= classesBySchool; i++) {
                     for (int j = 1; j <= 5; j++) {
                         for (int k = 1; k <= times.length; k++) {
-                            writer.println("\tINSERT INTO TblSchedules( SubjectFK, TeacherFK, ClassFK, RoomFK, TimeFK, Duration, DayOfWeek ) VALUES ( " + Methods.randBetween(1, subjects.length) + ", " + (students + (l*i+i)) + ", " + (i*l+i) + ", " + Methods.randBetween(l*roomsBySchool+1, (l+1)*roomsBySchool) + ", " + (k*l+k) + ", 1, " + j + " );");
+                            writer.println("\tINSERT INTO TblSchedules( SubjectFK, TeacherFK, ClassFK, RoomFK, TimeFK, Duration, DayOfWeek ) VALUES ( " + Methods.randBetween(1, subjects.length) + ", " + (students + classFlag) + ", " + classFlag + ", " + Methods.randBetween(l * roomsBySchool + 1, (l + 1) * roomsBySchool) + ", " + (timeFlag + k) + ", 1, " + j + " );");
                             count++;
                         }
                     }
+                    classFlag++;
                 }
+                timeFlag += times.length;
             }
 
             writer.println("");
