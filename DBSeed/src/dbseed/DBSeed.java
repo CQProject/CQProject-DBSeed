@@ -210,7 +210,7 @@ public class DBSeed {
             writer.println("");
             for (int j = 1; j <= schools; j++) {
                 for (int i = 1; i <= roomsBySchool; i++) {
-                    writer.println("\tINSERT INTO TblRooms( FloorFK, Name, XCoord, YCoord ) VALUES( " + j + ", 'S" + j + "-R" + i + "', " + Methods.randBetween(1, 900) + ", " + Methods.randBetween(1, 500) + " );");
+                    writer.println("\tINSERT INTO TblRooms( FloorFK, Name, XCoord, YCoord, HasSensor ) VALUES( " + j + ", 'S" + j + "-R" + i + "', " + Methods.randBetween(1, 900) + ", " + Methods.randBetween(1, 500) + ", "+(i<5?1:0)+" );");
                     count++;
                 }
             }
