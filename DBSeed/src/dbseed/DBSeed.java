@@ -439,19 +439,17 @@ public class DBSeed {
             writer.println("");
             writer.println("-- LESSONS-STUDENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 1; i < classesByYear * 200; i++) {
-                int[] stuID = new int[20];
-                for (int j = 0; j < 20; j++) {
-                    int rand;
-                    do {
-                        rand = 1 + (int) Math.round(Math.random() * (students - 1));
-                    } while (Methods.verify(rand, stuID));
-                    stuID[j] = rand;
+            classFlag = 0;
+            int lessonFlag = 1;
+            for (int i = 1; i < classesByYear * 4; i++) {
+                for (int k = 0; k < 50; k++) {
+                    for (int j = 1; j <= studentsByClass; j++) {
+                        writer.println("\tINSERT INTO TblLessonStudents( LessonFK, StudentFK, Presence, Material, Behavior ) VALUES ( " + lessonFlag + ", " + (classFlag + j) + ", " + ((j % 8 == 0) ? 0 : 1) + ", " + ((j % 5 == 0) ? 0 : 1) + ", " + Methods.randBetween(1, 5) + " );");
+                        count++;
+                    }
+                    lessonFlag++;
                 }
-                for (int j = 0; j < 20; j++) {
-                    writer.println("\tINSERT INTO TblLessonStudents( LessonFK, StudentFK, Presence, Material, Behavior ) VALUES ( " + i + ", " + stuID[j] + ", " + ((j % 8 == 0) ? 0 : 1) + ", " + ((j % 5 == 0) ? 0 : 1) + ", " + Methods.randBetween(1, 5) + " );");
-                    count++;
-                }
+                classFlag += studentsByClass;
             }
             writer.println("");
 
