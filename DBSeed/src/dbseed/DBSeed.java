@@ -174,8 +174,8 @@ public class DBSeed {
             writer.println("");
             for (int i = 0; i < classesByYear * 4; i++) {
                 for (int j = 0; j < 3; j++) {
-                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK, SubjectFK ) VALUES ( 'documentExemple.pdf', " + ((j % 2 == 0) ? 0 : 1) + ", GETDATE(), " + (i + 1) + ", " + (students + i + 1) + "," + Methods.randBetween(1, 6) + " );");
-                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK, SubjectFK ) VALUES ( 'documentExemple.pdf', 0, GETDATE(), " + (i + 1) + ", " + Methods.randBetween(students + teachers + 1, students + teachers + secretaries + 1) + ", null );");
+                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK, SubjectFK ) VALUES ( 'b28d6a0b-ced6-44d7-975e-7e81ffb5b02b.wordTest.docx', " + ((j % 2 == 0) ? 1 : 0) + ", GETDATE(), " + (i + 1) + ", " + (students + i + 1) + "," + Methods.randBetween(1, 6) + " );");
+                    writer.println("\tINSERT INTO TblDocuments( [File], IsVisible, SubmitedIn, ClassFK, UserFK, SubjectFK ) VALUES ( '64bebba0-662a-439f-81f9-e512f784a8f8.documentExemple.pdf'," + ((j % 2 == 0) ? 0 : 1) + ", GETDATE(), " + (i + 1) + ", " + Methods.randBetween(students + teachers + 1, students + teachers + secretaries + 1) + ", null );");
                     count++;
                 }
             }
@@ -458,7 +458,7 @@ public class DBSeed {
             writer.println("-- EVALUATION ------------------------------------------------------------------------------------------------");
             writer.println("");
             for (int i = 1; i < classesByYear * 4; i++) {
-                for (int j = 0; j < 3; j++) {
+                for (int j = 0; j < 5; j++) {
                     writer.println("\tINSERT INTO TblEvaluations( Purport, EvaluationDate, ClassFK, TeacherFK, SubjectFK ) VALUES ( 'Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo... Algum Objetivo...', '" + Methods.randDate() + "', " + i + "," + (i + students + 1) + ", " + Methods.randBetween(1, 6) + " );");
                     count++;
                 }
@@ -469,20 +469,16 @@ public class DBSeed {
             writer.println("");
             writer.println("-- EVALUATION-STUDENTS ------------------------------------------------------------------------------------------------");
             writer.println("");
-            for (int i = 1; i < classesByYear * 100; i++) {
-                int[] stuID = new int[20];
-                for (int j = 0; j < 20; j++) {
-                    int rand;
-                    do {
-                        rand = 1 + (int) Math.round(Math.random() * (students - 1));
-                    } while (Methods.verify(rand, stuID));
-                    stuID[j] = rand;
+            int studentFlag = 0, evaluationFlag=0;
+            for (int i = 1; i < classesByYear * 4; i++) {
+                for (int j = 1; j <= 5; j++) {
+                    for (int k = 1; k <= studentsByClass; k++) {
+                        writer.println("\tINSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK, Value ) VALUES ( " + (evaluationFlag+j) + ", " + (studentFlag+k) + ",  "+ Methods.randBetween(1, 5) +");");
+                        count++;
+                    }
                 }
-                for (int j = 0; j < 20; j++) {
-                    // INSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK ) VALUES ( "+i+", "+stuID[j]+" );
-                    writer.println("\tINSERT INTO TblEvaluationStudents( EvaluationFK, StudentFK ) VALUES ( " + i + ", " + stuID[j] + " );");
-                    count++;
-                }
+                studentFlag += studentsByClass;
+                evaluationFlag+=5;
             }
             writer.println("");
 
