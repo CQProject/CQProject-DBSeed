@@ -72,6 +72,7 @@ public class DBSeed {
             writer.println("TRUNCATE TABLE [TblFloors]");
             writer.println("TRUNCATE TABLE [TblSubjects]");
             writer.println("TRUNCATE TABLE [TblTimes]");
+            writer.println("TRUNCATE TABLE [TblNotices]");
 
             /* USERS */
             writer.println("");
@@ -482,6 +483,21 @@ public class DBSeed {
             }
             writer.println("");
 
+            /* NOTICES */
+            writer.println("");
+            writer.println("-- NOTICES ------------------------------------------------------------------------------------------------");
+            writer.println("");
+            int flagNotice=1;
+            for (int i = 1; i <= schools; i++) {
+                for (int j = 1; j < 10; j++) {
+                    writer.println("\tINSERT INTO TblNotices( SchoolFK, Title, Text, CreatedDate, Image ) VALUES ( " + i + ", 'Title Exemple "+flagNotice+"', 'Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text Some Text', '"+ Methods.randDate() +"', 'noticeimage.png'  );");
+                    flagNotice++;
+                count++;
+                }
+            }
+            writer.println("");
+
+            
             writer.close();
             System.out.println("Inserted rows: " + count);
         } catch (IOException e) {
